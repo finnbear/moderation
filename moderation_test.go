@@ -1,38 +1,38 @@
 package moderation
 
 import (
-    "encoding/csv"
-    "io"
-    "os"
-    "testing"
+	"encoding/csv"
+	"io"
+	"os"
+	"testing"
 )
 
 func TestAnalyze(t *testing.T) {
-    type TestCase struct {
-        phrase    string
-        offensive bool
-    }
-    testCases := []TestCase{
-        {"hi", false},
-        {"hello", false},
-        {"hello my name is Bob.", false},
-        {"SHIT", true},
-        {"sh-iit", true},
-        {"shhhhhiiiiter", true},
-        {"shhHhhit", true},
-        {"lol fuck this", true},
-        {"f*u*c*k", true},
-        {"$#1t", true},
-        {" fučk", true},
-        {"ass", true},
-        {"glass", false},
-        {"ÄšŚ", true},
-        {"pÓöp", true},
-        {"what a bunch of bullsh1t", true},
-        {"bitčh", true},
-        {"assassin", false},
-        {"carcass", false},
-        {"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
+	type TestCase struct {
+		phrase    string
+		offensive bool
+	}
+	testCases := []TestCase{
+		{"hi", false},
+		{"hello", false},
+		{"hello my name is Bob.", false},
+		{"SHIT", true},
+		{"sh-iit", true},
+		{"shhhhhiiiiter", true},
+		{"shhHhhit", true},
+		{"lol fuck this", true},
+		{"f*u*c*k", true},
+		{"$#1t", true},
+		{" fučk", true},
+		{"ass", true},
+		{"glass", false},
+		{"ÄšŚ", true},
+		{"pÓöp", true},
+		{"what a bunch of bullsh1t", true},
+		{"bitčh", true},
+		{"assassin", false},
+		{"carcass", false},
+		{"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
 		{"With an apology for my intrusion, I was about to withdraw when Holmes pulled me abruptly into the room and closed the door behind me.", false},
 		{"You could not possibly have come at a better time, my dear Watson, he said cordially", false},
 		{"I was afraid that you were engaged.", false},
@@ -56,59 +56,59 @@ func TestAnalyze(t *testing.T) {
 		{"Our cabs were dismissed, and, following the guidance of Mr. Merryweather, we passed down a narrow passage and through a side door, which he opened for us", false},
 		{"Within there was a small corridor, which ended in a very massive iron gate.", false},
 		{"We were seated at breakfast one morning, my wife and I, when the maid brought in a telegram. It was from Sherlock Holmes and ran in this way", false},
-    }
-    for _, testCase := range testCases {
-        analysis := Analyze(testCase.phrase)
-        if analysis.IsInappropriate() != testCase.offensive {
-            t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", testCase.phrase, analysis.IsInappropriate(), testCase.offensive)
-        }
-    }
+	}
+	for _, testCase := range testCases {
+		analysis := Analyze(testCase.phrase)
+		if analysis.IsInappropriate() != testCase.offensive {
+			t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", testCase.phrase, analysis.IsInappropriate(), testCase.offensive)
+		}
+	}
 }
 
 func TestAnalyzeWikipedia(t *testing.T) {
-    wikiModerationData, err := os.Open("wikipedia-test.csv")
-    if err != nil {
-        t.Skip()
-    }
-    reader := csv.NewReader(wikiModerationData)
+	wikiModerationData, err := os.Open("wikipedia-test.csv")
+	if err != nil {
+		t.Skip()
+	}
+	reader := csv.NewReader(wikiModerationData)
 
-    correct := 0
-    total := 0
+	correct := 0
+	total := 0
 
-    for total < 50000 {
-        fields, err := reader.Read()
-        if err != nil {
-            if err == io.EOF {
-                break
-            }
-            t.Error(err)
-        }
-        phrase := fields[1]
-        offensive := fields[0] == "1"
-        analysis := Analyze(phrase)
-        if analysis.IsInappropriate() == offensive {
-            correct++
-        } else {
-            //t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsOffensive(), offensive)
-        }
+	for total < 50000 {
+		fields, err := reader.Read()
+		if err != nil {
+			if err == io.EOF {
+				break
+			}
+			t.Error(err)
+		}
+		phrase := fields[1]
+		offensive := fields[0] == "1"
+		analysis := Analyze(phrase)
+		if analysis.IsInappropriate() == offensive {
+			correct++
+		} else {
+			//t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsOffensive(), offensive)
+		}
 
-        total++
-    }
+		total++
+	}
 
-    accuracy := 100 * float64(correct) / float64(total)
+	accuracy := 100 * float64(correct) / float64(total)
 
-    // Wikipedia takes into account more than whether the text contains
-    // bad words
-    const requiredAccuracy = 75
+	// Wikipedia takes into account more than whether the text contains
+	// bad words
+	const requiredAccuracy = 75
 
-    if accuracy >= requiredAccuracy {
-        t.Logf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)
-    } else {
-        t.Errorf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)
-    }
+	if accuracy >= requiredAccuracy {
+		t.Logf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)
+	} else {
+		t.Errorf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)
+	}
 
-    err = wikiModerationData.Close()
-    if err != nil {
-        t.Error(err)
-    }
+	err = wikiModerationData.Close()
+	if err != nil {
+		t.Error(err)
+	}
 }
