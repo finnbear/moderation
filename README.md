@@ -51,4 +51,5 @@ Output:
 
 ## Acknowledgements
 
-1. Some profanities and test cases are based on https://github.com/TwinProduction/go-away
+1. Radix implementation based on https://gitlab.com/caibear/go-boggle/
+2. Some profanities and test cases are based on https://github.com/TwinProduction/go-away
