@@ -5,7 +5,7 @@ import (
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
-	"moderation/internal/radix"
+	"github.com/finnbear/moderation/internal/radix"
 	"unicode"
 )
 

@@ -1,4 +1,4 @@
-module moderation/generator
+module github.com/finnbear/moderation/generator
 
 go 1.15
 

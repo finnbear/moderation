@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-    "moderation"
+    "github.com/finnbear/moderation"
 )
 
 func main() {
