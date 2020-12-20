@@ -1,5 +1,7 @@
 # moderation
 
+[![godocs](https://godoc.org/github.com/schollz/progressbar?status.svg)](https://godoc.org/github.com/finnbear/moderation) 
+
 `moderation` is a profanity filter for `Go`.
 
 ## Goals
