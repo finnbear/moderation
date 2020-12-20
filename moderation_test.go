@@ -17,7 +17,6 @@ func TestAnalyze(t *testing.T) {
 		{"hello", false},
 		{"hello my name is Bob.", false},
 		{"SHIT", true},
-		{"sh-iit", true},
 		{"shhhhhiiiiter", true},
 		{"shhHhhit", true},
 		{"lol fuck this", true},
@@ -27,11 +26,14 @@ func TestAnalyze(t *testing.T) {
 		{"ass", true},
 		{"glass", false},
 		{"ÄšŚ", true},
+		{"sex", true},
+		{"hello_world-sex_word", true},
+		{"sexy", true},
+		{"is extreme", false},
 		{"pÓöp", true},
 		{"what a bunch of bullsh1t", true},
 		{"bitčh", true},
 		{"assassin", false},
-		{"is extreme", false},
 		{"carcass", false},
 		{"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
 		{"With an apology for my intrusion, I was about to withdraw when Holmes pulled me abruptly into the room and closed the door behind me.", false},
@@ -100,7 +102,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 
 	// Wikipedia takes into account more than whether the text contains
 	// bad words
-	const requiredAccuracy = 75
+	const requiredAccuracy = 90
 
 	if accuracy >= requiredAccuracy {
 		t.Logf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)

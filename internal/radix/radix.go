@@ -77,7 +77,7 @@ func (tree *Tree) Add(word string, data int32) {
 	for i := 0; i < len(word); i++ {
 		next := current.Next(word[i])
 		if next == nil {
-			next = &Node{}
+			next = &Node{depth: byte(i + 1), start: word[0]}
 			current.children[word[i]-chOffset] = next
 			current.hasChildren = true
 		}

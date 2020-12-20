@@ -16,6 +16,7 @@ jackass
 nude(.*)
 penises
 poop(.*)
+porn(.?)
 prostitut(.*)
 sex(.*)
 shita

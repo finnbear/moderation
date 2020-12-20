@@ -46,6 +46,8 @@ var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(uni
 // Analyze analyzes a given phrase for moderation purposes
 func Analyze(text string) (analysis Analysis) {
 	text, _, _ = transform.String(removeAccentsTransform, text)
+	lastSepMin := 0
+	lastSepMax := 0
 
 	matches := make([]*radix.Node, 0, len(text))
 	var lastMatchable byte
@@ -53,6 +55,8 @@ func Analyze(text string) (analysis Analysis) {
 		if textRune >= 0x0020 && textRune <= 0x007E {
 			textByte := byte(textRune)
 			var textBytes string
+			lastSepMin++
+			lastSepMax++
 
 			ok := true
 			matchable := false
@@ -74,6 +78,8 @@ func Analyze(text string) (analysis Analysis) {
 				switch textByte {
 				case ' ', '_', '-', '.', ',', '*':
 					skippable = true
+					lastSepMin = 0
+					lastSepMax = 0
 				default:
 					ok = false
 				}
@@ -81,6 +87,10 @@ func Analyze(text string) (analysis Analysis) {
 
 			if len(textBytes) < 1 {
 				textBytes += string(textByte)
+			}
+
+			if textByte == lastMatchable {
+				lastSepMin-- // this character doesn't count
 			}
 
 			if ok {
@@ -99,7 +109,7 @@ func Analyze(text string) (analysis Analysis) {
 								if next.Word() {
 									if next.Data() == 0 {
 										// clear
-									} else {
+									} else if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
 										analysis.InappropriateLevel += int(next.Data())
 									}
 								}
