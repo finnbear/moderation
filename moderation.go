@@ -2,10 +2,10 @@
 package moderation
 
 import (
+	"github.com/finnbear/moderation/internal/radix"
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
-	"github.com/finnbear/moderation/internal/radix"
 	"unicode"
 )
 
