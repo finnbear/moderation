@@ -12,11 +12,11 @@ func main() {
 	printResult("assassin")
 
 	/*
-	Expected results:
-	"hello world" is appropriate.
-	"$#1t" is NOT appropriate.
-	"a$$" is NOT appropriate.
-	"assassin" is appropriate.
+		Expected results:
+		"hello world" is appropriate.
+		"$#1t" is NOT appropriate.
+		"a$$" is NOT appropriate.
+		"assassin" is appropriate.
 	*/
 }
 

@@ -2,7 +2,7 @@ package radix
 
 const (
 	alphabet    = 26
-	longestWord = 28
+	longestWord = 25
 	chMax       = 1 + byte('z') - byte('a')
 	chOffset    = byte('a')
 )

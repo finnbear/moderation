@@ -21,7 +21,7 @@ func init() {
 	}
 }
 
-var replacements = map[byte]string{
+var replacements = [...]string{
 	'!': "li",
 	'@': "a",
 	'4': "a",
@@ -45,11 +45,14 @@ var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(uni
 
 // Analyze analyzes a given phrase for moderation purposes
 func Analyze(text string) (analysis Analysis) {
-	text, _, _ = transform.String(removeAccentsTransform, text)
+	buf := make([]byte, 0, len(text))
+	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
+	text = string(buf[:n])
 	lastSepMin := 0
 	lastSepMax := 0
 
-	matches := make([]*radix.Node, 0, len(text))
+	var matchesGet, matchesPut radix.Buffer
+
 	var lastMatchable byte
 	for _, textRune := range text {
 		if textRune >= 0x0020 && textRune <= 0x007E {
@@ -62,7 +65,10 @@ func Analyze(text string) (analysis Analysis) {
 			matchable := false
 			skippable := false
 
-			replacement, replaceable := replacements[textByte]
+			var replacement string
+			if int(textByte) < len(replacements) {
+				replacement = replacements[textByte]
+			}
 
 			switch {
 			case textByte >= 'a' && textByte <= 'z':
@@ -70,7 +76,7 @@ func Analyze(text string) (analysis Analysis) {
 			case textByte >= 'A' && textByte <= 'Z':
 				textByte += 'a' - 'A'
 				matchable = true
-			case replaceable:
+			case replacement != "":
 				textByte = replacement[0]
 				textBytes = replacement
 				matchable = true
@@ -85,49 +91,51 @@ func Analyze(text string) (analysis Analysis) {
 				}
 			}
 
-			if len(textBytes) < 1 {
-				textBytes += string(textByte)
-			}
-
 			if textByte == lastMatchable {
 				lastSepMin-- // this character doesn't count
 			}
 
 			if ok {
-				matches = append(matches, tree.Root())
 				if matchable {
-					for matchIndex, match := range matches {
-						if match == nil {
-							continue
+					matchesGet.Append(tree.Root())
+
+					for i := 0; i < matchesGet.Len(); i++ {
+						match := matchesGet.Get(i)
+
+						if textByte == lastMatchable {
+							matchesPut.Append(match)
 						}
 
-						for i := 0; i < len(textBytes); i++ {
-							textByte := textBytes[i]
-							next := match.Next(textByte)
+						// Process textBytes as multiple textBytes or textByte
+						loops := 1
+						if len(textBytes) > 1 {
+							loops = len(textBytes)
+						}
+
+						for i := 0; i < loops; i++ {
+							loopTextByte := textByte
+							if len(textBytes) > 0 {
+								loopTextByte = textBytes[i]
+							}
+							next := match.Next(loopTextByte)
 
 							if next != nil {
 								if next.Word() {
-									if next.Data() == 0 {
-										// clear
-									} else if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
+									if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
 										analysis.InappropriateLevel += int(next.Data())
 									}
 								}
-							}
 
-							if textByte == lastMatchable || i > 1 {
-								if next != nil {
-									matches = append(matches, next)
-								}
-							} else {
-								matches[matchIndex] = next
+								matchesPut.Append(next)
 							}
 						}
 					}
 
 					lastMatchable = textByte
+					matchesGet = matchesPut
+					matchesPut.Clear()
 				} else if !skippable {
-					matches = matches[:0]
+					matchesGet.Clear()
 				}
 			}
 		}
