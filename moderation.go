@@ -13,11 +13,8 @@ var tree *radix.Tree
 
 func init() {
 	tree = radix.New()
-	for _, profanity := range profanities {
-		tree.Add(profanity, 1)
-	}
-	for _, falsePositive := range falsePositives {
-		tree.Add(falsePositive, -1)
+	for word, value := range wordValues {
+		tree.Add(word, int32(value))
 	}
 }
 
@@ -51,7 +48,7 @@ func Analyze(text string) (analysis Analysis) {
 	lastSepMin := 0
 	lastSepMax := 0
 
-	var matchesGet, matchesPut radix.Buffer
+	var matches radix.Queue
 
 	var lastMatchable byte
 	for _, textRune := range text {
@@ -97,13 +94,14 @@ func Analyze(text string) (analysis Analysis) {
 
 			if ok {
 				if matchable {
-					matchesGet.Append(tree.Root())
+					matches.Append(tree.Root())
 
-					for i := 0; i < matchesGet.Len(); i++ {
-						match := matchesGet.Get(i)
+					originalLength := matches.Len()
+					for i := 0; i < originalLength; i++ {
+						match := matches.Remove()
 
 						if textByte == lastMatchable {
-							matchesPut.Append(match)
+							matches.Append(match)
 						}
 
 						// Process textBytes as multiple textBytes or textByte
@@ -126,16 +124,14 @@ func Analyze(text string) (analysis Analysis) {
 									}
 								}
 
-								matchesPut.Append(next)
+								matches.Append(next)
 							}
 						}
 					}
 
 					lastMatchable = textByte
-					matchesGet = matchesPut
-					matchesPut.Clear()
 				} else if !skippable {
-					matchesGet.Clear()
+					matches.Clear()
 				}
 			}
 		}

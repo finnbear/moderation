@@ -17,12 +17,13 @@ nude(.*)
 penises
 poop(.*)
 porn(.?)
-prostitut(.*)
+(.*)prostitut(.*)
 sex(.*)
 shita
 shithead
 shitt(.*)
 slutt(.*)
+tite
 tittie(s*)
 (.*)vagina(.*)
 wank(.*)

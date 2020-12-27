@@ -8,5 +8,5 @@ dictionary.txt:
 dictionary_common.txt:
 	wget -O dictionary_common.txt https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english.txt
 
-dictionary_filtered.txt ../wordlists.go: filter_dictionary.go dictionary.txt dictionary_common.txt profanity.txt dictionary_blacklist.txt dictionary_extra.txt
-	go run filter_dictionary.go dictionary.txt dictionary_common.txt profanity.txt dictionary_blacklist.txt dictionary_extra.txt dictionary_filtered.txt ../wordlists.go
+../wordlists.go: generate.go dictionary.txt dictionary_common.txt profanity.csv dictionary_blacklist.txt dictionary_extra.txt
+	go run generate.go dictionary.txt dictionary_common.txt profanity.csv dictionary_blacklist.txt dictionary_extra.txt ../wordlists.go
