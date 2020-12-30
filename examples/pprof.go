@@ -19,8 +19,8 @@ func main() {
 	defer pprof.StopCPUProfile()
 
 	for i := 0; i < 100000; i++ {
-		moderation.Analyze("hello")
-		moderation.Analyze("sh1t")
-		moderation.Analyze("Hello John Doe, I hope you're feeling well, as I come today bearing shitty news regarding your favorite chocolate chip cookie brand")
+		moderation.IsInappropriate("hello")
+		moderation.IsInappropriate("sh1t")
+		moderation.IsInappropriate("Hello John Doe, I hope you're feeling well, as I come today bearing shitty news regarding your favorite chocolate chip cookie brand")
 	}
 }

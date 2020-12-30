@@ -22,12 +22,8 @@ func main() {
 
 func printResult(phrase string) {
 	description := "is appropriate"
-	if isInappropriate(phrase) {
+	if moderation.IsInappropriate(phrase) {
 		description = "is NOT appropriate"
 	}
 	fmt.Printf("\"%s\" %s.\n", phrase, description)
-}
-
-func isInappropriate(phrase string) bool {
-	return moderation.Analyze(phrase).IsInappropriate()
 }

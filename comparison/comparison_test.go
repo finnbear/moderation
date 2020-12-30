@@ -6,20 +6,16 @@ import (
 	"os"
 	"testing"
 
-    "github.com/finnbear/moderation"
-    "github.com/TwinProduction/go-away"
+	"github.com/TwinProduction/go-away"
+	"github.com/finnbear/moderation"
 )
 
-func moderationIsInappropriate(phrase string) bool {
-	return moderation.Analyze(phrase).IsInappropriate()
-}
-
 func TestModerationWikipedia(t *testing.T) {
-    testWikipedia(t, moderationIsInappropriate)
+	testWikipedia(t, moderation.IsInappropriate)
 }
 
 func TestGoAwayWikipedia(t *testing.T) {
-    testWikipedia(t, goaway.IsProfane)
+	testWikipedia(t, goaway.IsProfane)
 }
 
 func testWikipedia(t *testing.T, isInappropriate func(string) bool) {

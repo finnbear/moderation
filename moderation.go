@@ -9,7 +9,12 @@ import (
 	"unicode"
 )
 
-var tree *radix.Tree
+var (
+	// The threshold where a phrase is considered inappropriate
+	InappropriateThreshold int = 1
+
+	tree *radix.Tree
+)
 
 func init() {
 	tree = radix.New()
@@ -41,7 +46,7 @@ var replacements = [...]string{
 var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 
 // Analyze analyzes a given phrase for moderation purposes
-func Analyze(text string) (analysis Analysis) {
+func IsInappropriate(text string) bool {
 	buf := make([]byte, 0, len(text))
 	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
 	text = string(buf[:n])
@@ -49,6 +54,7 @@ func Analyze(text string) (analysis Analysis) {
 	lastSepMax := 0
 
 	var matches radix.Queue
+	inappropriateLevel := 0
 
 	var lastMatchable byte
 	for _, textRune := range text {
@@ -120,7 +126,7 @@ func Analyze(text string) (analysis Analysis) {
 							if next != nil {
 								if next.Word() {
 									if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
-										analysis.InappropriateLevel += int(next.Data())
+										inappropriateLevel += int(next.Data())
 									}
 								}
 
@@ -136,5 +142,5 @@ func Analyze(text string) (analysis Analysis) {
 			}
 		}
 	}
-	return
+	return inappropriateLevel >= InappropriateThreshold
 }

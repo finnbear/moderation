@@ -4,9 +4,7 @@ import (
 	"testing"
 )
 
-func IsProfane(phrase string) bool {
-	return Analyze(phrase).IsInappropriate()
-}
+var IsProfane = IsInappropriate
 
 // from https://github.com/TwinProduction/go-away/blob/master/goaway_bench_test.go
 func BenchmarkIsProfaneWhenShortStringHasNoProfanity(b *testing.B) {

@@ -62,9 +62,9 @@ func TestAnalyze(t *testing.T) {
 		{"We were seated at breakfast one morning, my wife and I, when the maid brought in a telegram. It was from Sherlock Holmes and ran in this way", false},
 	}
 	for _, testCase := range testCases {
-		analysis := Analyze(testCase.phrase)
-		if analysis.IsInappropriate() != testCase.offensive {
-			t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", testCase.phrase, analysis.IsInappropriate(), testCase.offensive)
+		inappropriate := IsInappropriate(testCase.phrase)
+		if inappropriate != testCase.offensive {
+			t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", testCase.phrase, inappropriate, testCase.offensive)
 		}
 	}
 }
@@ -89,8 +89,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		}
 		phrase := fields[1]
 		offensive := fields[0] == "1"
-		analysis := Analyze(phrase)
-		if analysis.IsInappropriate() == offensive {
+		if IsInappropriate(phrase) == offensive {
 			correct++
 		} else {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsInappropriate(), offensive)
