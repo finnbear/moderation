@@ -45,7 +45,7 @@ var replacements = [...]string{
 
 var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 
-// Analyze analyzes a given phrase for moderation purposes
+// IsInappropriate returns whether a phrase contains enough inappropriate words to meet or exceed InappropriateThreshold
 func IsInappropriate(text string) bool {
 	buf := make([]byte, 0, len(text))
 	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
