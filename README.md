@@ -55,7 +55,7 @@ $ go run hello_world.go
 Accuracy was evaluated based on a [dataset of moderated comments](https://raw.githubusercontent.com/vzhou842/profanity-check/master/profanity_check/data/clean_data.csv).
 **Package**|**Accuracy**|**Comment**
 :-----:|:-----:|:-----:
-https://github.com/finnbear/moderation|90.50%|This repository
+https://github.com/finnbear/moderation|90.50%|Current version is not stable
 https://github.com/TwinProduction/go-away|74.83%|Many false positives from combined words like "push it"
 
 

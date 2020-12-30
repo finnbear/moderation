@@ -1,0 +1,8 @@
+github.com/TwinProduction/go-away v1.0.1 h1:LDe6jPktucIz/dftNGL5x2LYRB6VXjVUtRsrlVHo+Ag=
+github.com/TwinProduction/go-away v1.0.1/go.mod h1:VB/lNzhkzh7Xw2QgU+tYBjMheldukJaIJzVaIx2rh30=
+github.com/finnbear/moderation v0.5.0 h1:k00252U3XaworO6EN/VRf1hasn0pcANWe7tNjEoyzsc=
+github.com/finnbear/moderation v0.5.0/go.mod h1:zoexQHUm4TZCb9x/Re0TqV8SgvnDPZjMRdSMAjEqmgE=
+golang.org/x/text v0.3.3/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
+golang.org/x/text v0.3.4 h1:0YWbFKbhXG/wIiuHDSKpS0Iy7FSA+u45VtBMfQcFTTc=
+golang.org/x/text v0.3.4/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
+golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=

@@ -34,6 +34,7 @@ func TestAnalyze(t *testing.T) {
 		{"what a bunch of bullsh1t", true},
 		{"bitčh", true},
 		{"assassin", false},
+		{"push it", false},
 		{"carcass", false},
 		{"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
 		{"With an apology for my intrusion, I was about to withdraw when Holmes pulled me abruptly into the room and closed the door behind me.", false},
@@ -92,7 +93,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		if analysis.IsInappropriate() == offensive {
 			correct++
 		} else {
-			//t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsOffensive(), offensive)
+			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsInappropriate(), offensive)
 		}
 
 		total++
