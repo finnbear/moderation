@@ -1,6 +1,6 @@
 .PHONY=all
 
-all: dictionary_filtered.txt ../wordlists.go
+all: ../wordlists.go
 
 dictionary.txt:
 	wget -O dictionary.txt https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt

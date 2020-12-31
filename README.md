@@ -10,7 +10,7 @@
 2. Minimum possible allocations, processing time, and binary size
 3. Minimum false negatives (including text like `h3110_w0r!d`)
 4. Minimum false positives
-5. (Future) Other analysis types than inappropriate (spam, violence, contact info, etc.)
+5. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean (spam, violence, contact info, etc.)
 6. (Future) Implement a way to censor text
 7. (Future) basic support for languages other than English
 

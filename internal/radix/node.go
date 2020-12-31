@@ -6,14 +6,14 @@ type Node struct {
 	hasChildren bool
 	start       byte // starting character (not offset)
 	depth       byte
-	data        int32
+	data        uint32
 }
 
 func (node *Node) Word() bool {
 	return node.word
 }
 
-func (node *Node) Data() int32 {
+func (node *Node) Data() uint32 {
 	return node.data
 }
 
@@ -29,7 +29,7 @@ func (node *Node) Start() byte {
 	return node.start
 }
 
-func (node *Node) traverse(word *[longestWord]byte, end int, callback func(string, int32)) {
+func (node *Node) traverse(word *[longestWord]byte, end int, callback func(string, uint32)) {
 	if node.word {
 		callback(string(word[0:end]), node.data)
 	}

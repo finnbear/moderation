@@ -69,6 +69,26 @@ func TestAnalyze(t *testing.T) {
 	}
 }
 
+func IsExamples_shit_profane() {
+	fmt.Println(Is("shit", Profane))
+	// Output: true
+}
+
+func IsExamples_shit_sexual_or_mean() {
+	fmt.Println(Is("shit", Sexual|Mean))
+	// Output: false
+}
+
+func IsInappropriateExamples_hello() {
+	fmt.Println(IsInappropriate("hello"))
+	// Output: false
+}
+
+func IsInappropriateExamples_shit() {
+	fmt.Println(IsInappropriate("shit"))
+	// Output: true
+}
+
 func TestAnalyzeWikipedia(t *testing.T) {
 	wikiModerationData, err := os.Open("wikipedia-test.csv")
 	if err != nil {
@@ -89,7 +109,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		}
 		phrase := fields[1]
 		offensive := fields[0] == "1"
-		if IsInappropriate(phrase) == offensive {
+		if Is(phrase, Profane|Offensive|Sexual|Mean) == offensive {
 			correct++
 		} else {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsInappropriate(), offensive)

@@ -9,6 +9,15 @@ import (
 	"unicode"
 )
 
+type Type uint32
+
+const (
+	Profane Type = 255 << (iota * 8)
+	Offensive
+	Sexual
+	Mean
+)
+
 var (
 	// The threshold where a phrase is considered inappropriate
 	InappropriateThreshold int = 1
@@ -19,7 +28,7 @@ var (
 func init() {
 	tree = radix.New()
 	for word, value := range wordValues {
-		tree.Add(word, int32(value))
+		tree.Add(word, value)
 	}
 }
 
@@ -45,8 +54,18 @@ var replacements = [...]string{
 
 var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 
-// IsInappropriate returns whether a phrase contains enough inappropriate words to meet or exceed InappropriateThreshold
+// IsInappropriate returns whether a phrase contains enough inappropriate words
+// to meet or exceed InappropriateThreshold
+//
+// Equivalent to moderation.Is(text, moderation.Profane|moderation.Offensive|moderation.Sexual)
+//
 func IsInappropriate(text string) bool {
+	return Is(text, Profane|Offensive|Sexual)
+}
+
+// IsInappropriate returns whether a phrase contains enough words matching the
+// types flag to meet or exceed InappropriateThreshold
+func Is(text string, types Type) bool {
 	buf := make([]byte, 0, len(text))
 	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
 	text = string(buf[:n])
@@ -126,7 +145,10 @@ func IsInappropriate(text string) bool {
 							if next != nil {
 								if next.Word() {
 									if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
-										inappropriateLevel += int(next.Data())
+										match := next.Data() & uint32(types)
+										for i := 0; i < 4; i++ {
+											inappropriateLevel += int(int8(match >> (i * 8)))
+										}
 									}
 								}
 
