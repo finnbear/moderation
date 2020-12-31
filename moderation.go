@@ -9,6 +9,7 @@ import (
 	"unicode"
 )
 
+// Types of inappropriate (combinable with bitwise OR)
 type Type uint32
 
 const (
@@ -57,7 +58,8 @@ var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(uni
 // IsInappropriate returns whether a phrase contains enough inappropriate words
 // to meet or exceed InappropriateThreshold
 //
-// Equivalent to moderation.Is(text, moderation.Profane|moderation.Offensive|moderation.Sexual)
+// Equivalent to
+//  moderation.Is(text, moderation.Profane|moderation.Offensive|moderation.Sexual)
 //
 func IsInappropriate(text string) bool {
 	return Is(text, Profane|Offensive|Sexual)

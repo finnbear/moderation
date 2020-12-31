@@ -2,6 +2,7 @@ package moderation
 
 import (
 	"encoding/csv"
+	"fmt"
 	"io"
 	"os"
 	"testing"
@@ -69,23 +70,23 @@ func TestAnalyze(t *testing.T) {
 	}
 }
 
-func IsExamples_shit_profane() {
+func ExampleIs_shit_profane() {
 	fmt.Println(Is("shit", Profane))
 	// Output: true
 }
 
-func IsExamples_shit_sexual_or_mean() {
+func ExampleIs_shit_sexual_or_mean() {
 	fmt.Println(Is("shit", Sexual|Mean))
 	// Output: false
 }
 
-func IsInappropriateExamples_hello() {
+func ExampleIsInappropriate_hello() {
 	fmt.Println(IsInappropriate("hello"))
 	// Output: false
 }
 
-func IsInappropriateExamples_shit() {
-	fmt.Println(IsInappropriate("shit"))
+func ExampleIsInappropriate_sh1t() {
+	fmt.Println(IsInappropriate("sh1t"))
 	// Output: true
 }
 
