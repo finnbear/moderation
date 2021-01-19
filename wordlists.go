@@ -25,7 +25,6 @@ var wordValues = map[string]uint32{
 	"accunto":                  0x00ffff00, //   0  -1  -1   0
 	"acetite":                  0x00fe0000, //   0   0  -2   0
 	"achievementspunk":         0x00fe0000, //   0   0  -2   0
-	"acock":                    0x000000ff, //  -1   0   0   0
 	"acolapissa":               0x000000ff, //  -1   0   0   0
 	"acousticrap":              0x000000ff, //  -1   0   0   0
 	"acousticuntil":            0x00ffff00, //   0  -1  -1   0
@@ -970,6 +969,7 @@ var wordValues = map[string]uint32{
 	"ballsullivan":             0x00ff0000, //   0   0  -1   0
 	"ballsum":                  0x00ff0000, //   0   0  -1   0
 	"ballsun":                  0x00ff0000, //   0   0  -1   0
+	"ballsunglasses":           0x00000000, //   0   0   0   0
 	"ballsuper":                0x00ff0000, //   0   0  -1   0
 	"ballsupplement":           0x00ff0000, //   0   0  -1   0
 	"ballsupplied":             0x00ff0000, //   0   0  -1   0
@@ -1048,7 +1048,8 @@ var wordValues = map[string]uint32{
 	"basilicock":               0x000000ff, //  -1   0   0   0
 	"basispunk":                0x00fe0000, //   0   0  -2   0
 	"basketballs":              0x00ff0000, //   0   0  -1   0
-	"basketballsunglasses":     0x00000000, //   0   0   0   0
+	"basketballsaturday":       0x00000000, //   0   0   0   0
+	"basketballsubstitute":     0x00000000, //   0   0   0   0
 	"basketspunk":              0x00fe0000, //   0   0  -2   0
 	"basketwatch":              0x00fe0000, //   0   0  -2   0
 	"basketwater":              0x00fe0000, //   0   0  -2   0
@@ -1473,8 +1474,6 @@ var wordValues = map[string]uint32{
 	"bootwatt":                 0x00fe0000, //   0   0  -2   0
 	"borassus":                 0x000000ff, //  -1   0   0   0
 	"bosspunk":                 0x00fe0000, //   0   0  -2   0
-	"botswanalatitude":         0x00000000, //   0   0   0   0
-	"botswanalivesex":          0x00000000, //   0   0   0   0
 	"bouffage":                 0x0000fd00, //   0  -3   0   0
 	"boundariespunk":           0x00fe0000, //   0   0  -2   0
 	"bountith":                 0x00fe0000, //   0   0  -2   0
@@ -2220,7 +2219,6 @@ var wordValues = map[string]uint32{
 	"clarseth":                 0x000000ff, //  -1   0   0   0
 	"classespunk":              0x00fe0000, //   0   0  -2   0
 	"classicspunk":             0x00fe0000, //   0   0  -2   0
-	"classicuntitled":          0x00000000, //   0   0   0   0
 	"classpunk":                0x00fe0000, //   0   0  -2   0
 	"claudetite":               0x00fe0000, //   0   0  -2   0
 	"cleanerspunk":             0x00fe0000, //   0   0  -2   0
@@ -2861,6 +2859,7 @@ var wordValues = map[string]uint32{
 	"danalgeria":               0x00ff00ff, //  -1   0  -1   0
 	"danalgorithm":             0x00ff00ff, //  -1   0  -1   0
 	"danali":                   0x00ff00ff, //  -1   0  -1   0
+	"danalivesex":              0x00000000, //   0   0   0   0
 	"danall":                   0x00ff00ff, //  -1   0  -1   0
 	"danalmost":                0x00ff00ff, //  -1   0  -1   0
 	"danalpha":                 0x00ff00ff, //  -1   0  -1   0
@@ -3002,7 +3001,6 @@ var wordValues = map[string]uint32{
 	"degass":                   0x000000ff, //  -1   0   0   0
 	"deglutitory":              0x00fe0000, //   0   0  -2   0
 	"degreespunk":              0x00fe0000, //   0   0  -2   0
-	"delassement":              0x00000000, //   0   0   0   0
 	"delayspunk":               0x00fe0000, //   0   0  -2   0
 	"deliciouspunk":            0x00fe0000, //   0   0  -2   0
 	"deliverspunk":             0x00fe0000, //   0   0  -2   0
@@ -3057,6 +3055,8 @@ var wordValues = map[string]uint32{
 	"diagnosticuntitled":       0x00ffff00, //   0  -1  -1   0
 	"diagnosticunto":           0x00ffff00, //   0  -1  -1   0
 	"diamondspunk":             0x00fe0000, //   0   0  -2   0
+	"dianalatitude":            0x00000000, //   0   0   0   0
+	"dianalivesex":             0x00000000, //   0   0   0   0
 	"dick":                     0x00010001, //   1   0   1   0
 	"dickcissel":               0x00ff00ff, //  -1   0  -1   0
 	"dickens":                  0x00ff00ff, //  -1   0  -1   0
@@ -3702,7 +3702,6 @@ var wordValues = map[string]uint32{
 	"exhaustwater":             0x00fe0000, //   0   0  -2   0
 	"exhaustwatson":            0x00fe0000, //   0   0  -2   0
 	"exhaustwatt":              0x00fe0000, //   0   0  -2   0
-	"exhibitchassis":           0x00000000, //   0   0   0   0
 	"existspunk":               0x00fe0000, //   0   0  -2   0
 	"exoticrap":                0x000000ff, //  -1   0   0   0
 	"exoticuntil":              0x00ffff00, //   0  -1  -1   0
@@ -3742,7 +3741,6 @@ var wordValues = map[string]uint32{
 	"extwater":                 0x00fe0000, //   0   0  -2   0
 	"extwatson":                0x00fe0000, //   0   0  -2   0
 	"extwatt":                  0x00fe0000, //   0   0  -2   0
-	"eyass":                    0x000000ff, //  -1   0   0   0
 	"eyeballs":                 0x00ff0000, //   0   0  -1   0
 	"fabricrap":                0x000000ff, //  -1   0   0   0
 	"fabricspunk":              0x00fe0000, //   0   0  -2   0
@@ -3901,7 +3899,7 @@ var wordValues = map[string]uint32{
 	"fontwatt":                 0x00fe0000, //   0   0  -2   0
 	"foodspunk":                0x00fe0000, //   0   0  -2   0
 	"footballs":                0x00ff0000, //   0   0  -1   0
-	"footballsaturday":         0x00000000, //   0   0   0   0
+	"footballsubstitute":       0x00000000, //   0   0   0   0
 	"footwatch":                0x00fe0000, //   0   0  -2   0
 	"footwater":                0x00fe0000, //   0   0  -2   0
 	"footwatson":               0x00fe0000, //   0   0  -2   0
@@ -4303,7 +4301,6 @@ var wordValues = map[string]uint32{
 	"guitarspunk":              0x00fe0000, //   0   0  -2   0
 	"gunspunk":                 0x00fe0000, //   0   0  -2   0
 	"guyspunk":                 0x00fe0000, //   0   0  -2   0
-	"gyassa":                   0x000000ff, //  -1   0   0   0
 	"habitatwatch":             0x00fe0000, //   0   0  -2   0
 	"habitatwater":             0x00fe0000, //   0   0  -2   0
 	"habitatwatson":            0x00fe0000, //   0   0  -2   0
@@ -4561,6 +4558,8 @@ var wordValues = map[string]uint32{
 	"incunto":                  0x00ffff00, //   0  -1  -1   0
 	"indexespunk":              0x00fe0000, //   0   0  -2   0
 	"indexrated":               0x00ff0000, //   0   0  -1   0
+	"indianalatitude":          0x00000000, //   0   0   0   0
+	"indianalivesex":           0x00000000, //   0   0   0   0
 	"indianapolispunk":         0x00fe0000, //   0   0  -2   0
 	"indianspunk":              0x00fe0000, //   0   0  -2   0
 	"indicatespunk":            0x00fe0000, //   0   0  -2   0
@@ -5267,7 +5266,7 @@ var wordValues = map[string]uint32{
 	"lotwatson":                0x00fe0000, //   0   0  -2   0
 	"lotwatt":                  0x00fe0000, //   0   0  -2   0
 	"louisemen":                0x00fe0000, //   0   0  -2   0
-	"louisianalatitude":        0x00000000, //   0   0   0   0
+	"louisianalivesex":         0x00000000, //   0   0   0   0
 	"louispunk":                0x00fe0000, //   0   0  -2   0
 	"loverspunk":               0x00fe0000, //   0   0  -2   0
 	"lovespunk":                0x00fe0000, //   0   0  -2   0
@@ -5335,6 +5334,7 @@ var wordValues = map[string]uint32{
 	"mapissue":                 0x000000ff, //  -1   0   0   0
 	"maprick":                  0x000000fe, //  -2   0   0   0
 	"mapspunk":                 0x00fe0000, //   0   0  -2   0
+	"maracock":                 0x000000ff, //  -1   0   0   0
 	"marcoonce":                0x0000fd00, //   0  -3   0   0
 	"marcoone":                 0x0000fd00, //   0  -3   0   0
 	"marcoongoing":             0x0000fd00, //   0  -3   0   0
@@ -5349,6 +5349,8 @@ var wordValues = map[string]uint32{
 	"margaretwater":            0x00fe0000, //   0   0  -2   0
 	"margaretwatson":           0x00fe0000, //   0   0  -2   0
 	"margaretwatt":             0x00fe0000, //   0   0  -2   0
+	"marijuanalatitude":        0x00000000, //   0   0   0   0
+	"marijuanalivesex":         0x00000000, //   0   0   0   0
 	"markerspunk":              0x00fe0000, //   0   0  -2   0
 	"marketspunk":              0x00fe0000, //   0   0  -2   0
 	"marketwatch":              0x00fe0000, //   0   0  -2   0
@@ -5423,6 +5425,7 @@ var wordValues = map[string]uint32{
 	"mauritiuspunk":            0x00fe0000, //   0   0  -2   0
 	"maxrated":                 0x00ff0000, //   0   0  -1   0
 	"maycock":                  0x000000ff, //  -1   0   0   0
+	"meacock":                  0x000000ff, //  -1   0   0   0
 	"mealspunk":                0x00fe0000, //   0   0  -2   0
 	"meanala":                  0x00ff00ff, //  -1   0  -1   0
 	"meanalbania":              0x00ff00ff, //  -1   0  -1   0
@@ -5865,6 +5868,8 @@ var wordValues = map[string]uint32{
 	"nightwatt":                0x00fe0000, //   0   0  -2   0
 	"nincompoop":               0x000000ff, //  -1   0   0   0
 	"nincum":                   0x00fe0000, //   0   0  -2   0
+	"nirvanalatitude":          0x00000000, //   0   0   0   0
+	"nirvanalivesex":           0x00000000, //   0   0   0   0
 	"nocument":                 0x00fe0000, //   0   0  -2   0
 	"noisemen":                 0x00fe0000, //   0   0  -2   0
 	"noncock":                  0x000000ff, //  -1   0   0   0
@@ -6122,7 +6127,6 @@ var wordValues = map[string]uint32{
 	"partitura":                0x00fe0000, //   0   0  -2   0
 	"partnerspunk":             0x00fe0000, //   0   0  -2   0
 	"pass":                     0x000000ff, //  -1   0   0   0
-	"passementing":             0x00000000, //   0   0   0   0
 	"passengerspunk":           0x00fe0000, //   0   0  -2   0
 	"passespunk":               0x00fe0000, //   0   0  -2   0
 	"passpunk":                 0x00fe0000, //   0   0  -2   0
@@ -6153,6 +6157,7 @@ var wordValues = map[string]uint32{
 	"pdtwater":                 0x00fe0000, //   0   0  -2   0
 	"pdtwatson":                0x00fe0000, //   0   0  -2   0
 	"pdtwatt":                  0x00fe0000, //   0   0  -2   0
+	"peacock":                  0x000000ff, //  -1   0   0   0
 	"pediatricrap":             0x000000ff, //  -1   0   0   0
 	"pediatricuntil":           0x00ffff00, //   0  -1  -1   0
 	"pediatricuntitled":        0x00ffff00, //   0  -1  -1   0
@@ -7100,7 +7105,6 @@ var wordValues = map[string]uint32{
 	"quizzespunk":              0x00fe0000, //   0   0  -2   0
 	"quotespunk":               0x00fe0000, //   0   0  -2   0
 	"quotity":                  0x00fe0000, //   0   0  -2   0
-	"rabbitchassis":            0x00000000, //   0   0   0   0
 	"raccoon":                  0x0000fd00, //   0  -3   0   0
 	"racespunk":                0x00fe0000, //   0   0  -2   0
 	"rackspunk":                0x00fe0000, //   0   0  -2   0
@@ -7727,6 +7731,7 @@ var wordValues = map[string]uint32{
 	"sculptitory":              0x00fe0000, //   0   0  -2   0
 	"scum":                     0x00fe0000, //   0   0  -2   0
 	"scuttlebutt":              0x000000ff, //  -1   0   0   0
+	"seacock":                  0x000000ff, //  -1   0   0   0
 	"seanala":                  0x00ff00ff, //  -1   0  -1   0
 	"seanalbania":              0x00ff00ff, //  -1   0  -1   0
 	"seanalbany":               0x00ff00ff, //  -1   0  -1   0
@@ -8149,7 +8154,8 @@ var wordValues = map[string]uint32{
 	"socuntitled":              0x00ffff00, //   0  -1  -1   0
 	"socunto":                  0x00ffff00, //   0  -1  -1   0
 	"softballs":                0x00ff0000, //   0   0  -1   0
-	"softballsaturday":         0x00000000, //   0   0   0   0
+	"softballsubstitute":       0x00000000, //   0   0   0   0
+	"softballsunglasses":       0x00000000, //   0   0   0   0
 	"softwatch":                0x00fe0000, //   0   0  -2   0
 	"softwater":                0x00fe0000, //   0   0  -2   0
 	"softwatson":               0x00fe0000, //   0   0  -2   0
@@ -8433,6 +8439,7 @@ var wordValues = map[string]uint32{
 	"sulfaguanidine":           0x0000fd00, //   0  -3   0   0
 	"sulpharsenid":             0x000000ff, //  -1   0   0   0
 	"summariespunk":            0x00fe0000, //   0   0  -2   0
+	"sunglassespunk":           0x00000000, //   0   0   0   0
 	"superbowlxxx":             0x00ff0000, //   0   0  -1   0
 	"supersex":                 0x00ff0000, //   0   0  -1   0
 	"supervisorspunk":          0x00fe0000, //   0   0  -2   0
@@ -8603,7 +8610,6 @@ var wordValues = map[string]uint32{
 	"tautit":                   0x00fe0000, //   0   0  -2   0
 	"taxespunk":                0x00fe0000, //   0   0  -2   0
 	"taxrated":                 0x00ff0000, //   0   0  -1   0
-	"tayassu":                  0x000000ff, //  -1   0   0   0
 	"tcpissn":                  0x000000ff, //  -1   0   0   0
 	"tcpissue":                 0x000000ff, //  -1   0   0   0
 	"tcpoops":                  0x000000ff, //  -1   0   0   0
@@ -9115,7 +9121,7 @@ var wordValues = map[string]uint32{
 	"voiprick":                 0x000000fe, //  -2   0   0   0
 	"volcanus":                 0x000000ff, //  -1   0   0   0
 	"volleyballs":              0x00ff0000, //   0   0  -1   0
-	"volleyballsaturday":       0x00000000, //   0   0   0   0
+	"volleyballsunglasses":     0x00000000, //   0   0   0   0
 	"voltwatch":                0x00fe0000, //   0   0  -2   0
 	"voltwater":                0x00fe0000, //   0   0  -2   0
 	"voltwatson":               0x00fe0000, //   0   0  -2   0
@@ -9195,6 +9201,7 @@ var wordValues = map[string]uint32{
 	"warsext":                  0x00ff0000, //   0   0  -1   0
 	"warspunk":                 0x00fe0000, //   0   0  -2   0
 	"washita":                  0x000000ff, //  -1   0   0   0
+	"wassup":                   0x000000ff, //  -1   0   0   0
 	"watcheshe":                0x00ff0000, //   0   0  -1   0
 	"watchespunk":              0x00fe0000, //   0   0  -2   0
 	"waterspunk":               0x00fe0000, //   0   0  -2   0
@@ -9277,6 +9284,7 @@ var wordValues = map[string]uint32{
 	"yachtwatson":              0x00fe0000, //   0   0  -2   0
 	"yachtwatt":                0x00fe0000, //   0   0  -2   0
 	"yardspunk":                0x00fe0000, //   0   0  -2   0
+	"yass":                     0x000000ff, //  -1   0   0   0
 	"yercum":                   0x00fe0000, //   0   0  -2   0
 	"yespunk":                  0x00fe0000, //   0   0  -2   0
 	"yetwatch":                 0x00fe0000, //   0   0  -2   0
