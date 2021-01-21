@@ -107,6 +107,15 @@ func (values Values) AnyPositive() bool {
 	return false
 }
 
+func (values Values) AnyNegative() bool {
+	for _, value := range values {
+		if value < 0 {
+			return true
+		}
+	}
+	return false
+}
+
 func (values Values) Pack() (packed uint32) {
 	for i, value := range values {
 		packed |= (uint32(value) & 255) << (i * 8)
@@ -330,7 +339,7 @@ outer:
 				value1 = value1.Sub(value2)
 				//testing[word2]=value2
 
-				if value1.IsZero() {
+				if !value1.AnyNegative() {
 					if value1.AnyPositive() {
 						// for debugging
 						//fmt.Printf("\nwarning: false positive '%s' (originally %d) achieved positive value %d (%v)\n", word1, filtered[word1], value1, testing)
