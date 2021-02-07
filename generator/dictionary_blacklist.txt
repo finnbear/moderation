@@ -12,6 +12,7 @@ crapy
 dildo(.*)
 fag(.*)
 fuck(.*)
+hell
 jackass
 livesex
 (.*)nigger(.*)
@@ -30,3 +31,4 @@ tittie(s*)
 (.*)vagina(.*)
 wank(.*)
 whore(.*)
+wto
