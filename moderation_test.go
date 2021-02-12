@@ -98,7 +98,11 @@ func TestAnalyzeWikipedia(t *testing.T) {
 	reader := csv.NewReader(wikiModerationData)
 
 	correct := 0
+	correctOk := 0
+	correctNok := 0
 	total := 0
+	totalOk := 0
+	totalNok := 0
 
 	for total < 50000 {
 		fields, err := reader.Read()
@@ -112,14 +116,26 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		offensive := fields[0] == "1"
 		if Is(phrase, Profane|Offensive|Sexual|Mean) == offensive {
 			correct++
+			if offensive {
+				correctNok++
+			} else {
+				correctOk++
+			}
 		} else {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsInappropriate(), offensive)
 		}
 
 		total++
+		if offensive {
+			totalNok++
+		} else {
+			totalOk++
+		}
 	}
 
 	accuracy := 100 * float64(correct) / float64(total)
+	accuracyOk := 100 * float64(correctOk) / float64(totalOk)
+	accuracyNok := 100 * float64(correctNok) / float64(totalNok)
 
 	// Wikipedia takes into account more than whether the text contains
 	// bad words
@@ -130,6 +146,9 @@ func TestAnalyzeWikipedia(t *testing.T) {
 	} else {
 		t.Errorf("accuracy was %f%% (%d%% required)\n", accuracy, requiredAccuracy)
 	}
+
+	t.Logf("positive accuracy was %f%%\n", accuracyNok)
+	t.Logf("negative accuracy was %f%%\n", accuracyOk)
 
 	err = wikiModerationData.Close()
 	if err != nil {
