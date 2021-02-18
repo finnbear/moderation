@@ -6352,6 +6352,7 @@ var wordValues = map[string]uint32{
 	"noisemen":                 0x00fe0000, //   0   0  -2   0
 	"noncock":                  0x00ff00ff, //  -1   0  -1   0
 	"nonporness":               0x00fe0000, //   0   0  -2   0
+	"nonretarded":              0xff00ff00, //   0  -1   0  -1
 	"nonsexist":                0x00ff0000, //   0   0  -1   0
 	"nonsexlinked":             0x00ff0000, //   0   0  -1   0
 	"nonsexual":                0x00ff0000, //   0   0  -1   0
@@ -7988,7 +7989,6 @@ var wordValues = map[string]uint32{
 	"retardation":              0xff00ff00, //   0  -1   0  -1
 	"retardative":              0xff00ff00, //   0  -1   0  -1
 	"retardatory":              0xff00ff00, //   0  -1   0  -1
-	"retarded":                 0xff00ff00, //   0  -1   0  -1
 	"retardee":                 0xff00ff00, //   0  -1   0  -1
 	"retardence":               0xff00ff00, //   0  -1   0  -1
 	"retardent":                0xff00ff00, //   0  -1   0  -1
@@ -9654,6 +9654,7 @@ var wordValues = map[string]uint32{
 	"unnaked":                  0x00ff0000, //   0   0  -1   0
 	"unporness":                0x00fe0000, //   0   0  -2   0
 	"unretardable":             0xff00ff00, //   0  -1   0  -1
+	"unretarded":               0xff00ff00, //   0  -1   0  -1
 	"unsex":                    0x00ff0000, //   0   0  -1   0
 	"unstupid":                 0xff000000, //   0   0   0  -1
 	"untithability":            0x00fe0000, //   0   0  -2   0

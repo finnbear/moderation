@@ -22,6 +22,7 @@ penist
 poop(.*)
 porn(.?)
 (.*)prostitut(.*)
+retarded
 sex(.*)
 shita
 shithead

@@ -37,6 +37,7 @@ func TestAnalyze(t *testing.T) {
 		{"assassin", false},
 		{"push it", false},
 		{"carcass", false},
+		{"retarded", true},
 		{"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
 		{"With an apology for my intrusion, I was about to withdraw when Holmes pulled me abruptly into the room and closed the door behind me.", false},
 		{"You could not possibly have come at a better time, my dear Watson, he said cordially", false},
