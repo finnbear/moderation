@@ -1,4 +1,5 @@
 acock
+asshole
 (.*)bastard(.*)
 blueballs
 booby
@@ -10,11 +11,13 @@ crapper(.*)
 crappie(.*)
 crapy
 dildo(.*)
+ejaculation
 fag(.*)
 fuck(.*)
 hell
 jackass
 livesex
+motherfuck(.*)
 (.*)nigger(.*)
 nude(.*)
 penises
@@ -28,6 +31,7 @@ shita
 shithead
 shitt(.*)
 slutt(.*)
+spunked
 tite
 tittie(s*)
 (.*)vagina(.*)

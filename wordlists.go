@@ -9,6 +9,19 @@ var wordValues = map[string]uint32{
 	"abcunto":                  0x00ffff00, //   0  -1  -1   0
 	"abichite":                 0x00ffff00, //   0  -1  -1   0
 	"abietite":                 0x00fe0000, //   0   0  -2   0
+	"abobra":                   0x00ff0000, //   0   0  -1   0
+	"abraham":                  0x00ff0000, //   0   0  -1   0
+	"abrasax":                  0x00ff0000, //   0   0  -1   0
+	"abrase":                   0x00ff0000, //   0   0  -1   0
+	"abrasing":                 0x00ff0000, //   0   0  -1   0
+	"abrasiometer":             0x00ff0000, //   0   0  -1   0
+	"abrasion":                 0x00ff0000, //   0   0  -1   0
+	"abrasive":                 0x00ff0000, //   0   0  -1   0
+	"abraum":                   0x00ff0000, //   0   0  -1   0
+	"abraxas":                  0x00ff0000, //   0   0  -1   0
+	"abrazite":                 0x00ff0000, //   0   0  -1   0
+	"abrazitic":                0x00ff0000, //   0   0  -1   0
+	"abrazo":                   0x00ff0000, //   0   0  -1   0
 	"abricock":                 0x00ff00ff, //  -1   0  -1   0
 	"abspunk":                  0x00fe0000, //   0   0  -2   0
 	"academicspunk":            0x00fe0000, //   0   0  -2   0
@@ -19,14 +32,17 @@ var wordValues = map[string]uint32{
 	"accessoriespunk":          0x00fe0000, //   0   0  -2   0
 	"accesspunk":               0x00fe0000, //   0   0  -2   0
 	"accidentspunk":            0x00fe0000, //   0   0  -2   0
+	"accomplishate":            0xff000000, //   0   0   0  -1
 	"accrap":                   0x000000ff, //  -1   0   0   0
 	"accum":                    0x00fe0000, //   0   0  -2   0
 	"accuntil":                 0x00ffff00, //   0  -1  -1   0
 	"accuntitled":              0x00ffff00, //   0  -1  -1   0
 	"accunto":                  0x00ffff00, //   0  -1  -1   0
 	"acetite":                  0x00fe0000, //   0   0  -2   0
+	"achate":                   0xff000000, //   0   0   0  -1
 	"achievementspunk":         0x00fe0000, //   0   0  -2   0
 	"acolapissa":               0x000000ff, //  -1   0   0   0
+	"acolythate":               0xff000000, //   0   0   0  -1
 	"acousticrap":              0x000000ff, //  -1   0   0   0
 	"acousticuntil":            0x00ffff00, //   0  -1  -1   0
 	"acousticuntitled":         0x00ffff00, //   0  -1  -1   0
@@ -93,6 +109,7 @@ var wordValues = map[string]uint32{
 	"agreementspunk":           0x00fe0000, //   0   0  -2   0
 	"agreespunk":               0x00fe0000, //   0   0  -2   0
 	"aimspunk":                 0x00fe0000, //   0   0  -2   0
+	"airbrasive":               0x00ff0000, //   0   0  -1   0
 	"akshita":                  0x000000ff, //  -1   0   0   0
 	"alabias":                  0x00fe0000, //   0   0  -2   0
 	"albertite":                0x00fe0000, //   0   0  -2   0
@@ -102,6 +119,7 @@ var wordValues = map[string]uint32{
 	"albertwatt":               0x00fe0000, //   0   0  -2   0
 	"albitite":                 0x00fe0000, //   0   0  -2   0
 	"albumspunk":               0x00fe0000, //   0   0  -2   0
+	"alcohate":                 0xff000000, //   0   0   0  -1
 	"alcumy":                   0x00fe0000, //   0   0  -2   0
 	"alertspunk":               0x00fe0000, //   0   0  -2   0
 	"alertwatch":               0x00fe0000, //   0   0  -2   0
@@ -111,11 +129,28 @@ var wordValues = map[string]uint32{
 	"aleutite":                 0x00fe0000, //   0   0  -2   0
 	"alexipharmacum":           0x00fe0000, //   0   0  -2   0
 	"alexrated":                0x00ff0000, //   0   0  -1   0
+	"algebra":                  0x00ff0000, //   0   0  -1   0
+	"algebrapeace":             0x00ff0000, //   0   0  -1   0
+	"algebrapeak":              0x00ff0000, //   0   0  -1   0
+	"algebrapeas":              0x00ff0000, //   0   0  -1   0
+	"algebrapee":               0x00ff0000, //   0   0  -1   0
+	"algebrapen":               0x00ff0000, //   0   0  -1   0
+	"algebrapeople":            0x00ff0000, //   0   0  -1   0
+	"algebrapepper":            0x00ff0000, //   0   0  -1   0
+	"algebrapet":               0x00ff0000, //   0   0  -1   0
 	"algorithmspunk":           0x00fe0000, //   0   0  -2   0
+	"alhambra":                 0x00ff0000, //   0   0  -1   0
 	"alkanal":                  0x00ff00ff, //  -1   0  -1   0
 	"allactite":                0x00fe0000, //   0   0  -2   0
+	"allahate":                 0xff000000, //   0   0   0  -1
 	"allemontite":              0x00fe0000, //   0   0  -2   0
 	"allochetite":              0x00fe0000, //   0   0  -2   0
+	"alphatea":                 0xff000000, //   0   0   0  -1
+	"alphatech":                0xff000000, //   0   0   0  -1
+	"alphatee":                 0xff000000, //   0   0   0  -1
+	"alphatemp":                0xff000000, //   0   0   0  -1
+	"alphaten":                 0xff000000, //   0   0   0  -1
+	"alphatex":                 0xff000000, //   0   0   0  -1
 	"alternativespunk":         0x00fe0000, //   0   0  -2   0
 	"altitonant":               0x00fe0000, //   0   0  -2   0
 	"altitude":                 0x00fe0000, //   0   0  -2   0
@@ -139,6 +174,7 @@ var wordValues = map[string]uint32{
 	"ampissue":                 0x000000ff, //  -1   0   0   0
 	"ampoops":                  0x000000ff, //  -1   0   0   0
 	"amprick":                  0x000000fe, //  -2   0   0   0
+	"amyxorrhoea":              0x00ffff00, //   0  -1  -1   0
 	"anacleticum":              0x00fe0000, //   0   0  -2   0
 	"anal":                     0x00010001, //   1   0   1   0
 	"analab":                   0x00ff00ff, //  -1   0  -1   0
@@ -319,6 +355,24 @@ var wordValues = map[string]uint32{
 	"analysing":                0x00ff00ff, //  -1   0  -1   0
 	"analysis":                 0x00ff00ff, //  -1   0  -1   0
 	"analysispunk":             0x00fe0000, //   0   0  -2   0
+	"analysissydney":           0xff000000, //   0   0   0  -1
+	"analysissymantec":         0xff000000, //   0   0   0  -1
+	"analysissymbol":           0xff000000, //   0   0   0  -1
+	"analysissympathy":         0xff000000, //   0   0   0  -1
+	"analysissymphony":         0xff000000, //   0   0   0  -1
+	"analysissymposium":        0xff000000, //   0   0   0  -1
+	"analysissymptoms":         0xff000000, //   0   0   0  -1
+	"analysissync":             0xff000000, //   0   0   0  -1
+	"analysissyndicate":        0xff000000, //   0   0   0  -1
+	"analysissyndication":      0xff000000, //   0   0   0  -1
+	"analysissyndrome":         0xff000000, //   0   0   0  -1
+	"analysissynopsis":         0xff000000, //   0   0   0  -1
+	"analysissyntax":           0xff000000, //   0   0   0  -1
+	"analysissynthesis":        0xff000000, //   0   0   0  -1
+	"analysissynthetic":        0xff000000, //   0   0   0  -1
+	"analysissyracuse":         0xff000000, //   0   0   0  -1
+	"analysissyria":            0xff000000, //   0   0   0  -1
+	"analysissys":              0xff000000, //   0   0   0  -1
 	"analyst":                  0x00ff00ff, //  -1   0  -1   0
 	"analystspunk":             0x00fe0000, //   0   0  -2   0
 	"analystwatch":             0x00fe0000, //   0   0  -2   0
@@ -331,6 +385,8 @@ var wordValues = map[string]uint32{
 	"analyzation":              0x00ff00ff, //  -1   0  -1   0
 	"analyze":                  0x00ff00ff, //  -1   0  -1   0
 	"analyzing":                0x00ff00ff, //  -1   0  -1   0
+	"anazinc":                  0x0000ff00, //   0  -1   0   0
+	"anazip":                   0x0000ff00, //   0  -1   0   0
 	"anchornyc":                0x00fe0000, //   0   0  -2   0
 	"anchornylon":              0x00fe0000, //   0   0  -2   0
 	"andorrapeace":             0x00ff0000, //   0   0  -1   0
@@ -356,15 +412,23 @@ var wordValues = map[string]uint32{
 	"angolabias":               0x00fe0000, //   0   0  -2   0
 	"angraecum":                0x00fe0000, //   0   0  -2   0
 	"animalspunk":              0x00fe0000, //   0   0  -2   0
+	"annazinc":                 0x0000ff00, //   0  -1   0   0
+	"annazip":                  0x0000ff00, //   0  -1   0   0
 	"annexrated":               0x00ff0000, //   0   0  -1   0
 	"announcementspunk":        0x00fe0000, //   0   0  -2   0
 	"announcespunk":            0x00fe0000, //   0   0  -2   0
 	"anonymouspunk":            0x00fe0000, //   0   0  -2   0
 	"anorthitite":              0x00fe0000, //   0   0  -2   0
 	"answerspunk":              0x00fe0000, //   0   0  -2   0
+	"antennazinc":              0x0000ff00, //   0  -1   0   0
+	"antennazip":               0x0000ff00, //   0  -1   0   0
 	"antesignanus":             0x000000ff, //  -1   0   0   0
 	"anthericum":               0x00fe0000, //   0   0  -2   0
+	"anthoecological":          0x00ffff00, //   0  -1  -1   0
+	"anthoecologist":           0x00ffff00, //   0  -1  -1   0
+	"anthoecology":             0x00ffff00, //   0  -1  -1   0
 	"anticum":                  0x00fe0000, //   0   0  -2   0
+	"antiejaculation":          0x00ff0000, //   0   0  -1   0
 	"antiquespunk":             0x00fe0000, //   0   0  -2   0
 	"antirape":                 0x00ff0000, //   0   0  -1   0
 	"antisex":                  0x00ff0000, //   0   0  -1   0
@@ -430,7 +494,10 @@ var wordValues = map[string]uint32{
 	"apnicuntil":               0x00ffff00, //   0  -1  -1   0
 	"apnicuntitled":            0x00ffff00, //   0  -1  -1   0
 	"apnicunto":                0x00ffff00, //   0  -1  -1   0
+	"apocryphate":              0xff000000, //   0   0   0  -1
+	"apolloser":                0xff000000, //   0   0   0  -1
 	"apoop":                    0x000000ff, //  -1   0   0   0
+	"aporrhoea":                0x00ffff00, //   0  -1  -1   0
 	"apparatuspunk":            0x00fe0000, //   0   0  -2   0
 	"appealspunk":              0x00fe0000, //   0   0  -2   0
 	"appendixrated":            0x00ff0000, //   0   0  -1   0
@@ -443,6 +510,7 @@ var wordValues = map[string]uint32{
 	"apprick":                  0x000000fe, //  -2   0   0   0
 	"approacheshe":             0x00ff0000, //   0   0  -1   0
 	"approachespunk":           0x00fe0000, //   0   0  -2   0
+	"approachink":              0x0000fe00, //   0  -2   0   0
 	"approxrated":              0x00ff0000, //   0   0  -1   0
 	"appspunk":                 0x00fe0000, //   0   0  -2   0
 	"aprosexia":                0x00ff0000, //   0   0  -1   0
@@ -564,6 +632,8 @@ var wordValues = map[string]uint32{
 	"arabicuntil":              0x00ffff00, //   0  -1  -1   0
 	"arabicuntitled":           0x00ffff00, //   0  -1  -1   0
 	"arabicunto":               0x00ffff00, //   0  -1  -1   0
+	"archate":                  0xff000000, //   0   0   0  -1
+	"archink":                  0x0000fe00, //   0  -2   0   0
 	"architectspunk":           0x00fe0000, //   0   0  -2   0
 	"architectwatch":           0x00fe0000, //   0   0  -2   0
 	"architectwater":           0x00fe0000, //   0   0  -2   0
@@ -580,8 +650,14 @@ var wordValues = map[string]uint32{
 	"arcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"arcunto":                  0x00ffff00, //   0  -1  -1   0
 	"ardass":                   0x000000ff, //  -1   0   0   0
+	"arenazinc":                0x0000ff00, //   0  -1   0   0
+	"arenazip":                 0x0000ff00, //   0  -1   0   0
+	"argentinazinc":            0x0000ff00, //   0  -1   0   0
+	"argentinazip":             0x0000ff00, //   0  -1   0   0
 	"argentite":                0x00fe0000, //   0   0  -2   0
 	"argumentspunk":            0x00fe0000, //   0   0  -2   0
+	"arizonazinc":              0x0000ff00, //   0  -1   0   0
+	"arizonazip":               0x0000ff00, //   0  -1   0   0
 	"arksutite":                0x00fe0000, //   0   0  -2   0
 	"armspunk":                 0x00fe0000, //   0   0  -2   0
 	"aromatitae":               0x00fe0000, //   0   0  -2   0
@@ -633,6 +709,8 @@ var wordValues = map[string]uint32{
 	"asbestospunk":             0x00fe0000, //   0   0  -2   0
 	"asbestosser":              0x000000ff, //  -1   0   0   0
 	"asexual":                  0x00ff0000, //   0   0  -1   0
+	"ashate":                   0xff000000, //   0   0   0  -1
+	"ashkenazi":                0x0000ff00, //   0  -1   0   0
 	"askspunk":                 0x00fe0000, //   0   0  -2   0
 	"aspectspunk":              0x00fe0000, //   0   0  -2   0
 	"aspectwatch":              0x00fe0000, //   0   0  -2   0
@@ -673,9 +751,10 @@ var wordValues = map[string]uint32{
 	"assessmentspunk":          0x00fe0000, //   0   0  -2   0
 	"assesspunk":               0x00fe0000, //   0   0  -2   0
 	"asshead":                  0x000000ff, //  -1   0   0   0
-	"asshole":                  0x000000ff, //  -1   0   0   0
+	"assholes":                 0x000000ff, //  -1   0   0   0
 	"assi":                     0x000000ff, //  -1   0   0   0
 	"assignmentspunk":          0x00fe0000, //   0   0  -2   0
+	"assistful":                0xff000000, //   0   0   0  -1
 	"assistspunk":              0x00fe0000, //   0   0  -2   0
 	"asslike":                  0x000000ff, //  -1   0   0   0
 	"assman":                   0x000000ff, //  -1   0   0   0
@@ -745,6 +824,7 @@ var wordValues = map[string]uint32{
 	"atlanticuntitled":         0x00ffff00, //   0  -1  -1   0
 	"atlanticunto":             0x00ffff00, //   0  -1  -1   0
 	"atlantite":                0x00fe0000, //   0   0  -2   0
+	"attachink":                0x0000fe00, //   0  -2   0   0
 	"attachmentspunk":          0x00fe0000, //   0   0  -2   0
 	"attackspunk":              0x00fe0000, //   0   0  -2   0
 	"attemptwatch":             0x00fe0000, //   0   0  -2   0
@@ -762,6 +842,10 @@ var wordValues = map[string]uint32{
 	"attorneyspunk":            0x00fe0000, //   0   0  -2   0
 	"attributespunk":           0x00fe0000, //   0   0  -2   0
 	"augitite":                 0x00fe0000, //   0   0  -2   0
+	"auglycos":                 0xff000000, //   0   0   0  -1
+	"auglying":                 0xff000000, //   0   0   0  -1
+	"auglynn":                  0xff000000, //   0   0   0  -1
+	"auglyric":                 0xff000000, //   0   0   0  -1
 	"augustwatch":              0x00fe0000, //   0   0  -2   0
 	"augustwater":              0x00fe0000, //   0   0  -2   0
 	"augustwatson":             0x00fe0000, //   0   0  -2   0
@@ -798,7 +882,9 @@ var wordValues = map[string]uint32{
 	"babespunk":                0x00fe0000, //   0   0  -2   0
 	"babiche":                  0x00ffff00, //   0  -1  -1   0
 	"babiespunk":               0x00fe0000, //   0   0  -2   0
+	"babracot":                 0x00ff0000, //   0   0  -1   0
 	"bacchanal":                0x00ff00ff, //  -1   0  -1   0
+	"backhoe":                  0x00ffff00, //   0  -1  -1   0
 	"backupissn":               0x000000ff, //  -1   0   0   0
 	"backupissue":              0x000000ff, //  -1   0   0   0
 	"backupoops":               0x000000ff, //  -1   0   0   0
@@ -807,6 +893,7 @@ var wordValues = map[string]uint32{
 	"badass":                   0x000000ff, //  -1   0   0   0
 	"bagass":                   0x000000ff, //  -1   0   0   0
 	"bagspunk":                 0x00fe0000, //   0   0  -2   0
+	"bahoe":                    0x00ffff00, //   0  -1  -1   0
 	"balanus":                  0x000000ff, //  -1   0   0   0
 	"balls":                    0x00010000, //   0   0   1   0
 	"ballsack":                 0x00020000, //   0   0   2   0
@@ -1126,9 +1213,11 @@ var wordValues = map[string]uint32{
 	"banal":                    0x00ff00ff, //  -1   0  -1   0
 	"banatite":                 0x00fe0000, //   0   0  -2   0
 	"bandspunk":                0x00fe0000, //   0   0  -2   0
+	"bangladeshate":            0xff000000, //   0   0   0  -1
 	"bankspunk":                0x00fe0000, //   0   0  -2   0
 	"bannerspunk":              0x00fe0000, //   0   0  -2   0
 	"banus":                    0x000000ff, //  -1   0   0   0
+	"barabra":                  0x00ff0000, //   0   0  -1   0
 	"barbarapeace":             0x00ff0000, //   0   0  -1   0
 	"barbarapeak":              0x00ff0000, //   0   0  -1   0
 	"barbarapeas":              0x00ff0000, //   0   0  -1   0
@@ -1137,6 +1226,9 @@ var wordValues = map[string]uint32{
 	"barbarapeople":            0x00ff0000, //   0   0  -1   0
 	"barbarapepper":            0x00ff0000, //   0   0  -1   0
 	"barbarapet":               0x00ff0000, //   0   0  -1   0
+	"barbra":                   0x00ff0000, //   0   0  -1   0
+	"barcelonazinc":            0x0000ff00, //   0  -1   0   0
+	"barcelonazip":             0x0000ff00, //   0  -1   0   0
 	"barnespunk":               0x00fe0000, //   0   0  -2   0
 	"barnhardtite":             0x00fe0000, //   0   0  -2   0
 	"barrierspunk":             0x00fe0000, //   0   0  -2   0
@@ -1174,6 +1266,24 @@ var wordValues = map[string]uint32{
 	"basicspunk":               0x00fe0000, //   0   0  -2   0
 	"basilicock":               0x00ff00ff, //  -1   0  -1   0
 	"basispunk":                0x00fe0000, //   0   0  -2   0
+	"basissydney":              0xff000000, //   0   0   0  -1
+	"basissymantec":            0xff000000, //   0   0   0  -1
+	"basissymbol":              0xff000000, //   0   0   0  -1
+	"basissympathy":            0xff000000, //   0   0   0  -1
+	"basissymphony":            0xff000000, //   0   0   0  -1
+	"basissymposium":           0xff000000, //   0   0   0  -1
+	"basissymptoms":            0xff000000, //   0   0   0  -1
+	"basissync":                0xff000000, //   0   0   0  -1
+	"basissyndicate":           0xff000000, //   0   0   0  -1
+	"basissyndication":         0xff000000, //   0   0   0  -1
+	"basissyndrome":            0xff000000, //   0   0   0  -1
+	"basissynopsis":            0xff000000, //   0   0   0  -1
+	"basissyntax":              0xff000000, //   0   0   0  -1
+	"basissynthesis":           0xff000000, //   0   0   0  -1
+	"basissynthetic":           0xff000000, //   0   0   0  -1
+	"basissyracuse":            0xff000000, //   0   0   0  -1
+	"basissyria":               0xff000000, //   0   0   0  -1
+	"basissys":                 0xff000000, //   0   0   0  -1
 	"basketballs":              0x00ff0000, //   0   0  -1   0
 	"basketspunk":              0x00fe0000, //   0   0  -2   0
 	"basketwatch":              0x00fe0000, //   0   0  -2   0
@@ -1184,6 +1294,9 @@ var wordValues = map[string]uint32{
 	"bassetite":                0x00fe0000, //   0   0  -2   0
 	"basspunk":                 0x00fe0000, //   0   0  -2   0
 	"bastard":                  0x00000201, //   1   2   0   0
+	"batchate":                 0xff000000, //   0   0   0  -1
+	"batchink":                 0x0000fe00, //   0  -2   0   0
+	"bathate":                  0xff000000, //   0   0   0  -1
 	"bathspunk":                0x00fe0000, //   0   0  -2   0
 	"batteriespunk":            0x00fe0000, //   0   0  -2   0
 	"batwatch":                 0x00fe0000, //   0   0  -2   0
@@ -1289,6 +1402,9 @@ var wordValues = map[string]uint32{
 	"beltwatson":               0x00fe0000, //   0   0  -2   0
 	"beltwatt":                 0x00fe0000, //   0   0  -2   0
 	"bementite":                0x00fe0000, //   0   0  -2   0
+	"benchate":                 0xff000000, //   0   0   0  -1
+	"benchink":                 0x0000fe00, //   0  -2   0   0
+	"beneathate":               0xff000000, //   0   0   0  -1
 	"benedick":                 0x00ff00ff, //  -1   0  -1   0
 	"bennettitaceae":           0x00fe0000, //   0   0  -2   0
 	"bennettitaceous":          0x00fe0000, //   0   0  -2   0
@@ -1299,6 +1415,7 @@ var wordValues = map[string]uint32{
 	"bennettwatson":            0x00fe0000, //   0   0  -2   0
 	"bennettwatt":              0x00fe0000, //   0   0  -2   0
 	"bereshith":                0x000000ff, //  -1   0   0   0
+	"bethate":                  0xff000000, //   0   0   0  -1
 	"betwatch":                 0x00fe0000, //   0   0  -2   0
 	"betwater":                 0x00fe0000, //   0   0  -2   0
 	"betwatson":                0x00fe0000, //   0   0  -2   0
@@ -1328,10 +1445,12 @@ var wordValues = map[string]uint32{
 	"biotite":                  0x00fe0000, //   0   0  -2   0
 	"biplanal":                 0x00ff00ff, //  -1   0  -1   0
 	"birdspunk":                0x00fe0000, //   0   0  -2   0
+	"birthate":                 0xff000000, //   0   0   0  -1
 	"bisexed":                  0x00ff0000, //   0   0  -1   0
 	"bisext":                   0x00ff0000, //   0   0  -1   0
 	"bisexual":                 0x00ff0000, //   0   0  -1   0
 	"bisexuous":                0x00ff0000, //   0   0  -1   0
+	"bismuthate":               0xff000000, //   0   0   0  -1
 	"bismutite":                0x00fe0000, //   0   0  -2   0
 	"bissext":                  0x00ff0000, //   0   0  -1   0
 	"bitch":                    0x00010100, //   0   1   1   0
@@ -1383,10 +1502,13 @@ var wordValues = map[string]uint32{
 	"blackbutt":                0x000000ff, //  -1   0   0   0
 	"blackcock":                0x00ff00ff, //  -1   0  -1   0
 	"blackspunk":               0x00fe0000, //   0   0  -2   0
+	"blahate":                  0xff000000, //   0   0   0  -1
 	"blanketwatch":             0x00fe0000, //   0   0  -2   0
 	"blanketwater":             0x00fe0000, //   0   0  -2   0
 	"blanketwatson":            0x00fe0000, //   0   0  -2   0
 	"blanketwatt":              0x00fe0000, //   0   0  -2   0
+	"blastful":                 0xff000000, //   0   0   0  -1
+	"blennorrhoea":             0x00ffff00, //   0  -1  -1   0
 	"bloggerspunk":             0x00fe0000, //   0   0  -2   0
 	"bloody":                   0x00000001, //   1   0   0   0
 	"bloodyacht":               0x000000ff, //  -1   0   0   0
@@ -1417,6 +1539,7 @@ var wordValues = map[string]uint32{
 	"bluespunk":                0x00fe0000, //   0   0  -2   0
 	"bluetit":                  0x00fe0000, //   0   0  -2   0
 	"boardspunk":               0x00fe0000, //   0   0  -2   0
+	"boastful":                 0xff000000, //   0   0   0  -1
 	"boatspunk":                0x00fe0000, //   0   0  -2   0
 	"boatwatch":                0x00fe0000, //   0   0  -2   0
 	"boatwater":                0x00fe0000, //   0   0  -2   0
@@ -1587,6 +1710,7 @@ var wordValues = map[string]uint32{
 	"boneruth":                 0x00fe0000, //   0   0  -2   0
 	"bonerwanda":               0x00fe0000, //   0   0  -2   0
 	"boneryan":                 0x00fe0000, //   0   0  -2   0
+	"bonhomous":                0x0000ff00, //   0  -1   0   0
 	"bonuspunk":                0x00fe0000, //   0   0  -2   0
 	"boob":                     0x00020000, //   0   0   2   0
 	"boobery":                  0x00fe0000, //   0   0  -2   0
@@ -1603,6 +1727,7 @@ var wordValues = map[string]uint32{
 	"boostwater":               0x00fe0000, //   0   0  -2   0
 	"boostwatson":              0x00fe0000, //   0   0  -2   0
 	"boostwatt":                0x00fe0000, //   0   0  -2   0
+	"boothate":                 0xff000000, //   0   0   0  -1
 	"bootspunk":                0x00fe0000, //   0   0  -2   0
 	"bootwatch":                0x00fe0000, //   0   0  -2   0
 	"bootwater":                0x00fe0000, //   0   0  -2   0
@@ -1610,6 +1735,7 @@ var wordValues = map[string]uint32{
 	"bootwatt":                 0x00fe0000, //   0   0  -2   0
 	"borassus":                 0x000000ff, //  -1   0   0   0
 	"bosspunk":                 0x00fe0000, //   0   0  -2   0
+	"bothate":                  0xff000000, //   0   0   0  -1
 	"bouffage":                 0x0000fd00, //   0  -3   0   0
 	"boundariespunk":           0x00fe0000, //   0   0  -2   0
 	"bountith":                 0x00fe0000, //   0   0  -2   0
@@ -1621,33 +1747,101 @@ var wordValues = map[string]uint32{
 	"boxespunk":                0x00fe0000, //   0   0  -2   0
 	"boxrated":                 0x00ff0000, //   0   0  -1   0
 	"boyspunk":                 0x00fe0000, //   0   0  -2   0
+	"bra":                      0x00010000, //   0   0   1   0
+	"braata":                   0x00ff0000, //   0   0  -1   0
+	"brab":                     0x00ff0000, //   0   0  -1   0
+	"braca":                    0x00ff0000, //   0   0  -1   0
+	"braccae":                  0x00ff0000, //   0   0  -1   0
+	"braccate":                 0x00ff0000, //   0   0  -1   0
+	"braccia":                  0x00ff0000, //   0   0  -1   0
+	"braccio":                  0x00ff0000, //   0   0  -1   0
+	"brace":                    0x00ff0000, //   0   0  -1   0
+	"brach":                    0x00ff0000, //   0   0  -1   0
+	"bracing":                  0x00ff0000, //   0   0  -1   0
+	"braciola":                 0x00ff0000, //   0   0  -1   0
+	"braciole":                 0x00ff0000, //   0   0  -1   0
+	"brack":                    0x00ff0000, //   0   0  -1   0
 	"bracketwatch":             0x00fe0000, //   0   0  -2   0
 	"bracketwater":             0x00fe0000, //   0   0  -2   0
 	"bracketwatson":            0x00fe0000, //   0   0  -2   0
 	"bracketwatt":              0x00fe0000, //   0   0  -2   0
+	"bracon":                   0x00ff0000, //   0   0  -1   0
+	"bracozzo":                 0x00ff0000, //   0   0  -1   0
+	"bract":                    0x00ff0000, //   0   0  -1   0
+	"brad":                     0x00ff0000, //   0   0  -1   0
+	"brae":                     0x00ff0000, //   0   0  -1   0
+	"brag":                     0x00ff0000, //   0   0  -1   0
+	"brahm":                    0x00ff0000, //   0   0  -1   0
+	"brahui":                   0x00ff0000, //   0   0  -1   0
+	"braid":                    0x00ff0000, //   0   0  -1   0
+	"braies":                   0x00ff0000, //   0   0  -1   0
+	"brail":                    0x00ff0000, //   0   0  -1   0
+	"brain":                    0x00ff0000, //   0   0  -1   0
 	"brainfag":                 0x0000fd00, //   0  -3   0   0
+	"braird":                   0x00ff0000, //   0   0  -1   0
+	"braireau":                 0x00ff0000, //   0   0  -1   0
+	"brairo":                   0x00ff0000, //   0   0  -1   0
+	"braise":                   0x00ff0000, //   0   0  -1   0
+	"braising":                 0x00ff0000, //   0   0  -1   0
+	"braize":                   0x00ff0000, //   0   0  -1   0
+	"brake":                    0x00ff0000, //   0   0  -1   0
 	"brakespunk":               0x00fe0000, //   0   0  -2   0
+	"brakie":                   0x00ff0000, //   0   0  -1   0
+	"braking":                  0x00ff0000, //   0   0  -1   0
+	"braky":                    0x00ff0000, //   0   0  -1   0
+	"braless":                  0x00ff0000, //   0   0  -1   0
+	"bram":                     0x00ff0000, //   0   0  -1   0
+	"bran":                     0x00ff0000, //   0   0  -1   0
 	"brancheshe":               0x00ff0000, //   0   0  -1   0
 	"branchespunk":             0x00fe0000, //   0   0  -2   0
 	"brandspunk":               0x00fe0000, //   0   0  -2   0
-	"brapeace":                 0x00ff0000, //   0   0  -1   0
-	"brapeak":                  0x00ff0000, //   0   0  -1   0
-	"brapeas":                  0x00ff0000, //   0   0  -1   0
-	"brapee":                   0x00ff0000, //   0   0  -1   0
-	"brapen":                   0x00ff0000, //   0   0  -1   0
-	"brapeople":                0x00ff0000, //   0   0  -1   0
-	"brapepper":                0x00ff0000, //   0   0  -1   0
-	"brapet":                   0x00ff0000, //   0   0  -1   0
-	"brass":                    0x000000ff, //  -1   0   0   0
+	"braquemard":               0x00ff0000, //   0   0  -1   0
+	"brarow":                   0x00ff0000, //   0   0  -1   0
+	"brasen":                   0x00ff0000, //   0   0  -1   0
+	"brasero":                  0x00ff0000, //   0   0  -1   0
+	"brash":                    0x00ff0000, //   0   0  -1   0
+	"brasier":                  0x00ff0000, //   0   0  -1   0
+	"brasil":                   0x00ff0000, //   0   0  -1   0
+	"brasque":                  0x00ff0000, //   0   0  -1   0
+	"brasquing":                0x00ff0000, //   0   0  -1   0
+	"brass":                    0x00ff00ff, //  -1   0  -1   0
 	"brasspunk":                0x00fe0000, //   0   0  -2   0
+	"brast":                    0x00ff0000, //   0   0  -1   0
+	"brat":                     0x00ff0000, //   0   0  -1   0
+	"braula":                   0x00ff0000, //   0   0  -1   0
+	"brauna":                   0x00ff0000, //   0   0  -1   0
+	"brauneberger":             0x00ff0000, //   0   0  -1   0
+	"brauneria":                0x00ff0000, //   0   0  -1   0
+	"braunite":                 0x00ff0000, //   0   0  -1   0
+	"braunschweiger":           0x00ff0000, //   0   0  -1   0
+	"brauronia":                0x00ff0000, //   0   0  -1   0
+	"brava":                    0x00ff0000, //   0   0  -1   0
+	"brave":                    0x00ff0000, //   0   0  -1   0
+	"bravi":                    0x00ff0000, //   0   0  -1   0
+	"bravo":                    0x00ff0000, //   0   0  -1   0
+	"bravura":                  0x00ff0000, //   0   0  -1   0
+	"bravure":                  0x00ff0000, //   0   0  -1   0
+	"braw":                     0x00ff0000, //   0   0  -1   0
+	"braxies":                  0x00ff0000, //   0   0  -1   0
+	"braxy":                    0x00ff0000, //   0   0  -1   0
+	"bray":                     0x00ff0000, //   0   0  -1   0
+	"braza":                    0x00ff0000, //   0   0  -1   0
+	"braze":                    0x00ff0000, //   0   0  -1   0
+	"brazier":                  0x00ff0000, //   0   0  -1   0
+	"brazil":                   0x00ff0000, //   0   0  -1   0
+	"brazing":                  0x00ff0000, //   0   0  -1   0
 	"breakspunk":               0x00fe0000, //   0   0  -2   0
+	"breastful":                0xff000000, //   0   0   0  -1
 	"breastspunk":              0x00fe0000, //   0   0  -2   0
+	"breathate":                0xff000000, //   0   0   0  -1
 	"breithauptite":            0x00fe0000, //   0   0  -2   0
 	"bridgespunk":              0x00fe0000, //   0   0  -2   0
 	"brieffinger":              0x00ff00ff, //  -1   0  -1   0
 	"briefspunk":               0x00fe0000, //   0   0  -2   0
+	"britishate":               0xff000000, //   0   0   0  -1
 	"brochantite":              0x00fe0000, //   0   0  -2   0
 	"brokerspunk":              0x00fe0000, //   0   0  -2   0
+	"bronchoegophony":          0x00ffff00, //   0  -1  -1   0
 	"bronzitite":               0x00fe0000, //   0   0  -2   0
 	"brookspunk":               0x00fe0000, //   0   0  -2   0
 	"broomrape":                0x00ff0000, //   0   0  -1   0
@@ -1668,6 +1862,7 @@ var wordValues = map[string]uint32{
 	"buddykevin":               0x00ffffff, //  -1  -1  -1   0
 	"buddykey":                 0x00ffffff, //  -1  -1  -1   0
 	"bufagin":                  0x0000fd00, //   0  -3   0   0
+	"buffaloser":               0xff000000, //   0   0   0  -1
 	"bugger":                   0x00000001, //   1   0   0   0
 	"buggerald":                0x000000ff, //  -1   0   0   0
 	"buggered":                 0x000000ff, //  -1   0   0   0
@@ -1675,6 +1870,10 @@ var wordValues = map[string]uint32{
 	"buggering":                0x000000ff, //  -1   0   0   0
 	"buggerman":                0x000000ff, //  -1   0   0   0
 	"buggery":                  0x000000ff, //  -1   0   0   0
+	"buglycos":                 0xff000000, //   0   0   0  -1
+	"buglying":                 0xff000000, //   0   0   0  -1
+	"buglynn":                  0xff000000, //   0   0   0  -1
+	"buglyric":                 0xff000000, //   0   0   0  -1
 	"bugspunk":                 0x00fe0000, //   0   0  -2   0
 	"builderspunk":             0x00fe0000, //   0   0  -2   0
 	"buildingspunk":            0x00fe0000, //   0   0  -2   0
@@ -1684,11 +1883,14 @@ var wordValues = map[string]uint32{
 	"builtwatson":              0x00fe0000, //   0   0  -2   0
 	"builtwatt":                0x00fe0000, //   0   0  -2   0
 	"bullshit":                 0x00000001, //   1   0   0   0
+	"bunchate":                 0xff000000, //   0   0   0  -1
+	"bunchink":                 0x0000fe00, //   0  -2   0   0
 	"burnspunk":                0x00fe0000, //   0   0  -2   0
 	"burstwatch":               0x00fe0000, //   0   0  -2   0
 	"burstwater":               0x00fe0000, //   0   0  -2   0
 	"burstwatson":              0x00fe0000, //   0   0  -2   0
 	"burstwatt":                0x00fe0000, //   0   0  -2   0
+	"bushate":                  0xff000000, //   0   0   0  -1
 	"bushtit":                  0x00fe0000, //   0   0  -2   0
 	"businessespunk":           0x00fe0000, //   0   0  -2   0
 	"businesspunk":             0x00fe0000, //   0   0  -2   0
@@ -1699,7 +1901,7 @@ var wordValues = map[string]uint32{
 	"buttackle":                0x000000ff, //  -1   0   0   0
 	"buttactics":               0x000000ff, //  -1   0   0   0
 	"buttag":                   0x000000ff, //  -1   0   0   0
-	"buttahoe":                 0x000000ff, //  -1   0   0   0
+	"buttahoe":                 0x00ffffff, //  -1  -1  -1   0
 	"buttail":                  0x000000ff, //  -1   0   0   0
 	"buttaiwan":                0x000000ff, //  -1   0   0   0
 	"buttake":                  0x000000ff, //  -1   0   0   0
@@ -1854,6 +2056,7 @@ var wordValues = map[string]uint32{
 	"bytownitite":              0x00fe0000, //   0   0  -2   0
 	"cabinetspunk":             0x00fe0000, //   0   0  -2   0
 	"cacheshe":                 0x00ff0000, //   0   0  -1   0
+	"cachoeira":                0x00ffff00, //   0  -1  -1   0
 	"cacoon":                   0x0000fd00, //   0  -3   0   0
 	"cadillacrap":              0x000000ff, //  -1   0   0   0
 	"cadillacuntil":            0x00ffff00, //   0  -1  -1   0
@@ -1891,7 +2094,6 @@ var wordValues = map[string]uint32{
 	"calendarsegypt":           0x000000ff, //  -1   0   0   0
 	"calendarseight":           0x000000ff, //  -1   0   0   0
 	"calendarseither":          0x000000ff, //  -1   0   0   0
-	"calendarsejaculation":     0x000000ff, //  -1   0   0   0
 	"calendarselder":           0x000000ff, //  -1   0   0   0
 	"calendarselect":           0x000000ff, //  -1   0   0   0
 	"calendarselegant":         0x000000ff, //  -1   0   0   0
@@ -1980,6 +2182,8 @@ var wordValues = map[string]uint32{
 	"calendarsext":             0x00ff00ff, //  -1   0  -1   0
 	"calendarseye":             0x000000ff, //  -1   0   0   0
 	"calendarspunk":            0x00fe0000, //   0   0  -2   0
+	"caliphate":                0xff000000, //   0   0   0  -1
+	"callirrhoe":               0x00ffff00, //   0  -1  -1   0
 	"callspunk":                0x00fe0000, //   0   0  -2   0
 	"campaignspunk":            0x00fe0000, //   0   0  -2   0
 	"campspunk":                0x00fe0000, //   0   0  -2   0
@@ -2063,7 +2267,10 @@ var wordValues = map[string]uint32{
 	"cardiovascularsewing":     0x000000ff, //  -1   0   0   0
 	"cardspunk":                0x00fe0000, //   0   0  -2   0
 	"careerspunk":              0x00fe0000, //   0   0  -2   0
+	"carloser":                 0xff000000, //   0   0   0  -1
 	"carnotite":                0x00fe0000, //   0   0  -2   0
+	"carolinazinc":             0x0000ff00, //   0  -1   0   0
+	"carolinazip":              0x0000ff00, //   0  -1   0   0
 	"carrierspunk":             0x00fe0000, //   0   0  -2   0
 	"carriespunk":              0x00fe0000, //   0   0  -2   0
 	"carse":                    0x000000ff, //  -1   0   0   0
@@ -2110,6 +2317,8 @@ var wordValues = map[string]uint32{
 	"catalystwater":            0x00fe0000, //   0   0  -2   0
 	"catalystwatson":           0x00fe0000, //   0   0  -2   0
 	"catalystwatt":             0x00fe0000, //   0   0  -2   0
+	"catchate":                 0xff000000, //   0   0   0  -1
+	"catchink":                 0x0000fe00, //   0  -2   0   0
 	"categoriespunk":           0x00fe0000, //   0   0  -2   0
 	"catharses":                0x000000ff, //  -1   0   0   0
 	"cathedraticum":            0x00fe0000, //   0   0  -2   0
@@ -2187,6 +2396,8 @@ var wordValues = map[string]uint32{
 	"centspunk":                0x00fe0000, //   0   0  -2   0
 	"centuriespunk":            0x00fe0000, //   0   0  -2   0
 	"ceratitoid":               0x00fe0000, //   0   0  -2   0
+	"cerebellorubral":          0x00ff0000, //   0   0  -1   0
+	"cerebra":                  0x00ff0000, //   0   0  -1   0
 	"certificatespunk":         0x00fe0000, //   0   0  -2   0
 	"certitude":                0x00fe0000, //   0   0  -2   0
 	"ceruleolactite":           0x00fe0000, //   0   0  -2   0
@@ -2274,7 +2485,26 @@ var wordValues = map[string]uint32{
 	"chashitsu":                0x000000ff, //  -1   0   0   0
 	"chass":                    0x000000ff, //  -1   0   0   0
 	"chassispunk":              0x00fe0000, //   0   0  -2   0
+	"chassissydney":            0xff000000, //   0   0   0  -1
+	"chassissymantec":          0xff000000, //   0   0   0  -1
+	"chassissymbol":            0xff000000, //   0   0   0  -1
+	"chassissympathy":          0xff000000, //   0   0   0  -1
+	"chassissymphony":          0xff000000, //   0   0   0  -1
+	"chassissymposium":         0xff000000, //   0   0   0  -1
+	"chassissymptoms":          0xff000000, //   0   0   0  -1
+	"chassissync":              0xff000000, //   0   0   0  -1
+	"chassissyndicate":         0xff000000, //   0   0   0  -1
+	"chassissyndication":       0xff000000, //   0   0   0  -1
+	"chassissyndrome":          0xff000000, //   0   0   0  -1
+	"chassissynopsis":          0xff000000, //   0   0   0  -1
+	"chassissyntax":            0xff000000, //   0   0   0  -1
+	"chassissynthesis":         0xff000000, //   0   0   0  -1
+	"chassissynthetic":         0xff000000, //   0   0   0  -1
+	"chassissyracuse":          0xff000000, //   0   0   0  -1
+	"chassissyria":             0xff000000, //   0   0   0  -1
+	"chassissys":               0xff000000, //   0   0   0  -1
 	"chastity":                 0x00fe0000, //   0   0  -2   0
+	"chateus":                  0xff000000, //   0   0   0  -1
 	"chauffage":                0x0000fd00, //   0  -3   0   0
 	"cheapissn":                0x000000ff, //  -1   0   0   0
 	"cheapissue":               0x000000ff, //  -1   0   0   0
@@ -2287,20 +2517,77 @@ var wordValues = map[string]uint32{
 	"chemicalspunk":            0x00fe0000, //   0   0  -2   0
 	"chercock":                 0x00ff00ff, //  -1   0  -1   0
 	"chesspunk":                0x00fe0000, //   0   0  -2   0
+	"chestful":                 0xff000000, //   0   0   0  -1
 	"chickenshit":              0x000000ff, //  -1   0   0   0
 	"chickspunk":               0x00fe0000, //   0   0  -2   0
 	"chiefage":                 0x0000fd00, //   0  -3   0   0
 	"chieffinger":              0x00ff00ff, //  -1   0  -1   0
 	"childrenspunk":            0x00fe0000, //   0   0  -2   0
+	"chinazinc":                0x0000ff00, //   0  -1   0   0
+	"chinazip":                 0x0000ff00, //   0  -1   0   0
 	"chinesemen":               0x00fe0000, //   0   0  -2   0
+	"chink":                    0x00000200, //   0   2   0   0
+	"chinkapin":                0x0000fe00, //   0  -2   0   0
+	"chinkara":                 0x0000fe00, //   0  -2   0   0
+	"chinked":                  0x0000fe00, //   0  -2   0   0
+	"chinker":                  0x0000fe00, //   0  -2   0   0
+	"chinkier":                 0x0000fe00, //   0  -2   0   0
+	"chinkiest":                0x0000fe00, //   0  -2   0   0
+	"chinking":                 0x0000fe00, //   0  -2   0   0
+	"chinkle":                  0x0000fe00, //   0  -2   0   0
+	"chinky":                   0x0000fe00, //   0  -2   0   0
 	"chiviatite":               0x00fe0000, //   0   0  -2   0
 	"chlorococcum":             0x00fe0000, //   0   0  -2   0
+	"choel":                    0x00ffff00, //   0  -1  -1   0
+	"choenix":                  0x00ffff00, //   0  -1  -1   0
+	"choes":                    0x00ffff00, //   0  -1  -1   0
 	"choicespunk":              0x00fe0000, //   0   0  -2   0
+	"choledochoenterostomy":    0x00ffff00, //   0  -1  -1   0
+	"chomobile":                0x0000ff00, //   0  -1   0   0
+	"chomobility":              0x0000ff00, //   0  -1   0   0
+	"chomod":                   0x0000ff00, //   0  -1   0   0
+	"chomoisture":              0x0000ff00, //   0  -1   0   0
+	"chomold":                  0x0000ff00, //   0  -1   0   0
+	"chomolecular":             0x0000ff00, //   0  -1   0   0
+	"chomolecules":             0x0000ff00, //   0  -1   0   0
+	"chomom":                   0x0000ff00, //   0  -1   0   0
+	"chomon":                   0x0000ff00, //   0  -1   0   0
+	"chomood":                  0x0000ff00, //   0  -1   0   0
+	"chomoon":                  0x0000ff00, //   0  -1   0   0
+	"chomoore":                 0x0000ff00, //   0  -1   0   0
+	"chomoral":                 0x0000ff00, //   0  -1   0   0
+	"chomore":                  0x0000ff00, //   0  -1   0   0
+	"chomorgan":                0x0000ff00, //   0  -1   0   0
+	"chomorning":               0x0000ff00, //   0  -1   0   0
+	"chomorocco":               0x0000ff00, //   0  -1   0   0
+	"chomorris":                0x0000ff00, //   0  -1   0   0
+	"chomortality":             0x0000ff00, //   0  -1   0   0
+	"chomortgage":              0x0000ff00, //   0  -1   0   0
+	"chomoscow":                0x0000ff00, //   0  -1   0   0
+	"chomoses":                 0x0000ff00, //   0  -1   0   0
+	"chomoss":                  0x0000ff00, //   0  -1   0   0
+	"chomost":                  0x0000ff00, //   0  -1   0   0
+	"chomotel":                 0x0000ff00, //   0  -1   0   0
+	"chomother":                0x0000ff00, //   0  -1   0   0
+	"chomotion":                0x0000ff00, //   0  -1   0   0
+	"chomotivated":             0x0000ff00, //   0  -1   0   0
+	"chomotivation":            0x0000ff00, //   0  -1   0   0
+	"chomotor":                 0x0000ff00, //   0  -1   0   0
+	"chomount":                 0x0000ff00, //   0  -1   0   0
+	"chomouse":                 0x0000ff00, //   0  -1   0   0
+	"chomouth":                 0x0000ff00, //   0  -1   0   0
+	"chomove":                  0x0000ff00, //   0  -1   0   0
+	"chomovie":                 0x0000ff00, //   0  -1   0   0
+	"chomoving":                0x0000ff00, //   0  -1   0   0
+	"chomozambique":            0x0000ff00, //   0  -1   0   0
+	"chomozilla":               0x0000ff00, //   0  -1   0   0
 	"choosemen":                0x00fe0000, //   0   0  -2   0
 	"choruspunk":               0x00fe0000, //   0   0  -2   0
 	"chrismatite":              0x00fe0000, //   0   0  -2   0
 	"chrispunk":                0x00fe0000, //   0   0  -2   0
 	"christianspunk":           0x00fe0000, //   0   0  -2   0
+	"christinazinc":            0x0000ff00, //   0  -1   0   0
+	"christinazip":             0x0000ff00, //   0  -1   0   0
 	"chromitite":               0x00fe0000, //   0   0  -2   0
 	"chronicrap":               0x000000ff, //  -1   0   0   0
 	"chronicuntil":             0x00ffff00, //   0  -1  -1   0
@@ -2308,8 +2595,10 @@ var wordValues = map[string]uint32{
 	"chronicunto":              0x00ffff00, //   0  -1  -1   0
 	"chrysophanus":             0x000000ff, //  -1   0   0   0
 	"chuprassy":                0x000000ff, //  -1   0   0   0
+	"churchate":                0xff000000, //   0   0   0  -1
 	"churcheshe":               0x00ff0000, //   0   0  -1   0
 	"churchespunk":             0x00fe0000, //   0   0  -2   0
+	"churchink":                0x0000fe00, //   0  -2   0   0
 	"cialispunk":               0x00fe0000, //   0   0  -2   0
 	"cigarettespunk":           0x00fe0000, //   0   0  -2   0
 	"cimcumvention":            0x00fe0000, //   0   0  -2   0
@@ -2369,6 +2658,7 @@ var wordValues = map[string]uint32{
 	"circuspunk":               0x00fe0000, //   0   0  -2   0
 	"cirmcumferential":         0x00fe0000, //   0   0  -2   0
 	"citizenspunk":             0x00fe0000, //   0   0  -2   0
+	"clamcracker":              0x0000ff00, //   0  -1   0   0
 	"clarapeace":               0x00ff0000, //   0   0  -1   0
 	"clarapeak":                0x00ff0000, //   0   0  -1   0
 	"clarapeas":                0x00ff0000, //   0   0  -1   0
@@ -2401,7 +2691,9 @@ var wordValues = map[string]uint32{
 	"clinicunto":               0x00ffff00, //   0  -1  -1   0
 	"clitoris":                 0x00020000, //   0   0   2   0
 	"clitorism":                0x00fe0000, //   0   0  -2   0
+	"closer":                   0xff000000, //   0   0   0  -1
 	"closespunk":               0x00fe0000, //   0   0  -2   0
+	"clothate":                 0xff000000, //   0   0   0  -1
 	"clothespunk":              0x00fe0000, //   0   0  -2   0
 	"cloudspunk":               0x00fe0000, //   0   0  -2   0
 	"cloudykeen":               0x00ffffff, //  -1  -1  -1   0
@@ -2418,6 +2710,7 @@ var wordValues = map[string]uint32{
 	"cmspunk":                  0x00fe0000, //   0   0  -2   0
 	"coacheshe":                0x00ff0000, //   0   0  -1   0
 	"coachespunk":              0x00fe0000, //   0   0  -2   0
+	"coachink":                 0x0000fe00, //   0  -2   0   0
 	"coarse":                   0x000000ff, //  -1   0   0   0
 	"coastwatch":               0x00fe0000, //   0   0  -2   0
 	"coastwater":               0x00fe0000, //   0   0  -2   0
@@ -2428,6 +2721,8 @@ var wordValues = map[string]uint32{
 	"coatwatson":               0x00fe0000, //   0   0  -2   0
 	"coatwatt":                 0x00fe0000, //   0   0  -2   0
 	"cobaltite":                0x00fe0000, //   0   0  -2   0
+	"cobbra":                   0x00ff0000, //   0   0  -1   0
+	"cobra":                    0x00ff0000, //   0   0  -1   0
 	"cock":                     0x00010001, //   1   0   1   0
 	"cockabondy":               0x00ff00ff, //  -1   0  -1   0
 	"cockade":                  0x00ff00ff, //  -1   0  -1   0
@@ -2502,6 +2797,7 @@ var wordValues = map[string]uint32{
 	"cocky":                    0x00ff00ff, //  -1   0  -1   0
 	"cocoon":                   0x0000fd00, //   0  -3   0   0
 	"coecum":                   0x00fe0000, //   0   0  -2   0
+	"coeliorrhoea":             0x00ffff00, //   0  -1  -1   0
 	"coeruleolactite":          0x00fe0000, //   0   0  -2   0
 	"cok":                      0x00010001, //   1   0   1   0
 	"coke":                     0x00ff00ff, //  -1   0  -1   0
@@ -2594,6 +2890,7 @@ var wordValues = map[string]uint32{
 	"concertwater":             0x00fe0000, //   0   0  -2   0
 	"concertwatson":            0x00fe0000, //   0   0  -2   0
 	"concertwatt":              0x00fe0000, //   0   0  -2   0
+	"conchate":                 0xff000000, //   0   0   0  -1
 	"concumbency":              0x00fe0000, //   0   0  -2   0
 	"condom":                   0x00010000, //   0   0   1   0
 	"condomac":                 0x00ff0000, //   0   0  -1   0
@@ -2791,6 +3088,7 @@ var wordValues = map[string]uint32{
 	"coprick":                  0x000000fe, //  -2   0   0   0
 	"coriolanus":               0x000000ff, //  -1   0   0   0
 	"cornballs":                0x00ff0000, //   0   0  -1   0
+	"corncracker":              0x0000ff00, //   0  -1   0   0
 	"cornerspunk":              0x00fe0000, //   0   0  -2   0
 	"corpissn":                 0x000000ff, //  -1   0   0   0
 	"corpissue":                0x000000ff, //  -1   0   0   0
@@ -2829,6 +3127,7 @@ var wordValues = map[string]uint32{
 	"cosmeticuntitled":         0x00ffff00, //   0  -1  -1   0
 	"cosmeticunto":             0x00ffff00, //   0  -1  -1   0
 	"cospunk":                  0x00fe0000, //   0   0  -2   0
+	"costful":                  0xff000000, //   0   0   0  -1
 	"costspunk":                0x00fe0000, //   0   0  -2   0
 	"costumespunk":             0x00fe0000, //   0   0  -2   0
 	"costwatch":                0x00fe0000, //   0   0  -2   0
@@ -2872,6 +3171,16 @@ var wordValues = map[string]uint32{
 	"cpusyracuse":              0x00ffff00, //   0  -1  -1   0
 	"cpusyria":                 0x00ffff00, //   0  -1  -1   0
 	"cpusys":                   0x00ffff00, //   0  -1  -1   0
+	"cracker":                  0x00000100, //   0   1   0   0
+	"crackera":                 0x0000ff00, //   0  -1   0   0
+	"crackerberries":           0x0000ff00, //   0  -1   0   0
+	"crackerberry":             0x0000ff00, //   0  -1   0   0
+	"crackeric":                0x0000ff00, //   0  -1   0   0
+	"crackerik":                0x0000ff00, //   0  -1   0   0
+	"crackerjack":              0x0000ff00, //   0  -1   0   0
+	"crackerotic":              0x0000ff00, //   0  -1   0   0
+	"crackerp":                 0x0000ff00, //   0  -1   0   0
+	"crackerror":               0x0000ff00, //   0  -1   0   0
 	"craftspunk":               0x00fe0000, //   0   0  -2   0
 	"craftwatch":               0x00fe0000, //   0   0  -2   0
 	"craftwater":               0x00fe0000, //   0   0  -2   0
@@ -2898,12 +3207,31 @@ var wordValues = map[string]uint32{
 	"crass":                    0x000000ff, //  -1   0   0   0
 	"createspunk":              0x00fe0000, //   0   0  -2   0
 	"crevass":                  0x000000ff, //  -1   0   0   0
+	"cribral":                  0x00ff0000, //   0   0  -1   0
 	"cricketwatch":             0x00fe0000, //   0   0  -2   0
 	"cricketwater":             0x00fe0000, //   0   0  -2   0
 	"cricketwatson":            0x00fe0000, //   0   0  -2   0
 	"cricketwatt":              0x00fe0000, //   0   0  -2   0
 	"crimespunk":               0x00fe0000, //   0   0  -2   0
 	"crisispunk":               0x00fe0000, //   0   0  -2   0
+	"crisissydney":             0xff000000, //   0   0   0  -1
+	"crisissymantec":           0xff000000, //   0   0   0  -1
+	"crisissymbol":             0xff000000, //   0   0   0  -1
+	"crisissympathy":           0xff000000, //   0   0   0  -1
+	"crisissymphony":           0xff000000, //   0   0   0  -1
+	"crisissymposium":          0xff000000, //   0   0   0  -1
+	"crisissymptoms":           0xff000000, //   0   0   0  -1
+	"crisissync":               0xff000000, //   0   0   0  -1
+	"crisissyndicate":          0xff000000, //   0   0   0  -1
+	"crisissyndication":        0xff000000, //   0   0   0  -1
+	"crisissyndrome":           0xff000000, //   0   0   0  -1
+	"crisissynopsis":           0xff000000, //   0   0   0  -1
+	"crisissyntax":             0xff000000, //   0   0   0  -1
+	"crisissynthesis":          0xff000000, //   0   0   0  -1
+	"crisissynthetic":          0xff000000, //   0   0   0  -1
+	"crisissyracuse":           0xff000000, //   0   0   0  -1
+	"crisissyria":              0xff000000, //   0   0   0  -1
+	"crisissys":                0xff000000, //   0   0   0  -1
 	"criticspunk":              0x00fe0000, //   0   0  -2   0
 	"cromaltite":               0x00fe0000, //   0   0  -2   0
 	"cronstedtite":             0x00fe0000, //   0   0  -2   0
@@ -3030,6 +3358,7 @@ var wordValues = map[string]uint32{
 	"cucumiform":               0x00fe0000, //   0   0  -2   0
 	"cucumis":                  0x00fe0000, //   0   0  -2   0
 	"cuirass":                  0x000000ff, //  -1   0   0   0
+	"culebra":                  0x00ff0000, //   0   0  -1   0
 	"cultwatch":                0x00fe0000, //   0   0  -2   0
 	"cultwater":                0x00fe0000, //   0   0  -2   0
 	"cultwatson":               0x00fe0000, //   0   0  -2   0
@@ -3051,7 +3380,7 @@ var wordValues = map[string]uint32{
 	"cumble":                   0x00fe0000, //   0   0  -2   0
 	"cumbly":                   0x00fe0000, //   0   0  -2   0
 	"cumbraite":                0x00fe0000, //   0   0  -2   0
-	"cumbrance":                0x00fe0000, //   0   0  -2   0
+	"cumbrance":                0x00ff0000, //   0   0  -1   0
 	"cumbre":                   0x00fe0000, //   0   0  -2   0
 	"cumbrian":                 0x00fe0000, //   0   0  -2   0
 	"cumbrous":                 0x00fe0000, //   0   0  -2   0
@@ -3104,6 +3433,7 @@ var wordValues = map[string]uint32{
 	"curcuma":                  0x00fe0000, //   0   0  -2   0
 	"curiouspunk":              0x00fe0000, //   0   0  -2   0
 	"currenciespunk":           0x00fe0000, //   0   0  -2   0
+	"curstful":                 0xff000000, //   0   0   0  -1
 	"curtispunk":               0x00fe0000, //   0   0  -2   0
 	"curvespunk":               0x00fe0000, //   0   0  -2   0
 	"cushite":                  0x000000ff, //  -1   0   0   0
@@ -3129,6 +3459,8 @@ var wordValues = map[string]uint32{
 	"cyanus":                   0x000000ff, //  -1   0   0   0
 	"cypruspunk":               0x00fe0000, //   0   0  -2   0
 	"cystitome":                0x00fe0000, //   0   0  -2   0
+	"czechate":                 0xff000000, //   0   0   0  -1
+	"czechink":                 0x0000fe00, //   0  -2   0   0
 	"daddykeen":                0x00ffffff, //  -1  -1  -1   0
 	"daddykeep":                0x00ffffff, //  -1  -1  -1   0
 	"daddykeith":               0x00ffffff, //  -1  -1  -1   0
@@ -3166,6 +3498,7 @@ var wordValues = map[string]uint32{
 	"danalumni":                0x00ff00ff, //  -1   0  -1   0
 	"danalways":                0x00ff00ff, //  -1   0  -1   0
 	"dangerouspunk":            0x00fe0000, //   0   0  -2   0
+	"danishate":                0xff000000, //   0   0   0  -1
 	"danspunk":                 0x00fe0000, //   0   0  -2   0
 	"danusa":                   0x000000ff, //  -1   0   0   0
 	"danusb":                   0x000000ff, //  -1   0   0   0
@@ -3226,9 +3559,12 @@ var wordValues = map[string]uint32{
 	"deanusps":                 0x000000ff, //  -1   0   0   0
 	"deanusr":                  0x000000ff, //  -1   0   0   0
 	"deanusual":                0x000000ff, //  -1   0   0   0
+	"deathate":                 0xff000000, //   0   0   0  -1
 	"deathspunk":               0x00fe0000, //   0   0  -2   0
+	"debacchate":               0xff000000, //   0   0   0  -1
 	"debarrass":                0x000000ff, //  -1   0   0   0
 	"deboner":                  0x00fe0000, //   0   0  -2   0
+	"deborahate":               0xff000000, //   0   0   0  -1
 	"debtchad":                 0x00ffff00, //   0  -1  -1   0
 	"debtchain":                0x00ffff00, //   0  -1  -1   0
 	"debtchair":                0x00ffff00, //   0  -1  -1   0
@@ -3298,6 +3634,7 @@ var wordValues = map[string]uint32{
 	"delayspunk":               0x00fe0000, //   0   0  -2   0
 	"deliciouspunk":            0x00fe0000, //   0   0  -2   0
 	"deliverspunk":             0x00fe0000, //   0   0  -2   0
+	"delubrubra":               0x00ff0000, //   0   0  -1   0
 	"demandspunk":              0x00fe0000, //   0   0  -2   0
 	"deminude":                 0x00fe0000, //   0   0  -2   0
 	"democraticrap":            0x000000ff, //  -1   0   0   0
@@ -3309,10 +3646,12 @@ var wordValues = map[string]uint32{
 	"dentistspunk":             0x00fe0000, //   0   0  -2   0
 	"denude":                   0x00fe0000, //   0   0  -2   0
 	"departmentspunk":          0x00fe0000, //   0   0  -2   0
+	"depthate":                 0xff000000, //   0   0   0  -1
 	"deptwatch":                0x00fe0000, //   0   0  -2   0
 	"deptwater":                0x00fe0000, //   0   0  -2   0
 	"deptwatson":               0x00fe0000, //   0   0  -2   0
 	"deptwatt":                 0x00fe0000, //   0   0  -2   0
+	"dermatorrhoea":            0x00ffff00, //   0  -1  -1   0
 	"describespunk":            0x00fe0000, //   0   0  -2   0
 	"desertwatch":              0x00fe0000, //   0   0  -2   0
 	"desertwater":              0x00fe0000, //   0   0  -2   0
@@ -3330,7 +3669,9 @@ var wordValues = map[string]uint32{
 	"detectwater":              0x00fe0000, //   0   0  -2   0
 	"detectwatson":             0x00fe0000, //   0   0  -2   0
 	"detectwatt":               0x00fe0000, //   0   0  -2   0
+	"deutschate":               0xff000000, //   0   0   0  -1
 	"deutscheshe":              0x00ff0000, //   0   0  -1   0
+	"deutschink":               0x0000fe00, //   0  -2   0   0
 	"developerspunk":           0x00fe0000, //   0   0  -2   0
 	"developissn":              0x000000ff, //  -1   0   0   0
 	"developissue":             0x000000ff, //  -1   0   0   0
@@ -3344,11 +3685,32 @@ var wordValues = map[string]uint32{
 	"diabetespunk":             0x00fe0000, //   0   0  -2   0
 	"diaconicum":               0x00fe0000, //   0   0  -2   0
 	"diagnosispunk":            0x00fe0000, //   0   0  -2   0
+	"diagnosissydney":          0xff000000, //   0   0   0  -1
+	"diagnosissymantec":        0xff000000, //   0   0   0  -1
+	"diagnosissymbol":          0xff000000, //   0   0   0  -1
+	"diagnosissympathy":        0xff000000, //   0   0   0  -1
+	"diagnosissymphony":        0xff000000, //   0   0   0  -1
+	"diagnosissymposium":       0xff000000, //   0   0   0  -1
+	"diagnosissymptoms":        0xff000000, //   0   0   0  -1
+	"diagnosissync":            0xff000000, //   0   0   0  -1
+	"diagnosissyndicate":       0xff000000, //   0   0   0  -1
+	"diagnosissyndication":     0xff000000, //   0   0   0  -1
+	"diagnosissyndrome":        0xff000000, //   0   0   0  -1
+	"diagnosissynopsis":        0xff000000, //   0   0   0  -1
+	"diagnosissyntax":          0xff000000, //   0   0   0  -1
+	"diagnosissynthesis":       0xff000000, //   0   0   0  -1
+	"diagnosissynthetic":       0xff000000, //   0   0   0  -1
+	"diagnosissyracuse":        0xff000000, //   0   0   0  -1
+	"diagnosissyria":           0xff000000, //   0   0   0  -1
+	"diagnosissys":             0xff000000, //   0   0   0  -1
 	"diagnosticrap":            0x000000ff, //  -1   0   0   0
 	"diagnosticuntil":          0x00ffff00, //   0  -1  -1   0
 	"diagnosticuntitled":       0x00ffff00, //   0  -1  -1   0
 	"diagnosticunto":           0x00ffff00, //   0  -1  -1   0
 	"diamondspunk":             0x00fe0000, //   0   0  -2   0
+	"diarrhoea":                0x00ffff00, //   0  -1  -1   0
+	"diarrhoeic":               0x00ffff00, //   0  -1  -1   0
+	"diarrhoetic":              0x00ffff00, //   0  -1  -1   0
 	"dick":                     0x00010001, //   1   0   1   0
 	"dickcissel":               0x00ff00ff, //  -1   0  -1   0
 	"dickens":                  0x00ff00ff, //  -1   0  -1   0
@@ -3394,6 +3756,7 @@ var wordValues = map[string]uint32{
 	"diseasespunk":             0x00fe0000, //   0   0  -2   0
 	"disexcommunicate":         0x00ff0000, //   0   0  -1   0
 	"disexercise":              0x00ff0000, //   0   0  -1   0
+	"dishate":                  0xff000000, //   0   0   0  -1
 	"dishespunk":               0x00fe0000, //   0   0  -2   0
 	"diskspunk":                0x00fe0000, //   0   0  -2   0
 	"dispunk":                  0x00fe0000, //   0   0  -2   0
@@ -3407,7 +3770,10 @@ var wordValues = map[string]uint32{
 	"distributorspunk":         0x00fe0000, //   0   0  -2   0
 	"districtspunk":            0x00fe0000, //   0   0  -2   0
 	"divxrated":                0x00ff0000, //   0   0  -1   0
+	"dnazinc":                  0x0000ff00, //   0  -1   0   0
+	"dnazip":                   0x0000ff00, //   0  -1   0   0
 	"dnspunk":                  0x00fe0000, //   0   0  -2   0
+	"dobra":                    0x00ff0000, //   0   0  -1   0
 	"docrap":                   0x000000ff, //  -1   0   0   0
 	"docspunk":                 0x00fe0000, //   0   0  -2   0
 	"doctorspunk":              0x00fe0000, //   0   0  -2   0
@@ -3447,7 +3813,6 @@ var wordValues = map[string]uint32{
 	"dollarsegypt":             0x000000ff, //  -1   0   0   0
 	"dollarseight":             0x000000ff, //  -1   0   0   0
 	"dollarseither":            0x000000ff, //  -1   0   0   0
-	"dollarsejaculation":       0x000000ff, //  -1   0   0   0
 	"dollarselder":             0x000000ff, //  -1   0   0   0
 	"dollarselect":             0x000000ff, //  -1   0   0   0
 	"dollarselegant":           0x000000ff, //  -1   0   0   0
@@ -3644,6 +4009,8 @@ var wordValues = map[string]uint32{
 	"donguy":                   0x00ff0000, //   0   0  -1   0
 	"dongym":                   0x00ff0000, //   0   0  -1   0
 	"dongzip":                  0x00ff0000, //   0   0  -1   0
+	"donnazinc":                0x0000ff00, //   0  -1   0   0
+	"donnazip":                 0x0000ff00, //   0  -1   0   0
 	"donorspunk":               0x00fe0000, //   0   0  -2   0
 	"dontwatch":                0x00fe0000, //   0   0  -2   0
 	"dontwater":                0x00fe0000, //   0   0  -2   0
@@ -3701,6 +4068,13 @@ var wordValues = map[string]uint32{
 	"doubtwater":               0x00fe0000, //   0   0  -2   0
 	"doubtwatson":              0x00fe0000, //   0   0  -2   0
 	"doubtwatt":                0x00fe0000, //   0   0  -2   0
+	"douche":                   0x01010101, //   1   1   1   1
+	"douched":                  0xffffffff, //  -1  -1  -1  -1
+	"douches":                  0xffffffff, //  -1  -1  -1  -1
+	"douglycos":                0xff000000, //   0   0   0  -1
+	"douglying":                0xff000000, //   0   0   0  -1
+	"douglynn":                 0xff000000, //   0   0   0  -1
+	"douglyric":                0xff000000, //   0   0   0  -1
 	"dozenspunk":               0x00fe0000, //   0   0  -2   0
 	"dpissl":                   0x000000ff, //  -1   0   0   0
 	"dracontites":              0x00fe0000, //   0   0  -2   0
@@ -3759,12 +4133,15 @@ var wordValues = map[string]uint32{
 	"dustwater":                0x00fe0000, //   0   0  -2   0
 	"dustwatson":               0x00fe0000, //   0   0  -2   0
 	"dustwatt":                 0x00fe0000, //   0   0  -2   0
+	"dutchate":                 0xff000000, //   0   0   0  -1
+	"dutchink":                 0x0000fe00, //   0  -2   0   0
 	"dvdspunk":                 0x00fe0000, //   0   0  -2   0
 	"dyke":                     0x00010101, //   1   1   1   0
 	"dyked":                    0x00ffffff, //  -1  -1  -1   0
 	"dykehopper":               0x00ffffff, //  -1  -1  -1   0
 	"dyker":                    0x00ffffff, //  -1  -1  -1   0
 	"dynamicspunk":             0x00fe0000, //   0   0  -2   0
+	"eachink":                  0x0000fe00, //   0  -2   0   0
 	"earmuff":                  0x00fe0000, //   0   0  -2   0
 	"earningspunk":             0x00fe0000, //   0   0  -2   0
 	"earsea":                   0x000000ff, //  -1   0   0   0
@@ -3796,7 +4173,6 @@ var wordValues = map[string]uint32{
 	"earsegypt":                0x000000ff, //  -1   0   0   0
 	"earseight":                0x000000ff, //  -1   0   0   0
 	"earseither":               0x000000ff, //  -1   0   0   0
-	"earsejaculation":          0x000000ff, //  -1   0   0   0
 	"earselder":                0x000000ff, //  -1   0   0   0
 	"earselect":                0x000000ff, //  -1   0   0   0
 	"earselegant":              0x000000ff, //  -1   0   0   0
@@ -3885,6 +4261,7 @@ var wordValues = map[string]uint32{
 	"earsext":                  0x00ff00ff, //  -1   0  -1   0
 	"earseye":                  0x000000ff, //  -1   0   0   0
 	"earspunk":                 0x00fe0000, //   0   0  -2   0
+	"earthate":                 0xff000000, //   0   0   0  -1
 	"easemen":                  0x00fe0000, //   0   0  -2   0
 	"eastwatch":                0x00fe0000, //   0   0  -2   0
 	"eastwater":                0x00fe0000, //   0   0  -2   0
@@ -3894,6 +4271,8 @@ var wordValues = map[string]uint32{
 	"eatwater":                 0x00fe0000, //   0   0  -2   0
 	"eatwatson":                0x00fe0000, //   0   0  -2   0
 	"eatwatt":                  0x00fe0000, //   0   0  -2   0
+	"ebraick":                  0x00ff0000, //   0   0  -1   0
+	"echoencephalography":      0x00ffff00, //   0  -1  -1   0
 	"eclipsemen":               0x00fe0000, //   0   0  -2   0
 	"economicspunk":            0x00fe0000, //   0   0  -2   0
 	"economiespunk":            0x00fe0000, //   0   0  -2   0
@@ -3912,6 +4291,7 @@ var wordValues = map[string]uint32{
 	"ecumenist":                0x00fe0000, //   0   0  -2   0
 	"ecumenopolis":             0x00fe0000, //   0   0  -2   0
 	"edgespunk":                0x00fe0000, //   0   0  -2   0
+	"edinburghate":             0xff000000, //   0   0   0  -1
 	"editorialspunk":           0x00fe0000, //   0   0  -2   0
 	"editorspunk":              0x00fe0000, //   0   0  -2   0
 	"edspunk":                  0x00fe0000, //   0   0  -2   0
@@ -3940,6 +4320,12 @@ var wordValues = map[string]uint32{
 	"eightwater":               0x00fe0000, //   0   0  -2   0
 	"eightwatson":              0x00fe0000, //   0   0  -2   0
 	"eightwatt":                0x00fe0000, //   0   0  -2   0
+	"ejaculat":                 0x00010000, //   0   0   1   0
+	"ejaculate":                0x00ff0000, //   0   0  -1   0
+	"ejaculating":              0x00ff0000, //   0   0  -1   0
+	"ejaculations":             0x00ff0000, //   0   0  -1   0
+	"ejaculative":              0x00ff0000, //   0   0  -1   0
+	"ejaculator":               0x00ff0000, //   0   0  -1   0
 	"elanus":                   0x000000ff, //  -1   0   0   0
 	"elasticum":                0x00fe0000, //   0   0  -2   0
 	"electricrap":              0x000000ff, //  -1   0   0   0
@@ -3966,7 +4352,29 @@ var wordValues = map[string]uint32{
 	"elvispunk":                0x00fe0000, //   0   0  -2   0
 	"emacspunk":                0x00fe0000, //   0   0  -2   0
 	"embarrass":                0x000000ff, //  -1   0   0   0
+	"embracive":                0x00ff0000, //   0   0  -1   0
+	"embrase":                  0x00ff0000, //   0   0  -1   0
+	"embrasure":                0x00ff0000, //   0   0  -1   0
+	"embrasuring":              0x00ff0000, //   0   0  -1   0
 	"emphasispunk":             0x00fe0000, //   0   0  -2   0
+	"emphasissydney":           0xff000000, //   0   0   0  -1
+	"emphasissymantec":         0xff000000, //   0   0   0  -1
+	"emphasissymbol":           0xff000000, //   0   0   0  -1
+	"emphasissympathy":         0xff000000, //   0   0   0  -1
+	"emphasissymphony":         0xff000000, //   0   0   0  -1
+	"emphasissymposium":        0xff000000, //   0   0   0  -1
+	"emphasissymptoms":         0xff000000, //   0   0   0  -1
+	"emphasissync":             0xff000000, //   0   0   0  -1
+	"emphasissyndicate":        0xff000000, //   0   0   0  -1
+	"emphasissyndication":      0xff000000, //   0   0   0  -1
+	"emphasissyndrome":         0xff000000, //   0   0   0  -1
+	"emphasissynopsis":         0xff000000, //   0   0   0  -1
+	"emphasissyntax":           0xff000000, //   0   0   0  -1
+	"emphasissynthesis":        0xff000000, //   0   0   0  -1
+	"emphasissynthetic":        0xff000000, //   0   0   0  -1
+	"emphasissyracuse":         0xff000000, //   0   0   0  -1
+	"emphasissyria":            0xff000000, //   0   0   0  -1
+	"emphasissys":              0xff000000, //   0   0   0  -1
 	"emplectite":               0x00fe0000, //   0   0  -2   0
 	"employeespunk":            0x00fe0000, //   0   0  -2   0
 	"employerspunk":            0x00fe0000, //   0   0  -2   0
@@ -3974,8 +4382,10 @@ var wordValues = map[string]uint32{
 	"enemiespunk":              0x00fe0000, //   0   0  -2   0
 	"engineerspunk":            0x00fe0000, //   0   0  -2   0
 	"enginespunk":              0x00fe0000, //   0   0  -2   0
+	"englishate":               0xff000000, //   0   0   0  -1
 	"enhancementspunk":         0x00fe0000, //   0   0  -2   0
 	"enormouspunk":             0x00fe0000, //   0   0  -2   0
+	"enoughate":                0xff000000, //   0   0   0  -1
 	"enquiriespunk":            0x00fe0000, //   0   0  -2   0
 	"enstatite":                0x00fe0000, //   0   0  -2   0
 	"enterprisespunk":          0x00fe0000, //   0   0  -2   0
@@ -4024,6 +4434,7 @@ var wordValues = map[string]uint32{
 	"essentialspunk":           0x00fe0000, //   0   0  -2   0
 	"essex":                    0x00ff0000, //   0   0  -1   0
 	"essexrated":               0x00ff0000, //   0   0  -1   0
+	"establishate":             0xff000000, //   0   0   0  -1
 	"estimatespunk":            0x00fe0000, //   0   0  -2   0
 	"estwatch":                 0x00fe0000, //   0   0  -2   0
 	"estwater":                 0x00fe0000, //   0   0  -2   0
@@ -4166,6 +4577,7 @@ var wordValues = map[string]uint32{
 	"factitude":                0x00fe0000, //   0   0  -2   0
 	"fag":                      0x00000300, //   0   3   0   0
 	"failspunk":                0x00fe0000, //   0   0  -2   0
+	"faithate":                 0xff000000, //   0   0   0  -1
 	"fallspunk":                0x00fe0000, //   0   0  -2   0
 	"falsemen":                 0x00fe0000, //   0   0  -2   0
 	"familiarsea":              0x000000ff, //  -1   0   0   0
@@ -4216,6 +4628,11 @@ var wordValues = map[string]uint32{
 	"fastwatson":               0x00fe0000, //   0   0  -2   0
 	"fastwatt":                 0x00fe0000, //   0   0  -2   0
 	"fatherspunk":              0x00fe0000, //   0   0  -2   0
+	"fatty":                    0x01000100, //   0   1   0   1
+	"fattyler":                 0xff00ff00, //   0  -1   0  -1
+	"fattype":                  0xff00ff00, //   0  -1   0  -1
+	"fattypical":               0xff00ff00, //   0  -1   0  -1
+	"fattyping":                0xff00ff00, //   0  -1   0  -1
 	"fatwatch":                 0x00fe0000, //   0   0  -2   0
 	"fatwater":                 0x00fe0000, //   0   0  -2   0
 	"fatwatson":                0x00fe0000, //   0   0  -2   0
@@ -4224,6 +4641,7 @@ var wordValues = map[string]uint32{
 	"faultwater":               0x00fe0000, //   0   0  -2   0
 	"faultwatson":              0x00fe0000, //   0   0  -2   0
 	"faultwatt":                0x00fe0000, //   0   0  -2   0
+	"faussebraie":              0x00ff0000, //   0   0  -1   0
 	"favoritespunk":            0x00fe0000, //   0   0  -2   0
 	"favorspunk":               0x00fe0000, //   0   0  -2   0
 	"favouritespunk":           0x00fe0000, //   0   0  -2   0
@@ -4271,6 +4689,7 @@ var wordValues = map[string]uint32{
 	"fccuntil":                 0x00ffff00, //   0  -1  -1   0
 	"fccuntitled":              0x00ffff00, //   0  -1  -1   0
 	"fccunto":                  0x00ffff00, //   0  -1  -1   0
+	"feastful":                 0xff000000, //   0   0   0  -1
 	"feck":                     0x00010001, //   1   0   1   0
 	"fecket":                   0x00ff00ff, //  -1   0  -1   0
 	"feckful":                  0x00ff00ff, //  -1   0  -1   0
@@ -4295,7 +4714,12 @@ var wordValues = map[string]uint32{
 	"feltwatson":               0x00fe0000, //   0   0  -2   0
 	"feltwatt":                 0x00fe0000, //   0   0  -2   0
 	"festivalspunk":            0x00fe0000, //   0   0  -2   0
+	"fetishate":                0xff000000, //   0   0   0  -1
+	"fibra":                    0x00ff0000, //   0   0  -1   0
+	"fibrofatty":               0xff00ff00, //   0  -1   0  -1
 	"fieldspunk":               0x00fe0000, //   0   0  -2   0
+	"fierabras":                0x00ff0000, //   0   0  -1   0
+	"fifthate":                 0xff000000, //   0   0   0  -1
 	"fighterspunk":             0x00fe0000, //   0   0  -2   0
 	"fightwatch":               0x00fe0000, //   0   0  -2   0
 	"fightwater":               0x00fe0000, //   0   0  -2   0
@@ -4308,13 +4732,18 @@ var wordValues = map[string]uint32{
 	"findingspunk":             0x00fe0000, //   0   0  -2   0
 	"findspunk":                0x00fe0000, //   0   0  -2   0
 	"fingerspunk":              0x00fe0000, //   0   0  -2   0
+	"finishate":                0xff000000, //   0   0   0  -1
+	"finnishate":               0xff000000, //   0   0   0  -1
 	"fireballs":                0x00ff0000, //   0   0  -1   0
+	"firecracker":              0x0000ff00, //   0  -1   0   0
 	"firmspunk":                0x00fe0000, //   0   0  -2   0
 	"firstwatch":               0x00fe0000, //   0   0  -2   0
 	"firstwater":               0x00fe0000, //   0   0  -2   0
 	"firstwatson":              0x00fe0000, //   0   0  -2   0
 	"firstwatt":                0x00fe0000, //   0   0  -2   0
+	"fishate":                  0xff000000, //   0   0   0  -1
 	"fisheriespunk":            0x00fe0000, //   0   0  -2   0
+	"fistful":                  0xff000000, //   0   0   0  -1
 	"fitnesspunk":              0x00fe0000, //   0   0  -2   0
 	"fittit":                   0x00fe0000, //   0   0  -2   0
 	"fixespunk":                0x00fe0000, //   0   0  -2   0
@@ -4331,6 +4760,7 @@ var wordValues = map[string]uint32{
 	"fleetwater":               0x00fe0000, //   0   0  -2   0
 	"fleetwatson":              0x00fe0000, //   0   0  -2   0
 	"fleetwatt":                0x00fe0000, //   0   0  -2   0
+	"fleshate":                 0xff000000, //   0   0   0  -1
 	"flexrated":                0x00ff0000, //   0   0  -1   0
 	"floatwatch":               0x00fe0000, //   0   0  -2   0
 	"floatwater":               0x00fe0000, //   0   0  -2   0
@@ -4341,6 +4771,7 @@ var wordValues = map[string]uint32{
 	"floorspunk":               0x00fe0000, //   0   0  -2   0
 	"floristspunk":             0x00fe0000, //   0   0  -2   0
 	"flowerspunk":              0x00fe0000, //   0   0  -2   0
+	"flushate":                 0xff000000, //   0   0   0  -1
 	"fluxrated":                0x00ff0000, //   0   0  -1   0
 	"focuspunk":                0x00fe0000, //   0   0  -2   0
 	"folderspunk":              0x00fe0000, //   0   0  -2   0
@@ -4362,6 +4793,7 @@ var wordValues = map[string]uint32{
 	"forestspunk":              0x00fe0000, //   0   0  -2   0
 	"formspunk":                0x00fe0000, //   0   0  -2   0
 	"formulabias":              0x00fe0000, //   0   0  -2   0
+	"forthate":                 0xff000000, //   0   0   0  -1
 	"fortitude":                0x00fe0000, //   0   0  -2   0
 	"fortitudinous":            0x00fe0000, //   0   0  -2   0
 	"fortwatch":                0x00fe0000, //   0   0  -2   0
@@ -4371,6 +4803,16 @@ var wordValues = map[string]uint32{
 	"forumspunk":               0x00fe0000, //   0   0  -2   0
 	"fotospunk":                0x00fe0000, //   0   0  -2   0
 	"fotosser":                 0x000000ff, //  -1   0   0   0
+	"foursome":                 0x00020000, //   0   0   2   0
+	"foursomebody":             0x00fe0000, //   0   0  -2   0
+	"foursomehow":              0x00fe0000, //   0   0  -2   0
+	"foursomeone":              0x00fe0000, //   0   0  -2   0
+	"foursomerset":             0x00fe0000, //   0   0  -2   0
+	"foursomething":            0x00fe0000, //   0   0  -2   0
+	"foursometimes":            0x00fe0000, //   0   0  -2   0
+	"foursomewhat":             0x00fe0000, //   0   0  -2   0
+	"foursomewhere":            0x00fe0000, //   0   0  -2   0
+	"fourthate":                0xff000000, //   0   0   0  -1
 	"foxrated":                 0x00ff0000, //   0   0  -1   0
 	"fragrancespunk":           0x00fe0000, //   0   0  -2   0
 	"framespunk":               0x00fe0000, //   0   0  -2   0
@@ -4382,7 +4824,24 @@ var wordValues = map[string]uint32{
 	"frankfurtwatt":            0x00fe0000, //   0   0  -2   0
 	"frape":                    0x00ff0000, //   0   0  -1   0
 	"frass":                    0x000000ff, //  -1   0   0   0
+	"freak":                    0x01000000, //   0   0   0   1
+	"freakdom":                 0xff000000, //   0   0   0  -1
+	"freaked":                  0xff000000, //   0   0   0  -1
+	"freakery":                 0xff000000, //   0   0   0  -1
+	"freakful":                 0xff000000, //   0   0   0  -1
+	"freakier":                 0xff000000, //   0   0   0  -1
+	"freakiest":                0xff000000, //   0   0   0  -1
+	"freakily":                 0xff000000, //   0   0   0  -1
+	"freakiness":               0xff000000, //   0   0   0  -1
+	"freaking":                 0xff000000, //   0   0   0  -1
+	"freakish":                 0xff000000, //   0   0   0  -1
+	"freakout":                 0xff000000, //   0   0   0  -1
+	"freakpot":                 0xff000000, //   0   0   0  -1
+	"freaky":                   0xff000000, //   0   0   0  -1
+	"frenchate":                0xff000000, //   0   0   0  -1
+	"frenchink":                0x0000fe00, //   0  -2   0   0
 	"frequenciespunk":          0x00fe0000, //   0   0  -2   0
+	"freshate":                 0xff000000, //   0   0   0  -1
 	"frig":                     0x00010001, //   1   0   1   0
 	"frigabriel":               0x00ff00ff, //  -1   0  -1   0
 	"frigadgets":               0x00ff00ff, //  -1   0  -1   0
@@ -4543,6 +5002,8 @@ var wordValues = map[string]uint32{
 	"gaiassa":                  0x000000ff, //  -1   0   0   0
 	"galabia":                  0x00fe0000, //   0   0  -2   0
 	"galactite":                0x00fe0000, //   0   0  -2   0
+	"galactorrhoea":            0x00ffff00, //   0  -1  -1   0
+	"galbraithian":             0x00ff0000, //   0   0  -1   0
 	"galeass":                  0x000000ff, //  -1   0   0   0
 	"galleass":                 0x000000ff, //  -1   0   0   0
 	"galleriespunk":            0x00fe0000, //   0   0  -2   0
@@ -4557,6 +5018,7 @@ var wordValues = map[string]uint32{
 	"gapissue":                 0x000000ff, //  -1   0   0   0
 	"gaprick":                  0x000000fe, //  -2   0   0   0
 	"gapspunk":                 0x00fe0000, //   0   0  -2   0
+	"gardebras":                0x00ff0000, //   0   0  -1   0
 	"gardenspunk":              0x00fe0000, //   0   0  -2   0
 	"garlicrap":                0x000000ff, //  -1   0   0   0
 	"garlicuntil":              0x00ffff00, //   0  -1  -1   0
@@ -4564,6 +5026,7 @@ var wordValues = map[string]uint32{
 	"garlicunto":               0x00ffff00, //   0  -1  -1   0
 	"garse":                    0x000000ff, //  -1   0   0   0
 	"gassy":                    0x000000ff, //  -1   0   0   0
+	"gastful":                  0xff000000, //   0   0   0  -1
 	"gatespunk":                0x00fe0000, //   0   0  -2   0
 	"gayspunk":                 0x00fe0000, //   0   0  -2   0
 	"gbpissn":                  0x000000ff, //  -1   0   0   0
@@ -4581,6 +5044,24 @@ var wordValues = map[string]uint32{
 	"generatorspunk":           0x00fe0000, //   0   0  -2   0
 	"generouspunk":             0x00fe0000, //   0   0  -2   0
 	"genesispunk":              0x00fe0000, //   0   0  -2   0
+	"genesissydney":            0xff000000, //   0   0   0  -1
+	"genesissymantec":          0xff000000, //   0   0   0  -1
+	"genesissymbol":            0xff000000, //   0   0   0  -1
+	"genesissympathy":          0xff000000, //   0   0   0  -1
+	"genesissymphony":          0xff000000, //   0   0   0  -1
+	"genesissymposium":         0xff000000, //   0   0   0  -1
+	"genesissymptoms":          0xff000000, //   0   0   0  -1
+	"genesissync":              0xff000000, //   0   0   0  -1
+	"genesissyndicate":         0xff000000, //   0   0   0  -1
+	"genesissyndication":       0xff000000, //   0   0   0  -1
+	"genesissyndrome":          0xff000000, //   0   0   0  -1
+	"genesissynopsis":          0xff000000, //   0   0   0  -1
+	"genesissyntax":            0xff000000, //   0   0   0  -1
+	"genesissynthesis":         0xff000000, //   0   0   0  -1
+	"genesissynthetic":         0xff000000, //   0   0   0  -1
+	"genesissyracuse":          0xff000000, //   0   0   0  -1
+	"genesissyria":             0xff000000, //   0   0   0  -1
+	"genesissys":               0xff000000, //   0   0   0  -1
 	"genespunk":                0x00fe0000, //   0   0  -2   0
 	"geneticrap":               0x000000ff, //  -1   0   0   0
 	"geneticspunk":             0x00fe0000, //   0   0  -2   0
@@ -4596,7 +5077,15 @@ var wordValues = map[string]uint32{
 	"getwatson":                0x00fe0000, //   0   0  -2   0
 	"getwatt":                  0x00fe0000, //   0   0  -2   0
 	"ghassanid":                0x000000ff, //  -1   0   0   0
+	"ghastful":                 0xff000000, //   0   0   0  -1
+	"ghetto":                   0x00000100, //   0   1   0   0
+	"ghettoed":                 0x0000ff00, //   0  -1   0   0
+	"ghettoing":                0x0000ff00, //   0  -1   0   0
+	"ghettoization":            0x0000ff00, //   0  -1   0   0
+	"ghettoize":                0x0000ff00, //   0  -1   0   0
+	"ghettoizing":              0x0000ff00, //   0  -1   0   0
 	"giantspunk":               0x00fe0000, //   0   0  -2   0
+	"gibraltar":                0x00ff0000, //   0   0  -1   0
 	"giftspunk":                0x00fe0000, //   0   0  -2   0
 	"giftwatch":                0x00fe0000, //   0   0  -2   0
 	"giftwater":                0x00fe0000, //   0   0  -2   0
@@ -4607,6 +5096,7 @@ var wordValues = map[string]uint32{
 	"gilbertwater":             0x00fe0000, //   0   0  -2   0
 	"gilbertwatson":            0x00fe0000, //   0   0  -2   0
 	"gilbertwatt":              0x00fe0000, //   0   0  -2   0
+	"gimcrackery":              0x0000ff00, //   0  -1   0   0
 	"giobertite":               0x00fe0000, //   0   0  -2   0
 	"girgashite":               0x000000ff, //  -1   0   0   0
 	"girlspunk":                0x00fe0000, //   0   0  -2   0
@@ -4619,6 +5109,7 @@ var wordValues = map[string]uint32{
 	"glucokinase":              0x00ff00ff, //  -1   0  -1   0
 	"glucokinin":               0x00ff00ff, //  -1   0  -1   0
 	"glucosemen":               0x00fe0000, //   0   0  -2   0
+	"gmbhate":                  0xff000000, //   0   0   0  -1
 	"gmcrap":                   0x000000ff, //  -1   0   0   0
 	"gmcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"gmcuntitled":              0x00ffff00, //   0  -1  -1   0
@@ -4676,6 +5167,10 @@ var wordValues = map[string]uint32{
 	"goldtit":                  0x00fe0000, //   0   0  -2   0
 	"goniatite":                0x00fe0000, //   0   0  -2   0
 	"goniatitoid":              0x00fe0000, //   0   0  -2   0
+	"gonnazinc":                0x0000ff00, //   0  -1   0   0
+	"gonnazip":                 0x0000ff00, //   0  -1   0   0
+	"gonorrhoea":               0x00ffff00, //   0  -1  -1   0
+	"gonorrhoeic":              0x00ffff00, //   0  -1  -1   0
 	"goodspunk":                0x00fe0000, //   0   0  -2   0
 	"goofballs":                0x00ff0000, //   0   0  -1   0
 	"gorcock":                  0x00ff00ff, //  -1   0  -1   0
@@ -4698,12 +5193,15 @@ var wordValues = map[string]uint32{
 	"granitite":                0x00fe0000, //   0   0  -2   0
 	"grantspunk":               0x00fe0000, //   0   0  -2   0
 	"grape":                    0x00ff0000, //   0   0  -1   0
+	"graphate":                 0xff000000, //   0   0   0  -1
 	"graphicrap":               0x000000ff, //  -1   0   0   0
 	"graphicspunk":             0x00fe0000, //   0   0  -2   0
 	"graphicuntil":             0x00ffff00, //   0  -1  -1   0
 	"graphicuntitled":          0x00ffff00, //   0  -1  -1   0
 	"graphicunto":              0x00ffff00, //   0  -1  -1   0
+	"graphomotor":              0x0000ff00, //   0  -1   0   0
 	"graphspunk":               0x00fe0000, //   0   0  -2   0
+	"graphukraine":             0x00ff00ff, //  -1   0  -1   0
 	"grass":                    0x000000ff, //  -1   0   0   0
 	"grasspunk":                0x00fe0000, //   0   0  -2   0
 	"gratispunk":               0x00fe0000, //   0   0  -2   0
@@ -4715,6 +5213,7 @@ var wordValues = map[string]uint32{
 	"groupoops":                0x000000ff, //  -1   0   0   0
 	"grouprick":                0x000000fe, //  -2   0   0   0
 	"groutite":                 0x00fe0000, //   0   0  -2   0
+	"growthate":                0xff000000, //   0   0   0  -1
 	"gstwatch":                 0x00fe0000, //   0   0  -2   0
 	"gstwater":                 0x00fe0000, //   0   0  -2   0
 	"gstwatson":                0x00fe0000, //   0   0  -2   0
@@ -4754,6 +5253,7 @@ var wordValues = map[string]uint32{
 	"guitarsext":               0x00ff0000, //   0   0  -1   0
 	"guitarspunk":              0x00fe0000, //   0   0  -2   0
 	"gunspunk":                 0x00fe0000, //   0   0  -2   0
+	"gustful":                  0xff000000, //   0   0   0  -1
 	"guyspunk":                 0x00fe0000, //   0   0  -2   0
 	"habitatwatch":             0x00fe0000, //   0   0  -2   0
 	"habitatwater":             0x00fe0000, //   0   0  -2   0
@@ -4764,6 +5264,7 @@ var wordValues = map[string]uint32{
 	"haematite":                0x00fe0000, //   0   0  -2   0
 	"hairballs":                0x00ff0000, //   0   0  -1   0
 	"halfcock":                 0x00ff00ff, //  -1   0  -1   0
+	"haloser":                  0xff000000, //   0   0   0  -1
 	"hancockite":               0x00ff00ff, //  -1   0  -1   0
 	"handballs":                0x00ff0000, //   0   0  -1   0
 	"handheldspunk":            0x00fe0000, //   0   0  -2   0
@@ -4782,6 +5283,156 @@ var wordValues = map[string]uint32{
 	"hassle":                   0x000000ff, //  -1   0   0   0
 	"hassling":                 0x000000ff, //  -1   0   0   0
 	"hatchettite":              0x00fe0000, //   0   0  -2   0
+	"hate":                     0x01000000, //   0   0   0   1
+	"hateable":                 0xff000000, //   0   0   0  -1
+	"hateach":                  0xff000000, //   0   0   0  -1
+	"hateagle":                 0xff000000, //   0   0   0  -1
+	"hatear":                   0xff000000, //   0   0   0  -1
+	"hatease":                  0xff000000, //   0   0   0  -1
+	"hateasier":                0xff000000, //   0   0   0  -1
+	"hateasily":                0xff000000, //   0   0   0  -1
+	"hateast":                  0xff000000, //   0   0   0  -1
+	"hateasy":                  0xff000000, //   0   0   0  -1
+	"hateat":                   0xff000000, //   0   0   0  -1
+	"hateau":                   0xff000000, //   0   0   0  -1
+	"hatebay":                  0xff000000, //   0   0   0  -1
+	"hatebony":                 0xff000000, //   0   0   0  -1
+	"hatebook":                 0xff000000, //   0   0   0  -1
+	"hatecho":                  0xff000000, //   0   0   0  -1
+	"hateclipse":               0xff000000, //   0   0   0  -1
+	"hateco":                   0xff000000, //   0   0   0  -1
+	"hatecuador":               0xff000000, //   0   0   0  -1
+	"hated":                    0xff000000, //   0   0   0  -1
+	"hateffect":                0xff000000, //   0   0   0  -1
+	"hatefficiency":            0xff000000, //   0   0   0  -1
+	"hatefficient":             0xff000000, //   0   0   0  -1
+	"hateffort":                0xff000000, //   0   0   0  -1
+	"hateful":                  0xff000000, //   0   0   0  -1
+	"hategg":                   0xff000000, //   0   0   0  -1
+	"hategypt":                 0xff000000, //   0   0   0  -1
+	"hateight":                 0xff000000, //   0   0   0  -1
+	"hateither":                0xff000000, //   0   0   0  -1
+	"hatel":                    0xff000000, //   0   0   0  -1
+	"hatemacs":                 0xff000000, //   0   0   0  -1
+	"hatemail":                 0xff000000, //   0   0   0  -1
+	"hatembassy":               0xff000000, //   0   0   0  -1
+	"hatembedded":              0xff000000, //   0   0   0  -1
+	"hatemerald":               0xff000000, //   0   0   0  -1
+	"hatemergency":             0xff000000, //   0   0   0  -1
+	"hatemerging":              0xff000000, //   0   0   0  -1
+	"hatemily":                 0xff000000, //   0   0   0  -1
+	"hateminem":                0xff000000, //   0   0   0  -1
+	"hatemirates":              0xff000000, //   0   0   0  -1
+	"hatemission":              0xff000000, //   0   0   0  -1
+	"hatemma":                  0xff000000, //   0   0   0  -1
+	"hatemonger":               0xff000000, //   0   0   0  -1
+	"hatemotional":             0xff000000, //   0   0   0  -1
+	"hatemotions":              0xff000000, //   0   0   0  -1
+	"hatemperor":               0xff000000, //   0   0   0  -1
+	"hatemphasis":              0xff000000, //   0   0   0  -1
+	"hatempire":                0xff000000, //   0   0   0  -1
+	"hatempirical":             0xff000000, //   0   0   0  -1
+	"hatemploy":                0xff000000, //   0   0   0  -1
+	"hatempty":                 0xff000000, //   0   0   0  -1
+	"hatenable":                0xff000000, //   0   0   0  -1
+	"hatenabling":              0xff000000, //   0   0   0  -1
+	"hatenb":                   0xff000000, //   0   0   0  -1
+	"hatenclosed":              0xff000000, //   0   0   0  -1
+	"hatenclosure":             0xff000000, //   0   0   0  -1
+	"hatencoding":              0xff000000, //   0   0   0  -1
+	"hatencounter":             0xff000000, //   0   0   0  -1
+	"hatencourage":             0xff000000, //   0   0   0  -1
+	"hatencouraging":           0xff000000, //   0   0   0  -1
+	"hatencryption":            0xff000000, //   0   0   0  -1
+	"hatencyclopedia":          0xff000000, //   0   0   0  -1
+	"hatend":                   0xff000000, //   0   0   0  -1
+	"hatenemies":               0xff000000, //   0   0   0  -1
+	"hatenemy":                 0xff000000, //   0   0   0  -1
+	"hatenergy":                0xff000000, //   0   0   0  -1
+	"hatenforcement":           0xff000000, //   0   0   0  -1
+	"hateng":                   0xff000000, //   0   0   0  -1
+	"hatenhance":               0xff000000, //   0   0   0  -1
+	"hatenhancing":             0xff000000, //   0   0   0  -1
+	"hatenjoy":                 0xff000000, //   0   0   0  -1
+	"hatenlarge":               0xff000000, //   0   0   0  -1
+	"hatenormous":              0xff000000, //   0   0   0  -1
+	"hatenough":                0xff000000, //   0   0   0  -1
+	"hatenquiries":             0xff000000, //   0   0   0  -1
+	"hatenquiry":               0xff000000, //   0   0   0  -1
+	"hatenrolled":              0xff000000, //   0   0   0  -1
+	"hatenrollment":            0xff000000, //   0   0   0  -1
+	"hatensemble":              0xff000000, //   0   0   0  -1
+	"hatensure":                0xff000000, //   0   0   0  -1
+	"hatensuring":              0xff000000, //   0   0   0  -1
+	"hatent":                   0xff000000, //   0   0   0  -1
+	"hatenvelope":              0xff000000, //   0   0   0  -1
+	"hatenvironment":           0xff000000, //   0   0   0  -1
+	"hatenzyme":                0xff000000, //   0   0   0  -1
+	"hateos":                   0xff000000, //   0   0   0  -1
+	"hatepa":                   0xff000000, //   0   0   0  -1
+	"hatepic":                  0xff000000, //   0   0   0  -1
+	"hatepinions":              0xff000000, //   0   0   0  -1
+	"hatepisode":               0xff000000, //   0   0   0  -1
+	"hatepson":                 0xff000000, //   0   0   0  -1
+	"hatequal":                 0xff000000, //   0   0   0  -1
+	"hatequation":              0xff000000, //   0   0   0  -1
+	"hatequilibrium":           0xff000000, //   0   0   0  -1
+	"hatequipment":             0xff000000, //   0   0   0  -1
+	"hatequipped":              0xff000000, //   0   0   0  -1
+	"hatequity":                0xff000000, //   0   0   0  -1
+	"hatequivalent":            0xff000000, //   0   0   0  -1
+	"hater":                    0xff000000, //   0   0   0  -1
+	"hatescape":                0xff000000, //   0   0   0  -1
+	"hatescort":                0xff000000, //   0   0   0  -1
+	"hatespecially":            0xff000000, //   0   0   0  -1
+	"hatespn":                  0xff000000, //   0   0   0  -1
+	"hatessay":                 0xff000000, //   0   0   0  -1
+	"hatessence":               0xff000000, //   0   0   0  -1
+	"hatessential":             0xff000000, //   0   0   0  -1
+	"hatessex":                 0xff000000, //   0   0   0  -1
+	"hatest":                   0xff000000, //   0   0   0  -1
+	"hatetc":                   0xff000000, //   0   0   0  -1
+	"hateternal":               0xff000000, //   0   0   0  -1
+	"hatethernet":              0xff000000, //   0   0   0  -1
+	"hatethical":               0xff000000, //   0   0   0  -1
+	"hatethics":                0xff000000, //   0   0   0  -1
+	"hatethiopia":              0xff000000, //   0   0   0  -1
+	"hatethnic":                0xff000000, //   0   0   0  -1
+	"hateugene":                0xff000000, //   0   0   0  -1
+	"hateur":                   0xff000000, //   0   0   0  -1
+	"hateva":                   0xff000000, //   0   0   0  -1
+	"hateve":                   0xff000000, //   0   0   0  -1
+	"hatevidence":              0xff000000, //   0   0   0  -1
+	"hatevident":               0xff000000, //   0   0   0  -1
+	"hatevil":                  0xff000000, //   0   0   0  -1
+	"hatevolution":             0xff000000, //   0   0   0  -1
+	"hatexact":                 0xff000000, //   0   0   0  -1
+	"hatexam":                  0xff000000, //   0   0   0  -1
+	"hatexceed":                0xff000000, //   0   0   0  -1
+	"hatexcel":                 0xff000000, //   0   0   0  -1
+	"hatexcept":                0xff000000, //   0   0   0  -1
+	"hatexcerpt":               0xff000000, //   0   0   0  -1
+	"hatexcess":                0xff000000, //   0   0   0  -1
+	"hatexchange":              0xff000000, //   0   0   0  -1
+	"hatexcited":               0xff000000, //   0   0   0  -1
+	"hatexcitement":            0xff000000, //   0   0   0  -1
+	"hatexciting":              0xff000000, //   0   0   0  -1
+	"hatexclude":               0xff000000, //   0   0   0  -1
+	"hatexcluding":             0xff000000, //   0   0   0  -1
+	"hatexclusion":             0xff000000, //   0   0   0  -1
+	"hatexclusive":             0xff000000, //   0   0   0  -1
+	"hatexcuse":                0xff000000, //   0   0   0  -1
+	"hatexec":                  0xff000000, //   0   0   0  -1
+	"hatexempt":                0xff000000, //   0   0   0  -1
+	"hatexercise":              0xff000000, //   0   0   0  -1
+	"hatexhaust":               0xff000000, //   0   0   0  -1
+	"hatexhibit":               0xff000000, //   0   0   0  -1
+	"hatexist":                 0xff000000, //   0   0   0  -1
+	"hatexit":                  0xff000000, //   0   0   0  -1
+	"hatexotic":                0xff000000, //   0   0   0  -1
+	"hatexp":                   0xff000000, //   0   0   0  -1
+	"hatext":                   0xff000000, //   0   0   0  -1
+	"hateye":                   0xff000000, //   0   0   0  -1
 	"hatspunk":                 0x00fe0000, //   0   0  -2   0
 	"hatwatch":                 0x00fe0000, //   0   0  -2   0
 	"hatwater":                 0x00fe0000, //   0   0  -2   0
@@ -4792,10 +5443,20 @@ var wordValues = map[string]uint32{
 	"hazardouspunk":            0x00fe0000, //   0   0  -2   0
 	"hazardspunk":              0x00fe0000, //   0   0  -2   0
 	"headerspunk":              0x00fe0000, //   0   0  -2   0
+	"healthate":                0xff000000, //   0   0   0  -1
 	"hearse":                   0x000000ff, //  -1   0   0   0
+	"heathate":                 0xff000000, //   0   0   0  -1
+	"hebraic":                  0x00ff0000, //   0   0  -1   0
+	"hebraism":                 0x00ff0000, //   0   0  -1   0
+	"hebraist":                 0x00ff0000, //   0   0  -1   0
+	"hebraization":             0x00ff0000, //   0   0  -1   0
+	"hebraizing":               0x00ff0000, //   0   0  -1   0
 	"heelballs":                0x00ff0000, //   0   0  -1   0
 	"heightspunk":              0x00fe0000, //   0   0  -2   0
+	"helenazinc":               0x0000ff00, //   0  -1   0   0
+	"helenazip":                0x0000ff00, //   0  -1   0   0
 	"helictite":                0x00fe0000, //   0   0  -2   0
+	"helloser":                 0xff000000, //   0   0   0  -1
 	"helpissn":                 0x000000ff, //  -1   0   0   0
 	"helpissue":                0x000000ff, //  -1   0   0   0
 	"helpoops":                 0x000000ff, //  -1   0   0   0
@@ -4806,6 +5467,7 @@ var wordValues = map[string]uint32{
 	"hemipenis":                0x00fe00fe, //  -2   0  -2   0
 	"hepatite":                 0x00fe0000, //   0   0  -2   0
 	"hepatitispunk":            0x00fe0000, //   0   0  -2   0
+	"hepatorrhoea":             0x00ffff00, //   0  -1  -1   0
 	"heptite":                  0x00fe0000, //   0   0  -2   0
 	"heptitol":                 0x00fe0000, //   0   0  -2   0
 	"herbspunk":                0x00fe0000, //   0   0  -2   0
@@ -4830,6 +5492,7 @@ var wordValues = map[string]uint32{
 	"hewlettwatson":            0x00fe0000, //   0   0  -2   0
 	"hewlettwatt":              0x00fe0000, //   0   0  -2   0
 	"hexanal":                  0x00ff00ff, //  -1   0  -1   0
+	"highate":                  0xff000000, //   0   0   0  -1
 	"highballs":                0x00ff0000, //   0   0  -1   0
 	"highspunk":                0x00fe0000, //   0   0  -2   0
 	"hillspunk":                0x00fe0000, //   0   0  -2   0
@@ -4847,6 +5510,15 @@ var wordValues = map[string]uint32{
 	"hittitology":              0x00fe0000, //   0   0  -2   0
 	"hoarse":                   0x000000ff, //  -1   0   0   0
 	"hobbiespunk":              0x00fe0000, //   0   0  -2   0
+	"hoe":                      0x00010100, //   0   1   1   0
+	"hoecake":                  0x00ffff00, //   0  -1  -1   0
+	"hoed":                     0x00ffff00, //   0  -1  -1   0
+	"hoeful":                   0x00ffff00, //   0  -1  -1   0
+	"hoeing":                   0x00ffff00, //   0  -1  -1   0
+	"hoelike":                  0x00ffff00, //   0  -1  -1   0
+	"hoer":                     0x00ffff00, //   0  -1  -1   0
+	"hoeshin":                  0x00ffff00, //   0  -1  -1   0
+	"hoey":                     0x00ffff00, //   0  -1  -1   0
 	"holderspunk":              0x00fe0000, //   0   0  -2   0
 	"holdingspunk":             0x00fe0000, //   0   0  -2   0
 	"holdspunk":                0x00fe0000, //   0   0  -2   0
@@ -4856,7 +5528,200 @@ var wordValues = map[string]uint32{
 	"holocaustwatson":          0x00fe0000, //   0   0  -2   0
 	"holocaustwatt":            0x00fe0000, //   0   0  -2   0
 	"homespunk":                0x00fe0000, //   0   0  -2   0
-	"homosexual":               0x00ff0000, //   0   0  -1   0
+	"homo":                     0x00000100, //   0   1   0   0
+	"homoanisaldehyde":         0x0000ff00, //   0  -1   0   0
+	"homoanisic":               0x0000ff00, //   0  -1   0   0
+	"homoarecoline":            0x0000ff00, //   0  -1   0   0
+	"homobaric":                0x0000ff00, //   0  -1   0   0
+	"homoblastic":              0x0000ff00, //   0  -1   0   0
+	"homoblasty":               0x0000ff00, //   0  -1   0   0
+	"homobront":                0x0000ff00, //   0  -1   0   0
+	"homocarpous":              0x0000ff00, //   0  -1   0   0
+	"homocategoric":            0x0000ff00, //   0  -1   0   0
+	"homocentric":              0x0000ff00, //   0  -1   0   0
+	"homocerc":                 0x0000ff00, //   0  -1   0   0
+	"homocerebrin":             0x0000ff00, //   0  -1   0   0
+	"homochiral":               0x0000ff00, //   0  -1   0   0
+	"homochlamydeous":          0x0000ff00, //   0  -1   0   0
+	"homochromatic":            0x0000ff00, //   0  -1   0   0
+	"homochromatism":           0x0000ff00, //   0  -1   0   0
+	"homochrome":               0x0000ff00, //   0  -1   0   0
+	"homochromic":              0x0000ff00, //   0  -1   0   0
+	"homochromosome":           0x0000ff00, //   0  -1   0   0
+	"homochromous":             0x0000ff00, //   0  -1   0   0
+	"homochromy":               0x0000ff00, //   0  -1   0   0
+	"homochronous":             0x0000ff00, //   0  -1   0   0
+	"homoclinal":               0x0000ff00, //   0  -1   0   0
+	"homocline":                0x0000ff00, //   0  -1   0   0
+	"homocoela":                0x0000ff00, //   0  -1   0   0
+	"homocoelous":              0x0000ff00, //   0  -1   0   0
+	"homocreosol":              0x0000ff00, //   0  -1   0   0
+	"homocycle":                0x0000ff00, //   0  -1   0   0
+	"homocyclic":               0x0000ff00, //   0  -1   0   0
+	"homodermic":               0x0000ff00, //   0  -1   0   0
+	"homodermy":                0x0000ff00, //   0  -1   0   0
+	"homodont":                 0x0000ff00, //   0  -1   0   0
+	"homodox":                  0x0000ff00, //   0  -1   0   0
+	"homodromal":               0x0000ff00, //   0  -1   0   0
+	"homodrome":                0x0000ff00, //   0  -1   0   0
+	"homodromous":              0x0000ff00, //   0  -1   0   0
+	"homodromy":                0x0000ff00, //   0  -1   0   0
+	"homodynamic":              0x0000ff00, //   0  -1   0   0
+	"homodynamous":             0x0000ff00, //   0  -1   0   0
+	"homodynamy":               0x0000ff00, //   0  -1   0   0
+	"homodyne":                 0x0000ff00, //   0  -1   0   0
+	"homoean":                  0x0000ff00, //   0  -1   0   0
+	"homoecious":               0x0000ff00, //   0  -1   0   0
+	"homoeoarchy":              0x0000ff00, //   0  -1   0   0
+	"homoeoblastic":            0x0000ff00, //   0  -1   0   0
+	"homoeochromatic":          0x0000ff00, //   0  -1   0   0
+	"homoeochronous":           0x0000ff00, //   0  -1   0   0
+	"homoeocrystalline":        0x0000ff00, //   0  -1   0   0
+	"homoeogenic":              0x0000ff00, //   0  -1   0   0
+	"homoeogenous":             0x0000ff00, //   0  -1   0   0
+	"homoeography":             0x0000ff00, //   0  -1   0   0
+	"homoeoid":                 0x0000ff00, //   0  -1   0   0
+	"homoeokinesis":            0x0000ff00, //   0  -1   0   0
+	"homoeomerae":              0x0000ff00, //   0  -1   0   0
+	"homoeomeral":              0x0000ff00, //   0  -1   0   0
+	"homoeomeri":               0x0000ff00, //   0  -1   0   0
+	"homoeomerous":             0x0000ff00, //   0  -1   0   0
+	"homoeomery":               0x0000ff00, //   0  -1   0   0
+	"homoeomorph":              0x0000ff00, //   0  -1   0   0
+	"homoeopath":               0x0000ff00, //   0  -1   0   0
+	"homoeophony":              0x0000ff00, //   0  -1   0   0
+	"homoeophyllous":           0x0000ff00, //   0  -1   0   0
+	"homoeoplasia":             0x0000ff00, //   0  -1   0   0
+	"homoeoplastic":            0x0000ff00, //   0  -1   0   0
+	"homoeoplasy":              0x0000ff00, //   0  -1   0   0
+	"homoeopolar":              0x0000ff00, //   0  -1   0   0
+	"homoeosis":                0x0000ff00, //   0  -1   0   0
+	"homoeotel":                0x0000ff00, //   0  -1   0   0
+	"homoeotic":                0x0000ff00, //   0  -1   0   0
+	"homoeotopy":               0x0000ff00, //   0  -1   0   0
+	"homoeotype":               0x0000ff00, //   0  -1   0   0
+	"homoeotypic":              0x0000ff00, //   0  -1   0   0
+	"homoeozoic":               0x0000ff00, //   0  -1   0   0
+	"homoerotic":               0x0000ff00, //   0  -1   0   0
+	"homoerotism":              0x0000ff00, //   0  -1   0   0
+	"homofermentative":         0x0000ff00, //   0  -1   0   0
+	"homogametic":              0x0000ff00, //   0  -1   0   0
+	"homogamic":                0x0000ff00, //   0  -1   0   0
+	"homogamies":               0x0000ff00, //   0  -1   0   0
+	"homogamous":               0x0000ff00, //   0  -1   0   0
+	"homogamy":                 0x0000ff00, //   0  -1   0   0
+	"homogangliate":            0x0000ff00, //   0  -1   0   0
+	"homogen":                  0x0000ff00, //   0  -1   0   0
+	"homoglot":                 0x0000ff00, //   0  -1   0   0
+	"homogone":                 0x0000ff00, //   0  -1   0   0
+	"homogonies":               0x0000ff00, //   0  -1   0   0
+	"homogonous":               0x0000ff00, //   0  -1   0   0
+	"homogony":                 0x0000ff00, //   0  -1   0   0
+	"homograft":                0x0000ff00, //   0  -1   0   0
+	"homograph":                0x0000ff00, //   0  -1   0   0
+	"homohedral":               0x0000ff00, //   0  -1   0   0
+	"homoiotherm":              0x0000ff00, //   0  -1   0   0
+	"homoiousia":               0x0000ff00, //   0  -1   0   0
+	"homoiousious":             0x0000ff00, //   0  -1   0   0
+	"homolateral":              0x0000ff00, //   0  -1   0   0
+	"homolecithal":             0x0000ff00, //   0  -1   0   0
+	"homolegalis":              0x0000ff00, //   0  -1   0   0
+	"homolog":                  0x0000ff00, //   0  -1   0   0
+	"homolosine":               0x0000ff00, //   0  -1   0   0
+	"homolysin":                0x0000ff00, //   0  -1   0   0
+	"homolysis":                0x0000ff00, //   0  -1   0   0
+	"homolytic":                0x0000ff00, //   0  -1   0   0
+	"homomallous":              0x0000ff00, //   0  -1   0   0
+	"homomeral":                0x0000ff00, //   0  -1   0   0
+	"homomerous":               0x0000ff00, //   0  -1   0   0
+	"homometrical":             0x0000ff00, //   0  -1   0   0
+	"homomorph":                0x0000ff00, //   0  -1   0   0
+	"homoneura":                0x0000ff00, //   0  -1   0   0
+	"homonid":                  0x0000ff00, //   0  -1   0   0
+	"homonomous":               0x0000ff00, //   0  -1   0   0
+	"homonomy":                 0x0000ff00, //   0  -1   0   0
+	"homonuclear":              0x0000ff00, //   0  -1   0   0
+	"homonym":                  0x0000ff00, //   0  -1   0   0
+	"homoousia":                0x0000ff00, //   0  -1   0   0
+	"homoousion":               0x0000ff00, //   0  -1   0   0
+	"homoousious":              0x0000ff00, //   0  -1   0   0
+	"homopathy":                0x0000ff00, //   0  -1   0   0
+	"homopause":                0x0000ff00, //   0  -1   0   0
+	"homoperiodic":             0x0000ff00, //   0  -1   0   0
+	"homopetalous":             0x0000ff00, //   0  -1   0   0
+	"homophene":                0x0000ff00, //   0  -1   0   0
+	"homophenous":              0x0000ff00, //   0  -1   0   0
+	"homophile":                0x0000ff00, //   0  -1   0   0
+	"homophobia":               0x0000ff00, //   0  -1   0   0
+	"homophobic":               0x0000ff00, //   0  -1   0   0
+	"homophone":                0x0000ff00, //   0  -1   0   0
+	"homophonic":               0x0000ff00, //   0  -1   0   0
+	"homophonous":              0x0000ff00, //   0  -1   0   0
+	"homophony":                0x0000ff00, //   0  -1   0   0
+	"homophthalic":             0x0000ff00, //   0  -1   0   0
+	"homophylic":               0x0000ff00, //   0  -1   0   0
+	"homophyllous":             0x0000ff00, //   0  -1   0   0
+	"homophyly":                0x0000ff00, //   0  -1   0   0
+	"homopiperonyl":            0x0000ff00, //   0  -1   0   0
+	"homoplasis":               0x0000ff00, //   0  -1   0   0
+	"homoplasmic":              0x0000ff00, //   0  -1   0   0
+	"homoplasmy":               0x0000ff00, //   0  -1   0   0
+	"homoplassy":               0x0000ff00, //   0  -1   0   0
+	"homoplast":                0x0000ff00, //   0  -1   0   0
+	"homoplasy":                0x0000ff00, //   0  -1   0   0
+	"homopolar":                0x0000ff00, //   0  -1   0   0
+	"homopolic":                0x0000ff00, //   0  -1   0   0
+	"homopolymer":              0x0000ff00, //   0  -1   0   0
+	"homopter":                 0x0000ff00, //   0  -1   0   0
+	"homorelaps":               0x0000ff00, //   0  -1   0   0
+	"homorganic":               0x0000ff00, //   0  -1   0   0
+	"homoscedastic":            0x0000ff00, //   0  -1   0   0
+	"homoseismal":              0x0000ff00, //   0  -1   0   0
+	"homosexual":               0x00ffff00, //   0  -1  -1   0
+	"homosphere":               0x0000ff00, //   0  -1   0   0
+	"homosporous":              0x0000ff00, //   0  -1   0   0
+	"homospory":                0x0000ff00, //   0  -1   0   0
+	"homosteus":                0x0000ff00, //   0  -1   0   0
+	"homostyled":               0x0000ff00, //   0  -1   0   0
+	"homostylic":               0x0000ff00, //   0  -1   0   0
+	"homostylism":              0x0000ff00, //   0  -1   0   0
+	"homostylous":              0x0000ff00, //   0  -1   0   0
+	"homostyly":                0x0000ff00, //   0  -1   0   0
+	"homosystemic":             0x0000ff00, //   0  -1   0   0
+	"homotactic":               0x0000ff00, //   0  -1   0   0
+	"homotatic":                0x0000ff00, //   0  -1   0   0
+	"homotaxeous":              0x0000ff00, //   0  -1   0   0
+	"homotaxia":                0x0000ff00, //   0  -1   0   0
+	"homotaxic":                0x0000ff00, //   0  -1   0   0
+	"homotaxis":                0x0000ff00, //   0  -1   0   0
+	"homotaxy":                 0x0000ff00, //   0  -1   0   0
+	"homothallic":              0x0000ff00, //   0  -1   0   0
+	"homothallism":             0x0000ff00, //   0  -1   0   0
+	"homotherm":                0x0000ff00, //   0  -1   0   0
+	"homothetic":               0x0000ff00, //   0  -1   0   0
+	"homothety":                0x0000ff00, //   0  -1   0   0
+	"homotonic":                0x0000ff00, //   0  -1   0   0
+	"homotonous":               0x0000ff00, //   0  -1   0   0
+	"homotony":                 0x0000ff00, //   0  -1   0   0
+	"homotopic":                0x0000ff00, //   0  -1   0   0
+	"homotopy":                 0x0000ff00, //   0  -1   0   0
+	"homotransplant":           0x0000ff00, //   0  -1   0   0
+	"homotropal":               0x0000ff00, //   0  -1   0   0
+	"homotropous":              0x0000ff00, //   0  -1   0   0
+	"homotypal":                0x0000ff00, //   0  -1   0   0
+	"homotype":                 0x0000ff00, //   0  -1   0   0
+	"homotypic":                0x0000ff00, //   0  -1   0   0
+	"homotypy":                 0x0000ff00, //   0  -1   0   0
+	"homousian":                0x0000ff00, //   0  -1   0   0
+	"homovanillic":             0x0000ff00, //   0  -1   0   0
+	"homovanillin":             0x0000ff00, //   0  -1   0   0
+	"homoveratric":             0x0000ff00, //   0  -1   0   0
+	"homoveratrole":            0x0000ff00, //   0  -1   0   0
+	"homozygosis":              0x0000ff00, //   0  -1   0   0
+	"homozygosity":             0x0000ff00, //   0  -1   0   0
+	"homozygote":               0x0000ff00, //   0  -1   0   0
+	"homozygotic":              0x0000ff00, //   0  -1   0   0
+	"homozygous":               0x0000ff00, //   0  -1   0   0
 	"honeyballs":               0x00ff0000, //   0   0  -1   0
 	"honorspunk":               0x00fe0000, //   0   0  -2   0
 	"hopenissan":               0x00fe00fe, //  -2   0  -2   0
@@ -4911,6 +5776,8 @@ var wordValues = map[string]uint32{
 	"httpissue":                0x000000ff, //  -1   0   0   0
 	"httpoops":                 0x000000ff, //  -1   0   0   0
 	"httprick":                 0x000000fe, //  -2   0   0   0
+	"hudibras":                 0x00ff0000, //   0   0  -1   0
+	"hughate":                  0xff000000, //   0   0   0  -1
 	"hugheshe":                 0x00ff0000, //   0   0  -1   0
 	"hughespunk":               0x00fe0000, //   0   0  -2   0
 	"humanspunk":               0x00fe0000, //   0   0  -2   0
@@ -4928,10 +5795,12 @@ var wordValues = map[string]uint32{
 	"hydraulicuntil":           0x00ffff00, //   0  -1  -1   0
 	"hydraulicuntitled":        0x00ffff00, //   0  -1  -1   0
 	"hydraulicunto":            0x00ffff00, //   0  -1  -1   0
+	"hydrorrhoea":              0x00ffff00, //   0  -1  -1   0
 	"hypericum":                0x00fe0000, //   0   0  -2   0
 	"hyperprosexia":            0x00ff0000, //   0   0  -1   0
 	"hypersexual":              0x00ff0000, //   0   0  -1   0
 	"hypoprosexia":             0x00ff0000, //   0   0  -1   0
+	"hypsophoeia":              0x00ffff00, //   0  -1  -1   0
 	"ianala":                   0x00ff00ff, //  -1   0  -1   0
 	"ianalbania":               0x00ff00ff, //  -1   0  -1   0
 	"ianalbany":                0x00ff00ff, //  -1   0  -1   0
@@ -4958,11 +5827,50 @@ var wordValues = map[string]uint32{
 	"ianalumni":                0x00ff00ff, //  -1   0  -1   0
 	"ianalways":                0x00ff00ff, //  -1   0  -1   0
 	"ianus":                    0x000000ff, //  -1   0   0   0
+	"ichorrhoea":               0x00ffff00, //   0  -1  -1   0
 	"icondom":                  0x00ff0000, //   0   0  -1   0
 	"ictwatch":                 0x00fe0000, //   0   0  -2   0
 	"ictwater":                 0x00fe0000, //   0   0  -2   0
 	"ictwatson":                0x00fe0000, //   0   0  -2   0
 	"ictwatt":                  0x00fe0000, //   0   0  -2   0
+	"idahomobile":              0x0000ff00, //   0  -1   0   0
+	"idahomobility":            0x0000ff00, //   0  -1   0   0
+	"idahomod":                 0x0000ff00, //   0  -1   0   0
+	"idahomoisture":            0x0000ff00, //   0  -1   0   0
+	"idahomold":                0x0000ff00, //   0  -1   0   0
+	"idahomolecular":           0x0000ff00, //   0  -1   0   0
+	"idahomolecules":           0x0000ff00, //   0  -1   0   0
+	"idahomom":                 0x0000ff00, //   0  -1   0   0
+	"idahomon":                 0x0000ff00, //   0  -1   0   0
+	"idahomood":                0x0000ff00, //   0  -1   0   0
+	"idahomoon":                0x0000ff00, //   0  -1   0   0
+	"idahomoore":               0x0000ff00, //   0  -1   0   0
+	"idahomoral":               0x0000ff00, //   0  -1   0   0
+	"idahomore":                0x0000ff00, //   0  -1   0   0
+	"idahomorgan":              0x0000ff00, //   0  -1   0   0
+	"idahomorning":             0x0000ff00, //   0  -1   0   0
+	"idahomorocco":             0x0000ff00, //   0  -1   0   0
+	"idahomorris":              0x0000ff00, //   0  -1   0   0
+	"idahomortality":           0x0000ff00, //   0  -1   0   0
+	"idahomortgage":            0x0000ff00, //   0  -1   0   0
+	"idahomoscow":              0x0000ff00, //   0  -1   0   0
+	"idahomoses":               0x0000ff00, //   0  -1   0   0
+	"idahomoss":                0x0000ff00, //   0  -1   0   0
+	"idahomost":                0x0000ff00, //   0  -1   0   0
+	"idahomotel":               0x0000ff00, //   0  -1   0   0
+	"idahomother":              0x0000ff00, //   0  -1   0   0
+	"idahomotion":              0x0000ff00, //   0  -1   0   0
+	"idahomotivated":           0x0000ff00, //   0  -1   0   0
+	"idahomotivation":          0x0000ff00, //   0  -1   0   0
+	"idahomotor":               0x0000ff00, //   0  -1   0   0
+	"idahomount":               0x0000ff00, //   0  -1   0   0
+	"idahomouse":               0x0000ff00, //   0  -1   0   0
+	"idahomouth":               0x0000ff00, //   0  -1   0   0
+	"idahomove":                0x0000ff00, //   0  -1   0   0
+	"idahomovie":               0x0000ff00, //   0  -1   0   0
+	"idahomoving":              0x0000ff00, //   0  -1   0   0
+	"idahomozambique":          0x0000ff00, //   0  -1   0   0
+	"idahomozilla":             0x0000ff00, //   0  -1   0   0
 	"identifiespunk":           0x00fe0000, //   0   0  -2   0
 	"idiot":                    0x01000000, //   0   0   0   1
 	"idiotcies":                0xff000000, //   0   0   0  -1
@@ -4990,6 +5898,7 @@ var wordValues = map[string]uint32{
 	"illnesspunk":              0x00fe0000, //   0   0  -2   0
 	"ilmenitite":               0x00fe0000, //   0   0  -2   0
 	"impactite":                0x00fe0000, //   0   0  -2   0
+	"impregnant":               0x00ff0000, //   0   0  -1   0
 	"improvementspunk":         0x00fe0000, //   0   0  -2   0
 	"incentivespunk":           0x00fe0000, //   0   0  -2   0
 	"incest":                   0x00020000, //   0   0   2   0
@@ -4999,8 +5908,10 @@ var wordValues = map[string]uint32{
 	"incestimation":            0x00fe0000, //   0   0  -2   0
 	"incestonia":               0x00fe0000, //   0   0  -2   0
 	"incestuous":               0x00fe0000, //   0   0  -2   0
+	"inchate":                  0xff000000, //   0   0   0  -1
 	"incheshe":                 0x00ff0000, //   0   0  -1   0
 	"inchespunk":               0x00fe0000, //   0   0  -2   0
+	"inchink":                  0x0000fe00, //   0  -2   0   0
 	"incidentspunk":            0x00fe0000, //   0   0  -2   0
 	"incrap":                   0x000000ff, //  -1   0   0   0
 	"increasespunk":            0x00fe0000, //   0   0  -2   0
@@ -5082,6 +5993,7 @@ var wordValues = map[string]uint32{
 	"ircuntitled":              0x00ffff00, //   0  -1  -1   0
 	"ircunto":                  0x00ffff00, //   0  -1  -1   0
 	"irenicum":                 0x00fe0000, //   0   0  -2   0
+	"irishate":                 0xff000000, //   0   0   0  -1
 	"irspunk":                  0x00fe0000, //   0   0  -2   0
 	"isaacrap":                 0x000000ff, //  -1   0   0   0
 	"isaacuntil":               0x00ffff00, //   0  -1  -1   0
@@ -5241,6 +6153,7 @@ var wordValues = map[string]uint32{
 	"jerkwater":                0x000000ff, //  -1   0   0   0
 	"jerky":                    0x000000ff, //  -1   0   0   0
 	"jessemen":                 0x00fe0000, //   0   0  -2   0
+	"jestful":                  0xff000000, //   0   0   0  -1
 	"jesuspunk":                0x00fe0000, //   0   0  -2   0
 	"jetspunk":                 0x00fe0000, //   0   0  -2   0
 	"jetwatch":                 0x00fe0000, //   0   0  -2   0
@@ -5292,6 +6205,9 @@ var wordValues = map[string]uint32{
 	"johnspunk":                0x00fe0000, //   0   0  -2   0
 	"jokespunk":                0x00fe0000, //   0   0  -2   0
 	"josemen":                  0x00fe0000, //   0   0  -2   0
+	"josephate":                0xff000000, //   0   0   0  -1
+	"josephukraine":            0x00ff00ff, //  -1   0  -1   0
+	"joshate":                  0xff000000, //   0   0   0  -1
 	"journalspunk":             0x00fe0000, //   0   0  -2   0
 	"juanala":                  0x00ff00ff, //  -1   0  -1   0
 	"juanalbania":              0x00ff00ff, //  -1   0  -1   0
@@ -5351,17 +6267,22 @@ var wordValues = map[string]uint32{
 	"jvcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"jvcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"jvcunto":                  0x00ffff00, //   0  -1  -1   0
+	"kalanchoe":                0x00ffff00, //   0  -1  -1   0
 	"kaneshite":                0x000000ff, //  -1   0   0   0
 	"kassabah":                 0x000000ff, //  -1   0   0   0
 	"kassak":                   0x000000ff, //  -1   0   0   0
 	"kassu":                    0x000000ff, //  -1   0   0   0
 	"katharses":                0x000000ff, //  -1   0   0   0
+	"katrinazinc":              0x0000ff00, //   0  -1   0   0
+	"katrinazip":               0x0000ff00, //   0  -1   0   0
 	"kavass":                   0x000000ff, //  -1   0   0   0
 	"keepissn":                 0x000000ff, //  -1   0   0   0
 	"keepissue":                0x000000ff, //  -1   0   0   0
 	"keepoops":                 0x000000ff, //  -1   0   0   0
 	"keeprick":                 0x000000fe, //  -2   0   0   0
 	"keepspunk":                0x00fe0000, //   0   0  -2   0
+	"kehoeite":                 0x00ffff00, //   0  -1  -1   0
+	"keithate":                 0xff000000, //   0   0   0  -1
 	"kennedykeen":              0x00ffffff, //  -1  -1  -1   0
 	"kennedykeep":              0x00ffffff, //  -1  -1  -1   0
 	"kennedykeith":             0x00ffffff, //  -1  -1  -1   0
@@ -5371,6 +6292,7 @@ var wordValues = map[string]uint32{
 	"kennedykept":              0x00ffffff, //  -1  -1  -1   0
 	"kennedykevin":             0x00ffffff, //  -1  -1  -1   0
 	"kennedykey":               0x00ffffff, //  -1  -1  -1   0
+	"kennethate":               0xff000000, //   0   0   0  -1
 	"kensitite":                0x00fe0000, //   0   0  -2   0
 	"keptwatch":                0x00fe0000, //   0   0  -2   0
 	"keptwater":                0x00fe0000, //   0   0  -2   0
@@ -5381,10 +6303,12 @@ var wordValues = map[string]uint32{
 	"khass":                    0x000000ff, //  -1   0   0   0
 	"khorassan":                0x000000ff, //  -1   0   0   0
 	"killspunk":                0x00fe0000, //   0   0  -2   0
+	"killyourself":             0x02000100, //   0   1   0   2
 	"kinasemen":                0x00fe0000, //   0   0  -2   0
 	"kindspunk":                0x00fe0000, //   0   0  -2   0
 	"kingspunk":                0x00fe0000, //   0   0  -2   0
 	"kisspunk":                 0x00fe0000, //   0   0  -2   0
+	"kistful":                  0xff000000, //   0   0   0  -1
 	"knivespunk":               0x00fe0000, //   0   0  -2   0
 	"knowspunk":                0x00fe0000, //   0   0  -2   0
 	"koreanala":                0x00ff00ff, //  -1   0  -1   0
@@ -5436,6 +6360,7 @@ var wordValues = map[string]uint32{
 	"labiate":                  0x00fe0000, //   0   0  -2   0
 	"labiatiflorous":           0x00fe0000, //   0   0  -2   0
 	"laboratoriespunk":         0x00fe0000, //   0   0  -2   0
+	"labra":                    0x00ff0000, //   0   0  -1   0
 	"laconicum":                0x00fe0000, //   0   0  -2   0
 	"ladykeen":                 0x00ffffff, //  -1  -1  -1   0
 	"ladykeep":                 0x00ffffff, //  -1  -1  -1   0
@@ -5492,11 +6417,15 @@ var wordValues = map[string]uint32{
 	"lapissn":                  0x000000ff, //  -1   0   0   0
 	"lapissue":                 0x000000ff, //  -1   0   0   0
 	"laprick":                  0x000000fe, //  -2   0   0   0
+	"larghetto":                0x0000ff00, //   0  -1   0   0
 	"lass":                     0x000000ff, //  -1   0   0   0
 	"lastwatch":                0x00fe0000, //   0   0  -2   0
 	"lastwater":                0x00fe0000, //   0   0  -2   0
 	"lastwatson":               0x00fe0000, //   0   0  -2   0
 	"lastwatt":                 0x00fe0000, //   0   0  -2   0
+	"latebra":                  0x00ff0000, //   0   0  -1   0
+	"latinazinc":               0x0000ff00, //   0  -1   0   0
+	"latinazip":                0x0000ff00, //   0  -1   0   0
 	"latitat":                  0x00fe0000, //   0   0  -2   0
 	"latite":                   0x00fe0000, //   0   0  -2   0
 	"latitude":                 0x00fe0000, //   0   0  -2   0
@@ -5508,9 +6437,12 @@ var wordValues = map[string]uint32{
 	"latwater":                 0x00fe0000, //   0   0  -2   0
 	"latwatson":                0x00fe0000, //   0   0  -2   0
 	"latwatt":                  0x00fe0000, //   0   0  -2   0
+	"laughate":                 0xff000000, //   0   0   0  -1
 	"laumontite":               0x00fe0000, //   0   0  -2   0
+	"launchate":                0xff000000, //   0   0   0  -1
 	"launcheshe":               0x00ff0000, //   0   0  -1   0
 	"launchespunk":             0x00fe0000, //   0   0  -2   0
+	"launchink":                0x0000fe00, //   0  -2   0   0
 	"laurapeace":               0x00ff0000, //   0   0  -1   0
 	"laurapeak":                0x00ff0000, //   0   0  -1   0
 	"laurapeas":                0x00ff0000, //   0   0  -1   0
@@ -5570,6 +6502,7 @@ var wordValues = map[string]uint32{
 	"leftwatt":                 0x00fe0000, //   0   0  -2   0
 	"legspunk":                 0x00fe0000, //   0   0  -2   0
 	"lenderspunk":              0x00fe0000, //   0   0  -2   0
+	"lengthate":                0xff000000, //   0   0   0  -1
 	"lensespunk":               0x00fe0000, //   0   0  -2   0
 	"lenspunk":                 0x00fe0000, //   0   0  -2   0
 	"lentitude":                0x00fe0000, //   0   0  -2   0
@@ -5585,6 +6518,9 @@ var wordValues = map[string]uint32{
 	"letwatson":                0x00fe0000, //   0   0  -2   0
 	"letwatt":                  0x00fe0000, //   0   0  -2   0
 	"leucitite":                0x00fe0000, //   0   0  -2   0
+	"leucorrhoea":              0x00ffff00, //   0  -1  -1   0
+	"leucothoe":                0x00ffff00, //   0  -1  -1   0
+	"leukorrhoea":              0x00ffff00, //   0  -1  -1   0
 	"levelspunk":               0x00fe0000, //   0   0  -2   0
 	"levisticum":               0x00fe0000, //   0   0  -2   0
 	"levitrapeace":             0x00ff0000, //   0   0  -1   0
@@ -5597,6 +6533,8 @@ var wordValues = map[string]uint32{
 	"levitrapet":               0x00ff0000, //   0   0  -1   0
 	"lewispunk":                0x00fe0000, //   0   0  -2   0
 	"lexuspunk":                0x00fe0000, //   0   0  -2   0
+	"libbra":                   0x00ff0000, //   0   0  -1   0
+	"libra":                    0x00ff0000, //   0   0  -1   0
 	"librariespunk":            0x00fe0000, //   0   0  -2   0
 	"libspunk":                 0x00fe0000, //   0   0  -2   0
 	"licensemen":               0x00fe0000, //   0   0  -2   0
@@ -5622,8 +6560,10 @@ var wordValues = map[string]uint32{
 	"lipoops":                  0x000000ff, //  -1   0   0   0
 	"liprick":                  0x000000fe, //  -2   0   0   0
 	"liripoop":                 0x000000ff, //  -1   0   0   0
+	"listful":                  0xff000000, //   0   0   0  -1
 	"listingspunk":             0x00fe0000, //   0   0  -2   0
 	"listspunk":                0x00fe0000, //   0   0  -2   0
+	"lithate":                  0xff000000, //   0   0   0  -1
 	"livespunk":                0x00fe0000, //   0   0  -2   0
 	"llcrap":                   0x000000ff, //  -1   0   0   0
 	"llcuntil":                 0x00ffff00, //   0  -1  -1   0
@@ -5718,6 +6658,7 @@ var wordValues = map[string]uint32{
 	"logicuntitled":            0x00ffff00, //   0  -1  -1   0
 	"logicunto":                0x00ffff00, //   0  -1  -1   0
 	"logisticspunk":            0x00fe0000, //   0   0  -2   0
+	"logorrhoea":               0x00ffff00, //   0  -1  -1   0
 	"logospunk":                0x00fe0000, //   0   0  -2   0
 	"logspunk":                 0x00fe0000, //   0   0  -2   0
 	"lookspunk":                0x00fe0000, //   0   0  -2   0
@@ -5731,6 +6672,150 @@ var wordValues = map[string]uint32{
 	"looprick":                 0x000000fe, //  -2   0   0   0
 	"loosemen":                 0x00fe0000, //   0   0  -2   0
 	"losemen":                  0x00fe0000, //   0   0  -2   0
+	"loser":                    0x01000000, //   0   0   0   1
+	"losera":                   0xff000000, //   0   0   0  -1
+	"loserca":                  0xff000000, //   0   0   0  -1
+	"losereach":                0xff000000, //   0   0   0  -1
+	"losereaction":             0xff000000, //   0   0   0  -1
+	"loseread":                 0xff000000, //   0   0   0  -1
+	"losereal":                 0xff000000, //   0   0   0  -1
+	"loserear":                 0xff000000, //   0   0   0  -1
+	"losereason":               0xff000000, //   0   0   0  -1
+	"loserebate":               0xff000000, //   0   0   0  -1
+	"loserebecca":              0xff000000, //   0   0   0  -1
+	"loserebel":                0xff000000, //   0   0   0  -1
+	"loserebound":              0xff000000, //   0   0   0  -1
+	"loserec":                  0xff000000, //   0   0   0  -1
+	"losered":                  0xff000000, //   0   0   0  -1
+	"losereed":                 0xff000000, //   0   0   0  -1
+	"losereef":                 0xff000000, //   0   0   0  -1
+	"losereel":                 0xff000000, //   0   0   0  -1
+	"loseref":                  0xff000000, //   0   0   0  -1
+	"losereg":                  0xff000000, //   0   0   0  -1
+	"loserehab":                0xff000000, //   0   0   0  -1
+	"losereid":                 0xff000000, //   0   0   0  -1
+	"losereject":               0xff000000, //   0   0   0  -1
+	"loserelate":               0xff000000, //   0   0   0  -1
+	"loserelating":             0xff000000, //   0   0   0  -1
+	"loserelation":             0xff000000, //   0   0   0  -1
+	"loserelative":             0xff000000, //   0   0   0  -1
+	"loserelax":                0xff000000, //   0   0   0  -1
+	"loserelay":                0xff000000, //   0   0   0  -1
+	"loserelease":              0xff000000, //   0   0   0  -1
+	"loserelevance":            0xff000000, //   0   0   0  -1
+	"loserelevant":             0xff000000, //   0   0   0  -1
+	"losereliability":          0xff000000, //   0   0   0  -1
+	"losereliable":             0xff000000, //   0   0   0  -1
+	"losereliance":             0xff000000, //   0   0   0  -1
+	"loserelief":               0xff000000, //   0   0   0  -1
+	"losereligion":             0xff000000, //   0   0   0  -1
+	"losereligious":            0xff000000, //   0   0   0  -1
+	"losereload":               0xff000000, //   0   0   0  -1
+	"loserelocation":           0xff000000, //   0   0   0  -1
+	"loserely":                 0xff000000, //   0   0   0  -1
+	"loseremain":               0xff000000, //   0   0   0  -1
+	"loseremark":               0xff000000, //   0   0   0  -1
+	"loseremedies":             0xff000000, //   0   0   0  -1
+	"loseremedy":               0xff000000, //   0   0   0  -1
+	"loseremember":             0xff000000, //   0   0   0  -1
+	"loseremind":               0xff000000, //   0   0   0  -1
+	"loseremix":                0xff000000, //   0   0   0  -1
+	"loseremote":               0xff000000, //   0   0   0  -1
+	"loseremovable":            0xff000000, //   0   0   0  -1
+	"loseremoval":              0xff000000, //   0   0   0  -1
+	"loseremove":               0xff000000, //   0   0   0  -1
+	"loseremoving":             0xff000000, //   0   0   0  -1
+	"loserenaissance":          0xff000000, //   0   0   0  -1
+	"loserender":               0xff000000, //   0   0   0  -1
+	"loserenew":                0xff000000, //   0   0   0  -1
+	"losereno":                 0xff000000, //   0   0   0  -1
+	"loserent":                 0xff000000, //   0   0   0  -1
+	"loserep":                  0xff000000, //   0   0   0  -1
+	"loserequest":              0xff000000, //   0   0   0  -1
+	"loserequire":              0xff000000, //   0   0   0  -1
+	"loserequiring":            0xff000000, //   0   0   0  -1
+	"loseres":                  0xff000000, //   0   0   0  -1
+	"loseretail":               0xff000000, //   0   0   0  -1
+	"loseretain":               0xff000000, //   0   0   0  -1
+	"loseretention":            0xff000000, //   0   0   0  -1
+	"loseretired":              0xff000000, //   0   0   0  -1
+	"loseretirement":           0xff000000, //   0   0   0  -1
+	"loseretreat":              0xff000000, //   0   0   0  -1
+	"loseretrieval":            0xff000000, //   0   0   0  -1
+	"loseretrieve":             0xff000000, //   0   0   0  -1
+	"loseretro":                0xff000000, //   0   0   0  -1
+	"losereturn":               0xff000000, //   0   0   0  -1
+	"losereunion":              0xff000000, //   0   0   0  -1
+	"losereuters":              0xff000000, //   0   0   0  -1
+	"loserev":                  0xff000000, //   0   0   0  -1
+	"losereward":               0xff000000, //   0   0   0  -1
+	"losereynolds":             0xff000000, //   0   0   0  -1
+	"loserfc":                  0xff000000, //   0   0   0  -1
+	"loserhode":                0xff000000, //   0   0   0  -1
+	"loserhythm":               0xff000000, //   0   0   0  -1
+	"loseribbon":               0xff000000, //   0   0   0  -1
+	"loseric":                  0xff000000, //   0   0   0  -1
+	"loserid":                  0xff000000, //   0   0   0  -1
+	"loseright":                0xff000000, //   0   0   0  -1
+	"loserik":                  0xff000000, //   0   0   0  -1
+	"loserim":                  0xff000000, //   0   0   0  -1
+	"losering":                 0xff000000, //   0   0   0  -1
+	"loserio":                  0xff000000, //   0   0   0  -1
+	"loserip":                  0xff000000, //   0   0   0  -1
+	"loserise":                 0xff000000, //   0   0   0  -1
+	"loserising":               0xff000000, //   0   0   0  -1
+	"loserisk":                 0xff000000, //   0   0   0  -1
+	"loseriver":                0xff000000, //   0   0   0  -1
+	"loserna":                  0xff000000, //   0   0   0  -1
+	"loseroad":                 0xff000000, //   0   0   0  -1
+	"loserob":                  0xff000000, //   0   0   0  -1
+	"loserochester":            0xff000000, //   0   0   0  -1
+	"loserock":                 0xff000000, //   0   0   0  -1
+	"loserod":                  0xff000000, //   0   0   0  -1
+	"loseroger":                0xff000000, //   0   0   0  -1
+	"loseroland":               0xff000000, //   0   0   0  -1
+	"loserole":                 0xff000000, //   0   0   0  -1
+	"loseroll":                 0xff000000, //   0   0   0  -1
+	"loserom":                  0xff000000, //   0   0   0  -1
+	"loseron":                  0xff000000, //   0   0   0  -1
+	"loseroof":                 0xff000000, //   0   0   0  -1
+	"loseroom":                 0xff000000, //   0   0   0  -1
+	"loseroot":                 0xff000000, //   0   0   0  -1
+	"loserope":                 0xff000000, //   0   0   0  -1
+	"loserosa":                 0xff000000, //   0   0   0  -1
+	"loserose":                 0xff000000, //   0   0   0  -1
+	"loseross":                 0xff000000, //   0   0   0  -1
+	"loseroster":               0xff000000, //   0   0   0  -1
+	"loserotary":               0xff000000, //   0   0   0  -1
+	"loserotation":             0xff000000, //   0   0   0  -1
+	"loserotic":                0xff000000, //   0   0   0  -1
+	"loserouge":                0xff000000, //   0   0   0  -1
+	"loserough":                0xff000000, //   0   0   0  -1
+	"loseroulette":             0xff000000, //   0   0   0  -1
+	"loseround":                0xff000000, //   0   0   0  -1
+	"loseroute":                0xff000000, //   0   0   0  -1
+	"loseroutine":              0xff000000, //   0   0   0  -1
+	"loserouting":              0xff000000, //   0   0   0  -1
+	"loserover":                0xff000000, //   0   0   0  -1
+	"loserow":                  0xff000000, //   0   0   0  -1
+	"loseroy":                  0xff000000, //   0   0   0  -1
+	"loserp":                   0xff000000, //   0   0   0  -1
+	"loserror":                 0xff000000, //   0   0   0  -1
+	"loserrp":                  0xff000000, //   0   0   0  -1
+	"loserss":                  0xff000000, //   0   0   0  -1
+	"loserubber":               0xff000000, //   0   0   0  -1
+	"loseruby":                 0xff000000, //   0   0   0  -1
+	"loserug":                  0xff000000, //   0   0   0  -1
+	"loserule":                 0xff000000, //   0   0   0  -1
+	"loseruling":               0xff000000, //   0   0   0  -1
+	"loserun":                  0xff000000, //   0   0   0  -1
+	"loserural":                0xff000000, //   0   0   0  -1
+	"loserush":                 0xff000000, //   0   0   0  -1
+	"loserussell":              0xff000000, //   0   0   0  -1
+	"loserussia":               0xff000000, //   0   0   0  -1
+	"loseruth":                 0xff000000, //   0   0   0  -1
+	"loserwanda":               0xff000000, //   0   0   0  -1
+	"loseryan":                 0xff000000, //   0   0   0  -1
 	"lospunk":                  0x00fe0000, //   0   0  -2   0
 	"lossespunk":               0x00fe0000, //   0   0  -2   0
 	"losspunk":                 0x00fe0000, //   0   0  -2   0
@@ -5750,17 +6835,23 @@ var wordValues = map[string]uint32{
 	"lovespunk":                0x00fe0000, //   0   0  -2   0
 	"lowspunk":                 0x00fe0000, //   0   0  -2   0
 	"lubbercock":               0x00ff00ff, //  -1   0  -1   0
+	"lubra":                    0x00ff0000, //   0   0  -1   0
 	"lucanus":                  0x000000ff, //  -1   0   0   0
 	"lucuma":                   0x00fe0000, //   0   0  -2   0
 	"lucumia":                  0x00fe0000, //   0   0  -2   0
 	"lucumo":                   0x00fe0000, //   0   0  -2   0
 	"luispunk":                 0x00fe0000, //   0   0  -2   0
+	"lunchate":                 0xff000000, //   0   0   0  -1
+	"lunchink":                 0x0000fe00, //   0  -2   0   0
+	"lustful":                  0xff000000, //   0   0   0  -1
+	"lymphomonocyte":           0x0000ff00, //   0  -1   0   0
 	"lyricrap":                 0x000000ff, //  -1   0   0   0
 	"lyricspunk":               0x00fe0000, //   0   0  -2   0
 	"lyricuntil":               0x00ffff00, //   0  -1  -1   0
 	"lyricuntitled":            0x00ffff00, //   0  -1  -1   0
 	"lyricunto":                0x00ffff00, //   0  -1  -1   0
 	"machinespunk":             0x00fe0000, //   0   0  -2   0
+	"macintoshate":             0xff000000, //   0   0   0  -1
 	"mackintoshite":            0x000000ff, //  -1   0   0   0
 	"macrap":                   0x000000ff, //  -1   0   0   0
 	"macumba":                  0x00fe0000, //   0   0  -2   0
@@ -5782,6 +6873,7 @@ var wordValues = map[string]uint32{
 	"magneticuntitled":         0x00ffff00, //   0  -1  -1   0
 	"magneticunto":             0x00ffff00, //   0  -1  -1   0
 	"magnetite":                0x00fe0000, //   0   0  -2   0
+	"mahoe":                    0x00ffff00, //   0  -1  -1   0
 	"mailspunk":                0x00fe0000, //   0   0  -2   0
 	"makassar":                 0x000000ff, //  -1   0   0   0
 	"makerspunk":               0x00fe0000, //   0   0  -2   0
@@ -5826,6 +6918,9 @@ var wordValues = map[string]uint32{
 	"margaretwater":            0x00fe0000, //   0   0  -2   0
 	"margaretwatson":           0x00fe0000, //   0   0  -2   0
 	"margaretwatt":             0x00fe0000, //   0   0  -2   0
+	"mariahate":                0xff000000, //   0   0   0  -1
+	"marinazinc":               0x0000ff00, //   0  -1   0   0
+	"marinazip":                0x0000ff00, //   0  -1   0   0
 	"markerspunk":              0x00fe0000, //   0   0  -2   0
 	"marketspunk":              0x00fe0000, //   0   0  -2   0
 	"marketwatch":              0x00fe0000, //   0   0  -2   0
@@ -5866,8 +6961,15 @@ var wordValues = map[string]uint32{
 	"marsexotic":               0x00ff0000, //   0   0  -1   0
 	"marsexp":                  0x00ff0000, //   0   0  -1   0
 	"marsext":                  0x00ff0000, //   0   0  -1   0
+	"marshate":                 0xff000000, //   0   0   0  -1
 	"marshite":                 0x000000ff, //  -1   0   0   0
 	"marspunk":                 0x00fe0000, //   0   0  -2   0
+	"marthatea":                0xff000000, //   0   0   0  -1
+	"marthatech":               0xff000000, //   0   0   0  -1
+	"marthatee":                0xff000000, //   0   0   0  -1
+	"marthatemp":               0xff000000, //   0   0   0  -1
+	"marthaten":                0xff000000, //   0   0   0  -1
+	"marthatex":                0xff000000, //   0   0   0  -1
 	"martite":                  0x00fe0000, //   0   0  -2   0
 	"mass":                     0x000000ff, //  -1   0   0   0
 	"massachusettspunk":        0x00fe0000, //   0   0  -2   0
@@ -5881,9 +6983,13 @@ var wordValues = map[string]uint32{
 	"masterbattery":            0x00ff0000, //   0   0  -1   0
 	"masterbattle":             0x00ff0000, //   0   0  -1   0
 	"masterspunk":              0x00fe0000, //   0   0  -2   0
+	"mastful":                  0xff000000, //   0   0   0  -1
+	"matchate":                 0xff000000, //   0   0   0  -1
 	"matcheshe":                0x00ff0000, //   0   0  -1   0
 	"matchespunk":              0x00fe0000, //   0   0  -2   0
+	"matchink":                 0x0000fe00, //   0  -2   0   0
 	"materialspunk":            0x00fe0000, //   0   0  -2   0
+	"mathate":                  0xff000000, //   0   0   0  -1
 	"mathematicspunk":          0x00fe0000, //   0   0  -2   0
 	"matrixrated":              0x00ff0000, //   0   0  -1   0
 	"matspunk":                 0x00fe0000, //   0   0  -2   0
@@ -5992,11 +7098,18 @@ var wordValues = map[string]uint32{
 	"meetwatt":                 0x00fe0000, //   0   0  -2   0
 	"megalopenis":              0x00fe00fe, //  -2   0  -2   0
 	"megass":                   0x000000ff, //  -1   0   0   0
+	"melanorrhoea":             0x00ffff00, //   0  -1  -1   0
 	"melilitite":               0x00fe0000, //   0   0  -2   0
 	"meltith":                  0x00fe0000, //   0   0  -2   0
 	"meltwater":                0x00fe0000, //   0   0  -2   0
 	"memberspunk":              0x00fe0000, //   0   0  -2   0
+	"membracid":                0x00ff0000, //   0   0  -1   0
+	"membracine":               0x00ff0000, //   0   0  -1   0
+	"membral":                  0x00ff0000, //   0   0  -1   0
 	"memoriespunk":             0x00fe0000, //   0   0  -2   0
+	"meningorrhoea":            0x00ffff00, //   0  -1  -1   0
+	"menorrhoea":               0x00ffff00, //   0  -1  -1   0
+	"menorrhoeic":              0x00ffff00, //   0  -1  -1   0
 	"menspunk":                 0x00fe0000, //   0   0  -2   0
 	"menudead":                 0x00fe0000, //   0   0  -2   0
 	"menudeaf":                 0x00fe0000, //   0   0  -2   0
@@ -6040,8 +7153,10 @@ var wordValues = map[string]uint32{
 	"menuspunk":                0x00fe0000, //   0   0  -2   0
 	"merchandisemen":           0x00fe0000, //   0   0  -2   0
 	"merchantspunk":            0x00fe0000, //   0   0  -2   0
+	"meshate":                  0xff000000, //   0   0   0  -1
 	"mesitite":                 0x00fe0000, //   0   0  -2   0
 	"messpunk":                 0x00fe0000, //   0   0  -2   0
+	"mestfull":                 0xff000000, //   0   0   0  -1
 	"metallicrap":              0x000000ff, //  -1   0   0   0
 	"metallicuntil":            0x00ffff00, //   0  -1  -1   0
 	"metallicuntitled":         0x00ffff00, //   0  -1  -1   0
@@ -6145,6 +7260,7 @@ var wordValues = map[string]uint32{
 	"mishit":                   0x000000ff, //  -1   0   0   0
 	"mississippissl":           0x000000ff, //  -1   0   0   0
 	"misspunk":                 0x00fe0000, //   0   0  -2   0
+	"mistful":                  0xff000000, //   0   0   0  -1
 	"mixrated":                 0x00ff0000, //   0   0  -1   0
 	"mlspunk":                  0x00fe0000, //   0   0  -2   0
 	"mocock":                   0x00ff00ff, //  -1   0  -1   0
@@ -6174,6 +7290,7 @@ var wordValues = map[string]uint32{
 	"modularseveral":           0x000000ff, //  -1   0   0   0
 	"modularsevere":            0x000000ff, //  -1   0   0   0
 	"modularsewing":            0x000000ff, //  -1   0   0   0
+	"moistful":                 0xff000000, //   0   0   0  -1
 	"molecularsea":             0x000000ff, //  -1   0   0   0
 	"molecularsec":             0x000000ff, //  -1   0   0   0
 	"molecularsee":             0x000000ff, //  -1   0   0   0
@@ -6195,6 +7312,7 @@ var wordValues = map[string]uint32{
 	"molecularseveral":         0x000000ff, //  -1   0   0   0
 	"molecularsevere":          0x000000ff, //  -1   0   0   0
 	"molecularsewing":          0x000000ff, //  -1   0   0   0
+	"molestful":                0xff000000, //   0   0   0  -1
 	"momentspunk":              0x00fe0000, //   0   0  -2   0
 	"momspunk":                 0x00fe0000, //   0   0  -2   0
 	"monacoonce":               0x0000fd00, //   0  -3   0   0
@@ -6206,12 +7324,16 @@ var wordValues = map[string]uint32{
 	"monacoons":                0x0000fd00, //   0  -3   0   0
 	"monacoontario":            0x0000fd00, //   0  -3   0   0
 	"monacoonto":               0x0000fd00, //   0  -3   0   0
+	"monazine":                 0x0000ff00, //   0  -1   0   0
+	"monazite":                 0x0000ff00, //   0  -1   0   0
 	"monbuttu":                 0x000000ff, //  -1   0   0   0
 	"monetite":                 0x00fe0000, //   0   0  -2   0
 	"monitorspunk":             0x00fe0000, //   0   0  -2   0
 	"monosexualities":          0x00ff0000, //   0   0  -1   0
 	"monosexuality":            0x00ff0000, //   0   0  -1   0
 	"monsterspunk":             0x00fe0000, //   0   0  -2   0
+	"montebrasite":             0x00ff0000, //   0   0  -1   0
+	"monthate":                 0xff000000, //   0   0   0  -1
 	"monthspunk":               0x00fe0000, //   0   0  -2   0
 	"moorcock":                 0x00ff00ff, //  -1   0  -1   0
 	"morass":                   0x000000ff, //  -1   0   0   0
@@ -6225,6 +7347,7 @@ var wordValues = map[string]uint32{
 	"moroccoontario":           0x0000fd00, //   0  -3   0   0
 	"moroccoonto":              0x0000fd00, //   0  -3   0   0
 	"morrispunk":               0x00fe0000, //   0   0  -2   0
+	"moschate":                 0xff000000, //   0   0   0  -1
 	"mosespunk":                0x00fe0000, //   0   0  -2   0
 	"mosspunk":                 0x00fe0000, //   0   0  -2   0
 	"mostwatch":                0x00fe0000, //   0   0  -2   0
@@ -6234,7 +7357,6 @@ var wordValues = map[string]uint32{
 	"motelspunk":               0x00fe0000, //   0   0  -2   0
 	"mothballs":                0x00ff0000, //   0   0  -1   0
 	"motherfuck":               0x00010100, //   0   1   1   0
-	"motherfucker":             0x00feffff, //  -1  -1  -2   0
 	"motitation":               0x00fe0000, //   0   0  -2   0
 	"motorolabias":             0x00fe0000, //   0   0  -2   0
 	"motorspunk":               0x00fe0000, //   0   0  -2   0
@@ -6243,13 +7365,19 @@ var wordValues = map[string]uint32{
 	"mountwater":               0x00fe0000, //   0   0  -2   0
 	"mountwatson":              0x00fe0000, //   0   0  -2   0
 	"mountwatt":                0x00fe0000, //   0   0  -2   0
+	"mouthate":                 0xff000000, //   0   0   0  -1
 	"movementspunk":            0x00fe0000, //   0   0  -2   0
 	"moverspunk":               0x00fe0000, //   0   0  -2   0
 	"movespunk":                0x00fe0000, //   0   0  -2   0
 	"moviespunk":               0x00fe0000, //   0   0  -2   0
 	"mozillabias":              0x00fe0000, //   0   0  -2   0
 	"mpegspunk":                0x00fe0000, //   0   0  -2   0
+	"mphate":                   0xff000000, //   0   0   0  -1
+	"mphukraine":               0x00ff00ff, //  -1   0  -1   0
 	"mrspunk":                  0x00fe0000, //   0   0  -2   0
+	"muchate":                  0xff000000, //   0   0   0  -1
+	"muchink":                  0x0000fe00, //   0  -2   0   0
+	"mucorrhoea":               0x00ffff00, //   0  -1  -1   0
 	"muff":                     0x00020000, //   0   0   2   0
 	"muffed":                   0x00fe0000, //   0   0  -2   0
 	"muffer":                   0x00fe0000, //   0   0  -2   0
@@ -6259,7 +7387,12 @@ var wordValues = map[string]uint32{
 	"muffle":                   0x00fe0000, //   0   0  -2   0
 	"mufflin":                  0x00fe0000, //   0   0  -2   0
 	"muffy":                    0x00fe0000, //   0   0  -2   0
+	"muglycos":                 0xff000000, //   0   0   0  -1
+	"muglying":                 0xff000000, //   0   0   0  -1
+	"muglynn":                  0xff000000, //   0   0   0  -1
+	"muglyric":                 0xff000000, //   0   0   0  -1
 	"muircock":                 0x00ff00ff, //  -1   0  -1   0
+	"muliebral":                0x00ff0000, //   0   0  -1   0
 	"multitagged":              0x00fe0000, //   0   0  -2   0
 	"multitask":                0x00fe0000, //   0   0  -2   0
 	"multitentacled":           0x00fe0000, //   0   0  -2   0
@@ -6278,16 +7411,20 @@ var wordValues = map[string]uint32{
 	"multitudinosity":          0x00fe0000, //   0   0  -2   0
 	"multitudinous":            0x00fe0000, //   0   0  -2   0
 	"multiturn":                0x00fe0000, //   0   0  -2   0
+	"munichate":                0xff000000, //   0   0   0  -1
+	"munichink":                0x0000fe00, //   0  -2   0   0
 	"muromontite":              0x00fe0000, //   0   0  -2   0
 	"museumspunk":              0x00fe0000, //   0   0  -2   0
 	"musicianspunk":            0x00fe0000, //   0   0  -2   0
 	"muslimspunk":              0x00fe0000, //   0   0  -2   0
+	"musselcracker":            0x0000ff00, //   0  -1   0   0
 	"mustwatch":                0x00fe0000, //   0   0  -2   0
 	"mustwater":                0x00fe0000, //   0   0  -2   0
 	"mustwatson":               0x00fe0000, //   0   0  -2   0
 	"mustwatt":                 0x00fe0000, //   0   0  -2   0
 	"myerspunk":                0x00fe0000, //   0   0  -2   0
 	"mysteriouspunk":           0x00fe0000, //   0   0  -2   0
+	"mythate":                  0xff000000, //   0   0   0  -1
 	"nagkassar":                0x000000ff, //  -1   0   0   0
 	"nailspunk":                0x00fe0000, //   0   0  -2   0
 	"naked":                    0x00010000, //   0   0   1   0
@@ -6307,16 +7444,28 @@ var wordValues = map[string]uint32{
 	"natwater":                 0x00fe0000, //   0   0  -2   0
 	"natwatson":                0x00fe0000, //   0   0  -2   0
 	"natwatt":                  0x00fe0000, //   0   0  -2   0
+	"navahoes":                 0x00ffff00, //   0  -1  -1   0
+	"nazi":                     0x00000100, //   0   1   0   0
+	"nazification":             0x0000ff00, //   0  -1   0   0
+	"nazified":                 0x0000ff00, //   0  -1   0   0
+	"nazifies":                 0x0000ff00, //   0  -1   0   0
+	"nazify":                   0x0000ff00, //   0  -1   0   0
+	"naziism":                  0x0000ff00, //   0  -1   0   0
+	"nazim":                    0x0000ff00, //   0  -1   0   0
+	"nazir":                    0x0000ff00, //   0  -1   0   0
+	"nazism":                   0x0000ff00, //   0  -1   0   0
 	"nbcrap":                   0x000000ff, //  -1   0   0   0
 	"nbcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"nbcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"nbcunto":                  0x00ffff00, //   0  -1  -1   0
+	"nebraska":                 0x00ff0000, //   0   0  -1   0
 	"necrap":                   0x000000ff, //  -1   0   0   0
 	"necuntil":                 0x00ffff00, //   0  -1  -1   0
 	"necuntitled":              0x00ffff00, //   0  -1  -1   0
 	"necunto":                  0x00ffff00, //   0  -1  -1   0
 	"neighborspunk":            0x00fe0000, //   0   0  -2   0
 	"nervouspunk":              0x00fe0000, //   0   0  -2   0
+	"nestful":                  0xff000000, //   0   0   0  -1
 	"netwatch":                 0x00fe0000, //   0   0  -2   0
 	"netwater":                 0x00fe0000, //   0   0  -2   0
 	"netwatson":                0x00fe0000, //   0   0  -2   0
@@ -6341,6 +7490,7 @@ var wordValues = map[string]uint32{
 	"nigga":                    0x00000201, //   1   2   0   0
 	"niggard":                  0x0000feff, //  -1  -2   0   0
 	"nigger":                   0x00000302, //   2   3   0   0
+	"nigguh":                   0x00000201, //   1   2   0   0
 	"nightspunk":               0x00fe0000, //   0   0  -2   0
 	"nightwatch":               0x00fe0000, //   0   0  -2   0
 	"nightwater":               0x00fe0000, //   0   0  -2   0
@@ -6351,12 +7501,16 @@ var wordValues = map[string]uint32{
 	"nocument":                 0x00fe0000, //   0   0  -2   0
 	"noisemen":                 0x00fe0000, //   0   0  -2   0
 	"noncock":                  0x00ff00ff, //  -1   0  -1   0
+	"nonfatty":                 0xff00ff00, //   0  -1   0  -1
+	"nonloser":                 0xff000000, //   0   0   0  -1
 	"nonporness":               0x00fe0000, //   0   0  -2   0
+	"nonpregnant":              0x00ff0000, //   0   0  -1   0
 	"nonretarded":              0xff00ff00, //   0  -1   0  -1
 	"nonsexist":                0x00ff0000, //   0   0  -1   0
 	"nonsexlinked":             0x00ff0000, //   0   0  -1   0
 	"nonsexual":                0x00ff0000, //   0   0  -1   0
 	"norsemen":                 0x00fe0000, //   0   0  -2   0
+	"northate":                 0xff000000, //   0   0   0  -1
 	"nosemen":                  0x00fe0000, //   0   0  -2   0
 	"notespunk":                0x00fe0000, //   0   0  -2   0
 	"nothofagus":               0x0000fd00, //   0  -3   0   0
@@ -6375,6 +7529,7 @@ var wordValues = map[string]uint32{
 	"numerouspunk":             0x00fe0000, //   0   0  -2   0
 	"nursemen":                 0x00fe0000, //   0   0  -2   0
 	"nursespunk":               0x00fe0000, //   0   0  -2   0
+	"nutcracker":               0x0000ff00, //   0  -1   0   0
 	"nutspunk":                 0x00fe0000, //   0   0  -2   0
 	"nutwatch":                 0x00fe0000, //   0   0  -2   0
 	"nutwater":                 0x00fe0000, //   0   0  -2   0
@@ -6389,6 +7544,24 @@ var wordValues = map[string]uint32{
 	"oakspunk":                 0x00fe0000, //   0   0  -2   0
 	"oarcock":                  0x00ff00ff, //  -1   0  -1   0
 	"oasispunk":                0x00fe0000, //   0   0  -2   0
+	"oasissydney":              0xff000000, //   0   0   0  -1
+	"oasissymantec":            0xff000000, //   0   0   0  -1
+	"oasissymbol":              0xff000000, //   0   0   0  -1
+	"oasissympathy":            0xff000000, //   0   0   0  -1
+	"oasissymphony":            0xff000000, //   0   0   0  -1
+	"oasissymposium":           0xff000000, //   0   0   0  -1
+	"oasissymptoms":            0xff000000, //   0   0   0  -1
+	"oasissync":                0xff000000, //   0   0   0  -1
+	"oasissyndicate":           0xff000000, //   0   0   0  -1
+	"oasissyndication":         0xff000000, //   0   0   0  -1
+	"oasissyndrome":            0xff000000, //   0   0   0  -1
+	"oasissynopsis":            0xff000000, //   0   0   0  -1
+	"oasissyntax":              0xff000000, //   0   0   0  -1
+	"oasissynthesis":           0xff000000, //   0   0   0  -1
+	"oasissynthetic":           0xff000000, //   0   0   0  -1
+	"oasissyracuse":            0xff000000, //   0   0   0  -1
+	"oasissyria":               0xff000000, //   0   0   0  -1
+	"oasissys":                 0xff000000, //   0   0   0  -1
 	"obituariespunk":           0x00fe0000, //   0   0  -2   0
 	"objectivespunk":           0x00fe0000, //   0   0  -2   0
 	"objectspunk":              0x00fe0000, //   0   0  -2   0
@@ -6435,12 +7608,15 @@ var wordValues = map[string]uint32{
 	"oddballs":                 0x00ff0000, //   0   0  -1   0
 	"oddspunk":                 0x00fe0000, //   0   0  -2   0
 	"oecumenian":               0x00fe0000, //   0   0  -2   0
+	"oenanthate":               0xff000000, //   0   0   0  -1
+	"oenochoe":                 0x00ffff00, //   0  -1  -1   0
 	"offensemen":               0x00fe0000, //   0   0  -2   0
 	"offerspunk":               0x00fe0000, //   0   0  -2   0
 	"officerspunk":             0x00fe0000, //   0   0  -2   0
 	"officespunk":              0x00fe0000, //   0   0  -2   0
 	"officialspunk":            0x00fe0000, //   0   0  -2   0
 	"oilspunk":                 0x00fe0000, //   0   0  -2   0
+	"oinochoe":                 0x00ffff00, //   0  -1  -1   0
 	"olympuspunk":              0x00fe0000, //   0   0  -2   0
 	"olympusyacht":             0x00ffff00, //   0  -1  -1   0
 	"olympusyahoo":             0x00ffff00, //   0  -1  -1   0
@@ -6462,6 +7638,13 @@ var wordValues = map[string]uint32{
 	"olympusyrs":               0x00ffff00, //   0  -1  -1   0
 	"olympusyugoslavia":        0x00ffff00, //   0  -1  -1   0
 	"olympusyukon":             0x00ffff00, //   0  -1  -1   0
+	"omahatea":                 0xff000000, //   0   0   0  -1
+	"omahatech":                0xff000000, //   0   0   0  -1
+	"omahatee":                 0xff000000, //   0   0   0  -1
+	"omahatemp":                0xff000000, //   0   0   0  -1
+	"omahaten":                 0xff000000, //   0   0   0  -1
+	"omahatex":                 0xff000000, //   0   0   0  -1
+	"omnipregnant":             0x00ff0000, //   0   0  -1   0
 	"onespunk":                 0x00fe0000, //   0   0  -2   0
 	"onspunk":                  0x00fe0000, //   0   0  -2   0
 	"oopspunk":                 0x00fe0000, //   0   0  -2   0
@@ -6504,11 +7687,19 @@ var wordValues = map[string]uint32{
 	"orichalcum":               0x00fe0000, //   0   0  -2   0
 	"orientite":                0x00fe0000, //   0   0  -2   0
 	"orleanspunk":              0x00fe0000, //   0   0  -2   0
+	"ornithomorph":             0x0000ff00, //   0  -1   0   0
 	"oroanal":                  0x00ff00ff, //  -1   0  -1   0
+	"orthoepic":                0x00ffff00, //   0  -1  -1   0
+	"orthoepies":               0x00ffff00, //   0  -1  -1   0
+	"orthoepist":               0x00ffff00, //   0  -1  -1   0
+	"orthoepy":                 0x00ffff00, //   0  -1  -1   0
 	"orthoganal":               0x00ff00ff, //  -1   0  -1   0
+	"orthomolecular":           0x0000ff00, //   0  -1   0   0
+	"orthomorphic":             0x0000ff00, //   0  -1   0   0
 	"orvietite":                0x00fe0000, //   0   0  -2   0
 	"ostracum":                 0x00fe0000, //   0   0  -2   0
 	"otherspunk":               0x00fe0000, //   0   0  -2   0
+	"otorrhoea":                0x00ffff00, //   0  -1  -1   0
 	"ouachitite":               0x00fe0000, //   0   0  -2   0
 	"oughtwatch":               0x00fe0000, //   0   0  -2   0
 	"oughtwater":               0x00fe0000, //   0   0  -2   0
@@ -6521,9 +7712,13 @@ var wordValues = map[string]uint32{
 	"outwatson":                0x00fe0000, //   0   0  -2   0
 	"outwatt":                  0x00fe0000, //   0   0  -2   0
 	"overfag":                  0x0000fd00, //   0  -3   0   0
+	"overhate":                 0xff000000, //   0   0   0  -1
+	"overpregnant":             0x00ff0000, //   0   0  -1   0
 	"oversexed":                0x00ff0000, //   0   0  -1   0
 	"ownerspunk":               0x00fe0000, //   0   0  -2   0
 	"ownspunk":                 0x00fe0000, //   0   0  -2   0
+	"oxyfatty":                 0xff00ff00, //   0  -1   0  -1
+	"pachinko":                 0x0000fe00, //   0  -2   0   0
 	"pacificrap":               0x000000ff, //  -1   0   0   0
 	"pacificuntil":             0x00ffff00, //   0  -1  -1   0
 	"pacificuntitled":          0x00ffff00, //   0  -1  -1   0
@@ -6540,7 +7735,9 @@ var wordValues = map[string]uint32{
 	"pacunto":                  0x00ffff00, //   0  -1  -1   0
 	"paddlecock":               0x00ff00ff, //  -1   0  -1   0
 	"paganalia":                0x00ff00ff, //  -1   0  -1   0
+	"pahoehoe":                 0x00ffff00, //   0  -1  -1   0
 	"paintingspunk":            0x00fe0000, //   0   0  -2   0
+	"palpebra":                 0x00ff0000, //   0   0  -1   0
 	"pamelabias":               0x00fe0000, //   0   0  -2   0
 	"panala":                   0x00ff00ff, //  -1   0  -1   0
 	"panalbania":               0x00ff00ff, //  -1   0  -1   0
@@ -6595,6 +7792,7 @@ var wordValues = map[string]uint32{
 	"paratitla":                0x00fe0000, //   0   0  -2   0
 	"paratitlon":               0x00fe0000, //   0   0  -2   0
 	"parentspunk":              0x00fe0000, //   0   0  -2   0
+	"parishate":                0xff000000, //   0   0   0  -1
 	"parispunk":                0x00fe0000, //   0   0  -2   0
 	"parkspunk":                0x00fe0000, //   0   0  -2   0
 	"parnassus":                0x000000ff, //  -1   0   0   0
@@ -6633,10 +7831,15 @@ var wordValues = map[string]uint32{
 	"pastwatson":               0x00fe0000, //   0   0  -2   0
 	"pastwatt":                 0x00fe0000, //   0   0  -2   0
 	"patacoon":                 0x0000fd00, //   0  -3   0   0
+	"patchate":                 0xff000000, //   0   0   0  -1
 	"patchcock":                0x00ff00ff, //  -1   0  -1   0
 	"patcheshe":                0x00ff0000, //   0   0  -1   0
 	"patchespunk":              0x00fe0000, //   0   0  -2   0
+	"patchink":                 0x0000fe00, //   0  -2   0   0
 	"patentspunk":              0x00fe0000, //   0   0  -2   0
+	"pathate":                  0xff000000, //   0   0   0  -1
+	"pathomorphologic":         0x0000ff00, //   0  -1   0   0
+	"pathomorphology":          0x0000ff00, //   0  -1   0   0
 	"pathspunk":                0x00fe0000, //   0   0  -2   0
 	"patientspunk":             0x00fe0000, //   0   0  -2   0
 	"patternspunk":             0x00fe0000, //   0   0  -2   0
@@ -6746,7 +7949,9 @@ var wordValues = map[string]uint32{
 	"persephassa":              0x000000ff, //  -1   0   0   0
 	"personalspunk":            0x00fe0000, //   0   0  -2   0
 	"perspectivespunk":         0x00fe0000, //   0   0  -2   0
+	"perthate":                 0xff000000, //   0   0   0  -1
 	"peshito":                  0x000000ff, //  -1   0   0   0
+	"pestful":                  0xff000000, //   0   0   0  -1
 	"petcock":                  0x00ff00ff, //  -1   0  -1   0
 	"petit":                    0x00fe0000, //   0   0  -2   0
 	"petspunk":                 0x00fe0000, //   0   0  -2   0
@@ -6764,18 +7969,46 @@ var wordValues = map[string]uint32{
 	"pharmacokinetic":          0x00ff00ff, //  -1   0  -1   0
 	"phasemen":                 0x00fe0000, //   0   0  -2   0
 	"phasespunk":               0x00fe0000, //   0   0  -2   0
+	"phenazin":                 0x0000ff00, //   0  -1   0   0
 	"philippinespunk":          0x00fe0000, //   0   0  -2   0
 	"philopornist":             0x00fe0000, //   0   0  -2   0
+	"phoebads":                 0x00ffff00, //   0  -1  -1   0
+	"phoebe":                   0x00ffff00, //   0  -1  -1   0
+	"phoebus":                  0x00ffff00, //   0  -1  -1   0
+	"phoenicaceae":             0x00ffff00, //   0  -1  -1   0
+	"phoenicaceous":            0x00ffff00, //   0  -1  -1   0
+	"phoenicales":              0x00ffff00, //   0  -1  -1   0
+	"phoenicean":               0x00ffff00, //   0  -1  -1   0
+	"phoenicia":                0x00ffff00, //   0  -1  -1   0
+	"phoenicid":                0x00ffff00, //   0  -1  -1   0
+	"phoenicite":               0x00ffff00, //   0  -1  -1   0
+	"phoenicize":               0x00ffff00, //   0  -1  -1   0
+	"phoenicochroite":          0x00ffff00, //   0  -1  -1   0
+	"phoenicopter":             0x00ffff00, //   0  -1  -1   0
+	"phoeniculidae":            0x00ffff00, //   0  -1  -1   0
+	"phoeniculus":              0x00ffff00, //   0  -1  -1   0
+	"phoenicurous":             0x00ffff00, //   0  -1  -1   0
+	"phoenigm":                 0x00ffff00, //   0  -1  -1   0
+	"phoenix":                  0x00ffff00, //   0  -1  -1   0
 	"phoenixrated":             0x00ff0000, //   0   0  -1   0
+	"phomopsis":                0x0000ff00, //   0  -1   0   0
+	"phosphate":                0xff000000, //   0   0   0  -1
+	"phosphoenolpyruvate":      0x00ffff00, //   0  -1  -1   0
+	"phosphomolybdate":         0x0000ff00, //   0  -1   0   0
+	"phosphomolybdic":          0x0000ff00, //   0  -1   0   0
+	"phosphomonoesterase":      0x0000ff00, //   0  -1   0   0
 	"photographerspunk":        0x00fe0000, //   0   0  -2   0
 	"photospunk":               0x00fe0000, //   0   0  -2   0
 	"photosser":                0x000000ff, //  -1   0   0   0
+	"photosynthate":            0xff000000, //   0   0   0  -1
 	"phpissn":                  0x000000ff, //  -1   0   0   0
 	"phpissue":                 0x000000ff, //  -1   0   0   0
 	"phpoops":                  0x000000ff, //  -1   0   0   0
 	"phprick":                  0x000000fe, //  -2   0   0   0
 	"phrasemen":                0x00fe0000, //   0   0  -2   0
 	"phrasespunk":              0x00fe0000, //   0   0  -2   0
+	"phuck":                    0x00010001, //   1   0   1   0
+	"phuk":                     0x00010001, //   1   0   1   0
 	"physicianspunk":           0x00fe0000, //   0   0  -2   0
 	"physicspunk":              0x00fe0000, //   0   0  -2   0
 	"physpunk":                 0x00fe0000, //   0   0  -2   0
@@ -6816,7 +8049,11 @@ var wordValues = map[string]uint32{
 	"pissing":                  0x000000ff, //  -1   0   0   0
 	"pissodes":                 0x000000ff, //  -1   0   0   0
 	"pissoir":                  0x000000ff, //  -1   0   0   0
+	"pitchate":                 0xff000000, //   0   0   0  -1
+	"pitchink":                 0x0000fe00, //   0  -2   0   0
+	"pithoegia":                0x00ffff00, //   0  -1  -1   0
 	"pittite":                  0x00fe0000, //   0   0  -2   0
+	"pittsburghate":            0xff000000, //   0   0   0  -1
 	"pixelspunk":               0x00fe0000, //   0   0  -2   0
 	"pixrated":                 0x00ff0000, //   0   0  -1   0
 	"placespunk":               0x00fe0000, //   0   0  -2   0
@@ -6846,7 +8083,13 @@ var wordValues = map[string]uint32{
 	"plcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"plcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"plcunto":                  0x00ffff00, //   0  -1  -1   0
+	"plemochoe":                0x00ffff00, //   0  -1  -1   0
 	"plotcock":                 0x00ff00ff, //  -1   0  -1   0
+	"pluglycos":                0xff000000, //   0   0   0  -1
+	"pluglying":                0xff000000, //   0   0   0  -1
+	"pluglynn":                 0xff000000, //   0   0   0  -1
+	"pluglyric":                0xff000000, //   0   0   0  -1
+	"plugugly":                 0xff000000, //   0   0   0  -1
 	"pluspunk":                 0x00fe0000, //   0   0  -2   0
 	"pmcrap":                   0x000000ff, //  -1   0   0   0
 	"pmcuntil":                 0x00ffff00, //   0  -1  -1   0
@@ -6887,9 +8130,11 @@ var wordValues = map[string]uint32{
 	"polarsevere":              0x000000ff, //  -1   0   0   0
 	"polarsewing":              0x000000ff, //  -1   0   0   0
 	"policiespunk":             0x00fe0000, //   0   0  -2   0
+	"polishate":                0xff000000, //   0   0   0  -1
 	"politicianspunk":          0x00fe0000, //   0   0  -2   0
 	"politicspunk":             0x00fe0000, //   0   0  -2   0
 	"pollspunk":                0x00fe0000, //   0   0  -2   0
+	"poloser":                  0xff000000, //   0   0   0  -1
 	"polyphonicrap":            0x000000ff, //  -1   0   0   0
 	"polyphonicuntil":          0x00ffff00, //   0  -1  -1   0
 	"polyphonicuntitled":       0x00ffff00, //   0  -1  -1   0
@@ -7038,6 +8283,7 @@ var wordValues = map[string]uint32{
 	"possesspunk":              0x00fe0000, //   0   0  -2   0
 	"postanal":                 0x00ff00ff, //  -1   0  -1   0
 	"posterspunk":              0x00fe0000, //   0   0  -2   0
+	"postfurca":                0xff000000, //   0   0   0  -1
 	"posticum":                 0x00fe0000, //   0   0  -2   0
 	"postingspunk":             0x00fe0000, //   0   0  -2   0
 	"postspunk":                0x00fe0000, //   0   0  -2   0
@@ -7064,6 +8310,9 @@ var wordValues = map[string]uint32{
 	"preanal":                  0x00ff00ff, //  -1   0  -1   0
 	"preciouspunk":             0x00fe0000, //   0   0  -2   0
 	"precisemen":               0x00fe0000, //   0   0  -2   0
+	"pregnant":                 0x00010000, //   0   0   1   0
+	"pregnantly":               0x00ff0000, //   0   0  -1   0
+	"pregnantness":             0x00ff0000, //   0   0  -1   0
 	"premisespunk":             0x00fe0000, //   0   0  -2   0
 	"presentspunk":             0x00fe0000, //   0   0  -2   0
 	"presspunk":                0x00fe0000, //   0   0  -2   0
@@ -7190,12 +8439,14 @@ var wordValues = map[string]uint32{
 	"prospectwatson":           0x00fe0000, //   0   0  -2   0
 	"prospectwatt":             0x00fe0000, //   0   0  -2   0
 	"prospunk":                 0x00fe0000, //   0   0  -2   0
+	"prostatorrhoea":           0x00ffff00, //   0  -1  -1   0
 	"prostitut":                0x00020000, //   0   0   2   0
 	"protectwatch":             0x00fe0000, //   0   0  -2   0
 	"protectwater":             0x00fe0000, //   0   0  -2   0
 	"protectwatson":            0x00fe0000, //   0   0  -2   0
 	"protectwatt":              0x00fe0000, //   0   0  -2   0
 	"protocolspunk":            0x00fe0000, //   0   0  -2   0
+	"protohomo":                0x0000ff00, //   0  -1   0   0
 	"protwatch":                0x00fe0000, //   0   0  -2   0
 	"protwater":                0x00fe0000, //   0   0  -2   0
 	"protwatson":               0x00fe0000, //   0   0  -2   0
@@ -7208,7 +8459,7 @@ var wordValues = map[string]uint32{
 	"provincestadium":          0x00fe0000, //   0   0  -2   0
 	"provincestaff":            0x00fe0000, //   0   0  -2   0
 	"provincestag":             0x00fe0000, //   0   0  -2   0
-	"provincestahoe":           0x00fe0000, //   0   0  -2   0
+	"provincestahoe":           0x00fdff00, //   0  -1  -3   0
 	"provincestail":            0x00fe0000, //   0   0  -2   0
 	"provincestainless":        0x00fe0000, //   0   0  -2   0
 	"provincestaiwan":          0x00fe0000, //   0   0  -2   0
@@ -7323,6 +8574,7 @@ var wordValues = map[string]uint32{
 	"prozacuntitled":           0x00ffff00, //   0  -1  -1   0
 	"prozacunto":               0x00ffff00, //   0  -1  -1   0
 	"pseudolabia":              0x00fe0000, //   0   0  -2   0
+	"pseudopregnant":           0x00ff0000, //   0   0  -1   0
 	"pspoops":                  0x000000ff, //  -1   0   0   0
 	"psprick":                  0x000000fe, //  -2   0   0   0
 	"pspunknown":               0x00fe0000, //   0   0  -2   0
@@ -7331,6 +8583,11 @@ var wordValues = map[string]uint32{
 	"pstwatson":                0x00fe0000, //   0   0  -2   0
 	"pstwatt":                  0x00fe0000, //   0   0  -2   0
 	"psychoanal":               0x00ff00ff, //  -1   0  -1   0
+	"psychoepilepsy":           0x00ffff00, //   0  -1  -1   0
+	"psychoethical":            0x00ffff00, //   0  -1  -1   0
+	"psychomorphic":            0x0000ff00, //   0  -1   0   0
+	"psychomorphism":           0x0000ff00, //   0  -1   0   0
+	"psychomotility":           0x0000ff00, //   0  -1   0   0
 	"psychosexual":             0x00ff0000, //   0   0  -1   0
 	"ptspunk":                  0x00fe0000, //   0   0  -2   0
 	"pube":                     0x00020000, //   0   0   2   0
@@ -7372,7 +8629,6 @@ var wordValues = map[string]uint32{
 	"pubegypt":                 0x00fe0000, //   0   0  -2   0
 	"pubeight":                 0x00fe0000, //   0   0  -2   0
 	"pubeither":                0x00fe0000, //   0   0  -2   0
-	"pubejaculation":           0x00fe0000, //   0   0  -2   0
 	"pubelder":                 0x00fe0000, //   0   0  -2   0
 	"pubelect":                 0x00fe0000, //   0   0  -2   0
 	"pubelegant":               0x00fe0000, //   0   0  -2   0
@@ -7529,6 +8785,7 @@ var wordValues = map[string]uint32{
 	"publicuntil":              0x00ffff00, //   0  -1  -1   0
 	"publicuntitled":           0x00ffff00, //   0  -1  -1   0
 	"publicunto":               0x00ffff00, //   0  -1  -1   0
+	"publishate":               0xff000000, //   0   0   0  -1
 	"publisherspunk":           0x00fe0000, //   0   0  -2   0
 	"pubspunk":                 0x00fe0000, //   0   0  -2   0
 	"puccoon":                  0x0000fd00, //   0  -3   0   0
@@ -7540,10 +8797,13 @@ var wordValues = map[string]uint32{
 	"pumpoops":                 0x000000ff, //  -1   0   0   0
 	"pumprick":                 0x000000fe, //  -2   0   0   0
 	"pumpspunk":                0x00fe0000, //   0   0  -2   0
+	"punchate":                 0xff000000, //   0   0   0  -1
+	"punchink":                 0x0000fe00, //   0  -2   0   0
 	"pupilspunk":               0x00fe0000, //   0   0  -2   0
 	"purchasespunk":            0x00fe0000, //   0   0  -2   0
 	"purposespunk":             0x00fe0000, //   0   0  -2   0
 	"pursemen":                 0x00fe0000, //   0   0  -2   0
+	"pushate":                  0xff000000, //   0   0   0  -1
 	"pushballs":                0x00ff0000, //   0   0  -1   0
 	"pussies":                  0x00010100, //   0   1   1   0
 	"pussiest":                 0x00ffff00, //   0  -1  -1   0
@@ -7557,6 +8817,8 @@ var wordValues = map[string]uint32{
 	"pvcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"pvcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"pvcunto":                  0x00ffff00, //   0  -1  -1   0
+	"pyorrhoea":                0x00ffff00, //   0  -1  -1   0
+	"pyorrhoeic":               0x00ffff00, //   0  -1  -1   0
 	"pyrrhotite":               0x00fe0000, //   0   0  -2   0
 	"quandong":                 0x00ff0000, //   0   0  -1   0
 	"quantitate":               0x00fe0000, //   0   0  -2   0
@@ -7588,6 +8850,7 @@ var wordValues = map[string]uint32{
 	"queersome":                0x0000fe00, //   0  -2   0   0
 	"queery":                   0x0000fe00, //   0  -2   0   0
 	"queriespunk":              0x00fe0000, //   0   0  -2   0
+	"questful":                 0xff000000, //   0   0   0  -1
 	"quietwatch":               0x00fe0000, //   0   0  -2   0
 	"quietwater":               0x00fe0000, //   0   0  -2   0
 	"quietwatson":              0x00fe0000, //   0   0  -2   0
@@ -7629,7 +8892,12 @@ var wordValues = map[string]uint32{
 	"radiuspunk":               0x00fe0000, //   0   0  -2   0
 	"raisemen":                 0x00fe0000, //   0   0  -2   0
 	"raisespunk":               0x00fe0000, //   0   0  -2   0
+	"raleighate":               0xff000000, //   0   0   0  -1
+	"ralphate":                 0xff000000, //   0   0   0  -1
+	"ralphukraine":             0x00ff00ff, //  -1   0  -1   0
 	"ranal":                    0x00ff00ff, //  -1   0  -1   0
+	"ranchate":                 0xff000000, //   0   0   0  -1
+	"ranchink":                 0x0000fe00, //   0  -2   0   0
 	"rangerspunk":              0x00fe0000, //   0   0  -2   0
 	"rangespunk":               0x00fe0000, //   0   0  -2   0
 	"rankspunk":                0x00fe0000, //   0   0  -2   0
@@ -7671,7 +8939,6 @@ var wordValues = map[string]uint32{
 	"rapegypt":                 0x00ff0000, //   0   0  -1   0
 	"rapeight":                 0x00ff0000, //   0   0  -1   0
 	"rapeither":                0x00ff0000, //   0   0  -1   0
-	"rapejaculation":           0x00ff0000, //   0   0  -1   0
 	"rapelder":                 0x00ff0000, //   0   0  -1   0
 	"rapelect":                 0x00ff0000, //   0   0  -1   0
 	"rapelegant":               0x00ff0000, //   0   0  -1   0
@@ -7857,6 +9124,7 @@ var wordValues = map[string]uint32{
 	"receiverspunk":            0x00fe0000, //   0   0  -2   0
 	"receivespunk":             0x00fe0000, //   0   0  -2   0
 	"receptorspunk":            0x00fe0000, //   0   0  -2   0
+	"rechate":                  0xff000000, //   0   0   0  -1
 	"recipenissan":             0x00fe00fe, //  -2   0  -2   0
 	"recipespunk":              0x00fe0000, //   0   0  -2   0
 	"recipientspunk":           0x00fe0000, //   0   0  -2   0
@@ -7926,6 +9194,7 @@ var wordValues = map[string]uint32{
 	"regularseveral":           0x000000ff, //  -1   0   0   0
 	"regularsevere":            0x000000ff, //  -1   0   0   0
 	"regularsewing":            0x000000ff, //  -1   0   0   0
+	"rehoe":                    0x00ffff00, //   0  -1  -1   0
 	"rejectwatch":              0x00fe0000, //   0   0  -2   0
 	"rejectwater":              0x00fe0000, //   0   0  -2   0
 	"rejectwatson":             0x00fe0000, //   0   0  -2   0
@@ -7960,6 +9229,7 @@ var wordValues = map[string]uint32{
 	"researcherspunk":          0x00fe0000, //   0   0  -2   0
 	"resex":                    0x00ff0000, //   0   0  -1   0
 	"residentspunk":            0x00fe0000, //   0   0  -2   0
+	"resistful":                0xff000000, //   0   0   0  -1
 	"respectwatch":             0x00fe0000, //   0   0  -2   0
 	"respectwater":             0x00fe0000, //   0   0  -2   0
 	"respectwatson":            0x00fe0000, //   0   0  -2   0
@@ -7969,6 +9239,7 @@ var wordValues = map[string]uint32{
 	"responsespunk":            0x00fe0000, //   0   0  -2   0
 	"respunk":                  0x00fe0000, //   0   0  -2   0
 	"restaurantspunk":          0x00fe0000, //   0   0  -2   0
+	"restful":                  0xff000000, //   0   0   0  -1
 	"restitue":                 0x00fe0000, //   0   0  -2   0
 	"restitute":                0x00fe0000, //   0   0  -2   0
 	"restituting":              0x00fe0000, //   0   0  -2   0
@@ -8005,8 +9276,14 @@ var wordValues = map[string]uint32{
 	"rfcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"rfcuntitled":              0x00ffff00, //   0  -1  -1   0
 	"rfcunto":                  0x00ffff00, //   0  -1  -1   0
+	"rhinorrhoea":              0x00ffff00, //   0  -1  -1   0
+	"rhoeadales":               0x00ffff00, //   0  -1  -1   0
+	"rhoecus":                  0x00ffff00, //   0  -1  -1   0
+	"rhoeo":                    0x00ffff00, //   0  -1  -1   0
 	"ribboner":                 0x00fe0000, //   0   0  -2   0
 	"richardspunk":             0x00fe0000, //   0   0  -2   0
+	"richate":                  0xff000000, //   0   0   0  -1
+	"richink":                  0x0000fe00, //   0  -2   0   0
 	"ricoonce":                 0x0000fd00, //   0  -3   0   0
 	"ricoone":                  0x0000fd00, //   0  -3   0   0
 	"ricoongoing":              0x0000fd00, //   0  -3   0   0
@@ -8032,6 +9309,8 @@ var wordValues = map[string]uint32{
 	"risemen":                  0x00fe0000, //   0   0  -2   0
 	"riskspunk":                0x00fe0000, //   0   0  -2   0
 	"riverspunk":               0x00fe0000, //   0   0  -2   0
+	"rnazinc":                  0x0000ff00, //   0  -1   0   0
+	"rnazip":                   0x0000ff00, //   0  -1   0   0
 	"robertspunk":              0x00fe0000, //   0   0  -2   0
 	"robertwatch":              0x00fe0000, //   0   0  -2   0
 	"robertwater":              0x00fe0000, //   0   0  -2   0
@@ -8042,6 +9321,7 @@ var wordValues = map[string]uint32{
 	"robotwater":               0x00fe0000, //   0   0  -2   0
 	"robotwatson":              0x00fe0000, //   0   0  -2   0
 	"robotwatt":                0x00fe0000, //   0   0  -2   0
+	"robustful":                0xff000000, //   0   0   0  -1
 	"robustity":                0x00fe0000, //   0   0  -2   0
 	"robustwatch":              0x00fe0000, //   0   0  -2   0
 	"robustwater":              0x00fe0000, //   0   0  -2   0
@@ -8071,6 +9351,7 @@ var wordValues = map[string]uint32{
 	"rosespunk":                0x00fe0000, //   0   0  -2   0
 	"rosspunk":                 0x00fe0000, //   0   0  -2   0
 	"rougemontite":             0x00fe0000, //   0   0  -2   0
+	"roughate":                 0xff000000, //   0   0   0  -1
 	"roundspunk":               0x00fe0000, //   0   0  -2   0
 	"routerspunk":              0x00fe0000, //   0   0  -2   0
 	"routespunk":               0x00fe0000, //   0   0  -2   0
@@ -8082,9 +9363,16 @@ var wordValues = map[string]uint32{
 	"rrpoops":                  0x000000ff, //  -1   0   0   0
 	"rrprick":                  0x000000fe, //  -2   0   0   0
 	"rsspunk":                  0x00fe0000, //   0   0  -2   0
+	"ruglycos":                 0xff000000, //   0   0   0  -1
+	"ruglying":                 0xff000000, //   0   0   0  -1
+	"ruglynn":                  0xff000000, //   0   0   0  -1
+	"ruglyric":                 0xff000000, //   0   0   0  -1
 	"rugspunk":                 0x00fe0000, //   0   0  -2   0
 	"runspunk":                 0x00fe0000, //   0   0  -2   0
+	"rushate":                  0xff000000, //   0   0   0  -1
+	"rustful":                  0xff000000, //   0   0   0  -1
 	"rusticum":                 0x00fe0000, //   0   0  -2   0
+	"ruthate":                  0xff000000, //   0   0   0  -1
 	"ryanala":                  0x00ff00ff, //  -1   0  -1   0
 	"ryanalbania":              0x00ff00ff, //  -1   0  -1   0
 	"ryanalbany":               0x00ff00ff, //  -1   0  -1   0
@@ -8120,8 +9408,10 @@ var wordValues = map[string]uint32{
 	"ryanusps":                 0x000000ff, //  -1   0   0   0
 	"ryanusr":                  0x000000ff, //  -1   0   0   0
 	"ryanusual":                0x000000ff, //  -1   0   0   0
+	"sabra":                    0x00ff0000, //   0   0  -1   0
 	"saccoon":                  0x0000fd00, //   0  -3   0   0
 	"sackbutt":                 0x000000ff, //  -1   0   0   0
+	"safecracker":              0x0000ff00, //   0  -1   0   0
 	"saintspunk":               0x00fe0000, //   0   0  -2   0
 	"salariespunk":             0x00fe0000, //   0   0  -2   0
 	"sanala":                   0x00ff00ff, //  -1   0  -1   0
@@ -8151,6 +9441,8 @@ var wordValues = map[string]uint32{
 	"sanalways":                0x00ff00ff, //  -1   0  -1   0
 	"sanctitude":               0x00fe0000, //   0   0  -2   0
 	"sanctity":                 0x00fe0000, //   0   0  -2   0
+	"sandwichate":              0xff000000, //   0   0   0  -1
+	"sandwichink":              0x0000fe00, //   0  -2   0   0
 	"sanspunk":                 0x00fe0000, //   0   0  -2   0
 	"sanusa":                   0x000000ff, //  -1   0   0   0
 	"sanusb":                   0x000000ff, //  -1   0   0   0
@@ -8165,6 +9457,7 @@ var wordValues = map[string]uint32{
 	"sapissn":                  0x000000ff, //  -1   0   0   0
 	"sapissue":                 0x000000ff, //  -1   0   0   0
 	"saprick":                  0x000000fe, //  -2   0   0   0
+	"sarahate":                 0xff000000, //   0   0   0  -1
 	"sarape":                   0x00ff0000, //   0   0  -1   0
 	"sargasso":                 0x000000ff, //  -1   0   0   0
 	"sargassum":                0x000000ff, //  -1   0   0   0
@@ -8228,6 +9521,7 @@ var wordValues = map[string]uint32{
 	"satwater":                 0x00fe0000, //   0   0  -2   0
 	"satwatson":                0x00fe0000, //   0   0  -2   0
 	"satwatt":                  0x00fe0000, //   0   0  -2   0
+	"savannahate":              0xff000000, //   0   0   0  -1
 	"savespunk":                0x00fe0000, //   0   0  -2   0
 	"savingspunk":              0x00fe0000, //   0   0  -2   0
 	"sayspunk":                 0x00fe0000, //   0   0  -2   0
@@ -8245,6 +9539,11 @@ var wordValues = map[string]uint32{
 	"scenicuntitled":           0x00ffff00, //   0  -1  -1   0
 	"scenicunto":               0x00ffff00, //   0  -1  -1   0
 	"schemespunk":              0x00fe0000, //   0   0  -2   0
+	"schoenanth":               0x00ffff00, //   0  -1  -1   0
+	"schoenobatic":             0x00ffff00, //   0  -1  -1   0
+	"schoenobatist":            0x00ffff00, //   0  -1  -1   0
+	"schoenocaulon":            0x00ffff00, //   0  -1  -1   0
+	"schoenus":                 0x00ffff00, //   0  -1  -1   0
 	"scholarsea":               0x000000ff, //  -1   0   0   0
 	"scholarsebay":             0x000000ff, //  -1   0   0   0
 	"scholarsebony":            0x000000ff, //  -1   0   0   0
@@ -8274,7 +9573,6 @@ var wordValues = map[string]uint32{
 	"scholarsegypt":            0x000000ff, //  -1   0   0   0
 	"scholarseight":            0x000000ff, //  -1   0   0   0
 	"scholarseither":           0x000000ff, //  -1   0   0   0
-	"scholarsejaculation":      0x000000ff, //  -1   0   0   0
 	"scholarselder":            0x000000ff, //  -1   0   0   0
 	"scholarselect":            0x000000ff, //  -1   0   0   0
 	"scholarselegant":          0x000000ff, //  -1   0   0   0
@@ -8375,11 +9673,14 @@ var wordValues = map[string]uint32{
 	"scoopissue":               0x000000ff, //  -1   0   0   0
 	"scoopoops":                0x000000ff, //  -1   0   0   0
 	"scooprick":                0x000000fe, //  -2   0   0   0
+	"scottishate":              0xff000000, //   0   0   0  -1
 	"scottwatch":               0x00fe0000, //   0   0  -2   0
 	"scottwater":               0x00fe0000, //   0   0  -2   0
 	"scottwatson":              0x00fe0000, //   0   0  -2   0
 	"scottwatt":                0x00fe0000, //   0   0  -2   0
 	"scrap":                    0x000000ff, //  -1   0   0   0
+	"scratchate":               0xff000000, //   0   0   0  -1
+	"scratchink":               0x0000fe00, //   0  -2   0   0
 	"screensaverspunk":         0x00fe0000, //   0   0  -2   0
 	"screenspunk":              0x00fe0000, //   0   0  -2   0
 	"screwballs":               0x00ff0000, //   0   0  -1   0
@@ -8393,6 +9694,7 @@ var wordValues = map[string]uint32{
 	"sculptitory":              0x00fe0000, //   0   0  -2   0
 	"scum":                     0x00fe0000, //   0   0  -2   0
 	"scuttlebutt":              0x000000ff, //  -1   0   0   0
+	"scyphate":                 0xff000000, //   0   0   0  -1
 	"seacock":                  0x00ff00ff, //  -1   0  -1   0
 	"seanala":                  0x00ff00ff, //  -1   0  -1   0
 	"seanalbania":              0x00ff00ff, //  -1   0  -1   0
@@ -8432,6 +9734,8 @@ var wordValues = map[string]uint32{
 	"searcheshe":               0x00ff0000, //   0   0  -1   0
 	"searchespunk":             0x00fe0000, //   0   0  -2   0
 	"seatspunk":                0x00fe0000, //   0   0  -2   0
+	"seborrhoea":               0x00ffff00, //   0  -1  -1   0
+	"seborrhoeic":              0x00ffff00, //   0  -1  -1   0
 	"secondomaha":              0x00ff0000, //   0   0  -1   0
 	"secondspunk":              0x00fe0000, //   0   0  -2   0
 	"secrap":                   0x000000ff, //  -1   0   0   0
@@ -8491,7 +9795,6 @@ var wordValues = map[string]uint32{
 	"seminarsegypt":            0x000000ff, //  -1   0   0   0
 	"seminarseight":            0x000000ff, //  -1   0   0   0
 	"seminarseither":           0x000000ff, //  -1   0   0   0
-	"seminarsejaculation":      0x000000ff, //  -1   0   0   0
 	"seminarselder":            0x000000ff, //  -1   0   0   0
 	"seminarselect":            0x000000ff, //  -1   0   0   0
 	"seminarselegant":          0x000000ff, //  -1   0   0   0
@@ -8593,6 +9896,7 @@ var wordValues = map[string]uint32{
 	"sepissue":                 0x000000ff, //  -1   0   0   0
 	"sepoops":                  0x000000ff, //  -1   0   0   0
 	"seprick":                  0x000000fe, //  -2   0   0   0
+	"septembral":               0x00ff0000, //   0   0  -1   0
 	"septwatch":                0x00fe0000, //   0   0  -2   0
 	"septwater":                0x00fe0000, //   0   0  -2   0
 	"septwatson":               0x00fe0000, //   0   0  -2   0
@@ -8618,8 +9922,10 @@ var wordValues = map[string]uint32{
 	"setwater":                 0x00fe0000, //   0   0  -2   0
 	"setwatson":                0x00fe0000, //   0   0  -2   0
 	"setwatt":                  0x00fe0000, //   0   0  -2   0
+	"seventhate":               0xff000000, //   0   0   0  -1
 	"sex":                      0x00010000, //   0   0   1   0
 	"seybertite":               0x00fe0000, //   0   0  -2   0
+	"shabracque":               0x00ff0000, //   0   0  -1   0
 	"shadowspunk":              0x00fe0000, //   0   0  -2   0
 	"shaftwatch":               0x00fe0000, //   0   0  -2   0
 	"shaftwater":               0x00fe0000, //   0   0  -2   0
@@ -8643,6 +9949,7 @@ var wordValues = map[string]uint32{
 	"sheetwater":               0x00fe0000, //   0   0  -2   0
 	"sheetwatson":              0x00fe0000, //   0   0  -2   0
 	"sheetwatt":                0x00fe0000, //   0   0  -2   0
+	"shellcracker":             0x0000ff00, //   0  -1   0   0
 	"sheshe":                   0x00ff0000, //   0   0  -1   0
 	"shiftwatch":               0x00fe0000, //   0   0  -2   0
 	"shiftwater":               0x00fe0000, //   0   0  -2   0
@@ -8660,6 +9967,7 @@ var wordValues = map[string]uint32{
 	"shitepoke":                0x000000ff, //  -1   0   0   0
 	"shitheel":                 0x000000ff, //  -1   0   0   0
 	"shither":                  0x000000ff, //  -1   0   0   0
+	"shoe":                     0x00ffff00, //   0  -1  -1   0
 	"shoespunk":                0x00fe0000, //   0   0  -2   0
 	"shootwatch":               0x00fe0000, //   0   0  -2   0
 	"shootwater":               0x00fe0000, //   0   0  -2   0
@@ -8769,15 +10077,21 @@ var wordValues = map[string]uint32{
 	"sincestyle":               0x00fe0000, //   0   0  -2   0
 	"sincestylish":             0x00fe0000, //   0   0  -2   0
 	"sincestylus":              0x00fe0000, //   0   0  -2   0
+	"singhate":                 0xff000000, //   0   0   0  -1
 	"sipissn":                  0x000000ff, //  -1   0   0   0
 	"sipissue":                 0x000000ff, //  -1   0   0   0
 	"sipoops":                  0x000000ff, //  -1   0   0   0
 	"siprick":                  0x000000fe, //  -2   0   0   0
+	"sissy":                    0x01000000, //   0   0   0   1
+	"sissyish":                 0xff000000, //   0   0   0  -1
+	"sissyism":                 0xff000000, //   0   0   0  -1
 	"sisterspunk":              0x00fe0000, //   0   0  -2   0
 	"sitespunk":                0x00fe0000, //   0   0  -2   0
 	"sixrated":                 0x00ff0000, //   0   0  -1   0
+	"sixthate":                 0xff000000, //   0   0   0  -1
 	"sizespunk":                0x00fe0000, //   0   0  -2   0
 	"skiddycock":               0x00ff00ff, //  -1   0  -1   0
+	"skillyourself":            0xfe00ff00, //   0  -1   0  -2
 	"skipissn":                 0x000000ff, //  -1   0   0   0
 	"skipissue":                0x000000ff, //  -1   0   0   0
 	"skipoops":                 0x000000ff, //  -1   0   0   0
@@ -8801,20 +10115,26 @@ var wordValues = map[string]uint32{
 	"sluthood":                 0x00ffff00, //   0  -1  -1   0
 	"smaltite":                 0x00fe0000, //   0   0  -2   0
 	"smectite":                 0x00fe0000, //   0   0  -2   0
+	"smithate":                 0xff000000, //   0   0   0  -1
+	"smoothate":                0xff000000, //   0   0   0  -1
 	"smspunk":                  0x00fe0000, //   0   0  -2   0
 	"smtpissn":                 0x000000ff, //  -1   0   0   0
 	"smtpissue":                0x000000ff, //  -1   0   0   0
 	"smtpoops":                 0x000000ff, //  -1   0   0   0
 	"smtprick":                 0x000000fe, //  -2   0   0   0
+	"smugly":                   0xff000000, //   0   0   0  -1
 	"snaked":                   0x00ff0000, //   0   0  -1   0
 	"snakedicke":               0x00ff00ff, //  -1   0  -1   0
 	"snapissn":                 0x000000ff, //  -1   0   0   0
 	"snapissue":                0x000000ff, //  -1   0   0   0
 	"snaprick":                 0x000000fe, //  -2   0   0   0
 	"snowballs":                0x00ff0000, //   0   0  -1   0
+	"snugly":                   0xff000000, //   0   0   0  -1
 	"soapissn":                 0x000000ff, //  -1   0   0   0
 	"soapissue":                0x000000ff, //  -1   0   0   0
 	"soaprick":                 0x000000fe, //  -2   0   0   0
+	"sobralia":                 0x00ff0000, //   0   0  -1   0
+	"sobralite":                0x00ff0000, //   0   0  -1   0
 	"sociosexual":              0x00ff0000, //   0   0  -1   0
 	"socketwatch":              0x00fe0000, //   0   0  -2   0
 	"socketwater":              0x00fe0000, //   0   0  -2   0
@@ -8854,11 +10174,14 @@ var wordValues = map[string]uint32{
 	"solarsevere":              0x000000ff, //  -1   0   0   0
 	"solarsewing":              0x000000ff, //  -1   0   0   0
 	"soldierspunk":             0x00fe0000, //   0   0  -2   0
+	"soloser":                  0xff000000, //   0   0   0  -1
 	"songspunk":                0x00fe0000, //   0   0  -2   0
 	"sonicrap":                 0x000000ff, //  -1   0   0   0
 	"sonicuntil":               0x00ffff00, //   0  -1  -1   0
 	"sonicuntitled":            0x00ffff00, //   0  -1  -1   0
 	"sonicunto":                0x00ffff00, //   0  -1  -1   0
+	"sophomore":                0x0000ff00, //   0  -1   0   0
+	"sophomoric":               0x0000ff00, //   0  -1   0   0
 	"sortita":                  0x00fe0000, //   0   0  -2   0
 	"sortspunk":                0x00fe0000, //   0   0  -2   0
 	"sortwatch":                0x00fe0000, //   0   0  -2   0
@@ -8873,13 +10196,16 @@ var wordValues = map[string]uint32{
 	"souprick":                 0x000000fe, //  -2   0   0   0
 	"sourballs":                0x00ff0000, //   0   0  -1   0
 	"sourcespunk":              0x00fe0000, //   0   0  -2   0
+	"southate":                 0xff000000, //   0   0   0  -1
 	"sovietwatch":              0x00fe0000, //   0   0  -2   0
 	"sovietwater":              0x00fe0000, //   0   0  -2   0
 	"sovietwatson":             0x00fe0000, //   0   0  -2   0
 	"sovietwatt":               0x00fe0000, //   0   0  -2   0
 	"soxrated":                 0x00ff0000, //   0   0  -1   0
 	"spacespunk":               0x00fe0000, //   0   0  -2   0
+	"spanishate":               0xff000000, //   0   0   0  -1
 	"sparassodont":             0x000000ff, //  -1   0   0   0
+	"spattlehoe":               0x00ffff00, //   0  -1  -1   0
 	"speakerspunk":             0x00fe0000, //   0   0  -2   0
 	"speakspunk":               0x00fe0000, //   0   0  -2   0
 	"specialspunk":             0x00fe0000, //   0   0  -2   0
@@ -8916,8 +10242,11 @@ var wordValues = map[string]uint32{
 	"specuntil":                0x00ffff00, //   0  -1  -1   0
 	"specuntitled":             0x00ffff00, //   0  -1  -1   0
 	"specunto":                 0x00ffff00, //   0  -1  -1   0
+	"speechate":                0xff000000, //   0   0   0  -1
 	"speecheshe":               0x00ff0000, //   0   0  -1   0
 	"speechespunk":             0x00fe0000, //   0   0  -2   0
+	"speechink":                0x0000fe00, //   0  -2   0   0
+	"spermatorrhoea":           0x00ffff00, //   0  -1  -1   0
 	"spessartite":              0x00fe0000, //   0   0  -2   0
 	"spiespunk":                0x00fe0000, //   0   0  -2   0
 	"spiss":                    0x000000ff, //  -1   0   0   0
@@ -8926,7 +10255,6 @@ var wordValues = map[string]uint32{
 	"sponsorspunk":             0x00fe0000, //   0   0  -2   0
 	"spotspunk":                0x00fe0000, //   0   0  -2   0
 	"spunk":                    0x00020000, //   0   0   2   0
-	"spunked":                  0x00fe0000, //   0   0  -2   0
 	"spunkie":                  0x00fe0000, //   0   0  -2   0
 	"spunkily":                 0x00fe0000, //   0   0  -2   0
 	"spunkiness":               0x00fe0000, //   0   0  -2   0
@@ -9004,13 +10332,18 @@ var wordValues = map[string]uint32{
 	"steadykept":               0x00ffffff, //  -1  -1  -1   0
 	"steadykevin":              0x00ffffff, //  -1  -1  -1   0
 	"steadykey":                0x00ffffff, //  -1  -1  -1   0
+	"stearrhoea":               0x00ffff00, //   0  -1  -1   0
 	"steatite":                 0x00fe0000, //   0   0  -2   0
+	"steatorrhoea":             0x00ffff00, //   0  -1  -1   0
+	"steenbras":                0x00ff0000, //   0   0  -1   0
 	"stepissn":                 0x000000ff, //  -1   0   0   0
 	"stepissue":                0x000000ff, //  -1   0   0   0
 	"stepoops":                 0x000000ff, //  -1   0   0   0
 	"steprick":                 0x000000fe, //  -2   0   0   0
 	"stepspunk":                0x00fe0000, //   0   0  -2   0
+	"sternebra":                0x00ff0000, //   0   0  -1   0
 	"stevenspunk":              0x00fe0000, //   0   0  -2   0
+	"stfu":                     0x01000000, //   0   0   0   1
 	"stickerspunk":             0x00fe0000, //   0   0  -2   0
 	"stickspunk":               0x00fe0000, //   0   0  -2   0
 	"stitch":                   0x00fe0000, //   0   0  -2   0
@@ -9018,6 +10351,7 @@ var wordValues = map[string]uint32{
 	"stith":                    0x00fe0000, //   0   0  -2   0
 	"stituted":                 0x00fe0000, //   0   0  -2   0
 	"stockspunk":               0x00fe0000, //   0   0  -2   0
+	"stomachink":               0x0000fe00, //   0  -2   0   0
 	"stopcock":                 0x00ff00ff, //  -1   0  -1   0
 	"storiespunk":              0x00fe0000, //   0   0  -2   0
 	"stormcock":                0x00ff00ff, //  -1   0  -1   0
@@ -9036,8 +10370,11 @@ var wordValues = map[string]uint32{
 	"streetwater":              0x00fe0000, //   0   0  -2   0
 	"streetwatson":             0x00fe0000, //   0   0  -2   0
 	"streetwatt":               0x00fe0000, //   0   0  -2   0
+	"strengthate":              0xff000000, //   0   0   0  -1
 	"strengthspunk":            0x00fe0000, //   0   0  -2   0
 	"stresspunk":               0x00fe0000, //   0   0  -2   0
+	"stretchate":               0xff000000, //   0   0   0  -1
+	"stretchink":               0x0000fe00, //   0  -2   0   0
 	"strikespunk":              0x00fe0000, //   0   0  -2   0
 	"stripespunk":              0x00fe0000, //   0   0  -2   0
 	"structwatch":              0x00fe0000, //   0   0  -2   0
@@ -9070,6 +10407,7 @@ var wordValues = map[string]uint32{
 	"sturdiest":                0x000000ff, //  -1   0   0   0
 	"sturdily":                 0x000000ff, //  -1   0   0   0
 	"sturdy":                   0x000000ff, //  -1   0   0   0
+	"stylishate":               0xff000000, //   0   0   0  -1
 	"styluspunk":               0x00fe0000, //   0   0  -2   0
 	"subjectspunk":             0x00fe0000, //   0   0  -2   0
 	"subjectwatch":             0x00fe0000, //   0   0  -2   0
@@ -9077,6 +10415,7 @@ var wordValues = map[string]uint32{
 	"subjectwatson":            0x00fe0000, //   0   0  -2   0
 	"subjectwatt":              0x00fe0000, //   0   0  -2   0
 	"subnude":                  0x00fe0000, //   0   0  -2   0
+	"subra":                    0x00ff0000, //   0   0  -1   0
 	"subscriberspunk":          0x00fe0000, //   0   0  -2   0
 	"subsextuple":              0x00ff0000, //   0   0  -1   0
 	"subsidiariespunk":         0x00fe0000, //   0   0  -2   0
@@ -9090,7 +10429,10 @@ var wordValues = map[string]uint32{
 	"substitution":             0x00fe0000, //   0   0  -2   0
 	"substitutive":             0x00fe0000, //   0   0  -2   0
 	"successpunk":              0x00fe0000, //   0   0  -2   0
+	"succorrhoea":              0x00ffff00, //   0  -1  -1   0
 	"succumb":                  0x00fe0000, //   0   0  -2   0
+	"suchate":                  0xff000000, //   0   0   0  -1
+	"suchink":                  0x0000fe00, //   0  -2   0   0
 	"suckmy":                   0x00020000, //   0   0   2   0
 	"suckmyanmar":              0x00fe0000, //   0   0  -2   0
 	"suckmyers":                0x00fe0000, //   0   0  -2   0
@@ -9108,9 +10450,11 @@ var wordValues = map[string]uint32{
 	"suitespunk":               0x00fe0000, //   0   0  -2   0
 	"sulfaguanidine":           0x0000fd00, //   0  -3   0   0
 	"sulpharsenid":             0x000000ff, //  -1   0   0   0
+	"sulphate":                 0xff000000, //   0   0   0  -1
 	"summariespunk":            0x00fe0000, //   0   0  -2   0
 	"superbowlxxx":             0x00ff0000, //   0   0  -1   0
 	"supersex":                 0x00ff0000, //   0   0  -1   0
+	"superugly":                0xff000000, //   0   0   0  -1
 	"supervisorspunk":          0x00fe0000, //   0   0  -2   0
 	"supplementspunk":          0x00fe0000, //   0   0  -2   0
 	"supplierspunk":            0x00fe0000, //   0   0  -2   0
@@ -9154,6 +10498,24 @@ var wordValues = map[string]uint32{
 	"syncuntitled":             0x00ffff00, //   0  -1  -1   0
 	"syncunto":                 0x00ffff00, //   0  -1  -1   0
 	"synopsispunk":             0x00fe0000, //   0   0  -2   0
+	"synopsissydney":           0xff000000, //   0   0   0  -1
+	"synopsissymantec":         0xff000000, //   0   0   0  -1
+	"synopsissymbol":           0xff000000, //   0   0   0  -1
+	"synopsissympathy":         0xff000000, //   0   0   0  -1
+	"synopsissymphony":         0xff000000, //   0   0   0  -1
+	"synopsissymposium":        0xff000000, //   0   0   0  -1
+	"synopsissymptoms":         0xff000000, //   0   0   0  -1
+	"synopsissync":             0xff000000, //   0   0   0  -1
+	"synopsissyndicate":        0xff000000, //   0   0   0  -1
+	"synopsissyndication":      0xff000000, //   0   0   0  -1
+	"synopsissyndrome":         0xff000000, //   0   0   0  -1
+	"synopsissynopsis":         0xff000000, //   0   0   0  -1
+	"synopsissyntax":           0xff000000, //   0   0   0  -1
+	"synopsissynthesis":        0xff000000, //   0   0   0  -1
+	"synopsissynthetic":        0xff000000, //   0   0   0  -1
+	"synopsissyracuse":         0xff000000, //   0   0   0  -1
+	"synopsissyria":            0xff000000, //   0   0   0  -1
+	"synopsissys":              0xff000000, //   0   0   0  -1
 	"syntheticrap":             0x000000ff, //  -1   0   0   0
 	"syntheticuntil":           0x00ffff00, //   0  -1  -1   0
 	"syntheticuntitled":        0x00ffff00, //   0  -1  -1   0
@@ -9288,6 +10650,8 @@ var wordValues = map[string]uint32{
 	"teachespunk":              0x00fe0000, //   0   0  -2   0
 	"teamspunk":                0x00fe0000, //   0   0  -2   0
 	"teanal":                   0x00ff00ff, //  -1   0  -1   0
+	"techate":                  0xff000000, //   0   0   0  -1
+	"techink":                  0x0000fe00, //   0  -2   0   0
 	"techniquespunk":           0x00fe0000, //   0   0  -2   0
 	"technologiespunk":         0x00fe0000, //   0   0  -2   0
 	"tecum":                    0x00fe0000, //   0   0  -2   0
@@ -9301,16 +10665,19 @@ var wordValues = map[string]uint32{
 	"teddykevin":               0x00ffffff, //  -1  -1  -1   0
 	"teddykey":                 0x00ffffff, //  -1  -1  -1   0
 	"teenspunk":                0x00fe0000, //   0   0  -2   0
+	"teethate":                 0xff000000, //   0   0   0  -1
 	"tektite":                  0x00fe0000, //   0   0  -2   0
 	"tellspunk":                0x00fe0000, //   0   0  -2   0
 	"tempissn":                 0x000000ff, //  -1   0   0   0
 	"tempissue":                0x000000ff, //  -1   0   0   0
 	"tempoops":                 0x000000ff, //  -1   0   0   0
 	"temprick":                 0x000000fe, //  -2   0   0   0
+	"tenebra":                  0x00ff0000, //   0   0  -1   0
 	"tennantite":               0x00fe0000, //   0   0  -2   0
 	"tennispunk":               0x00fe0000, //   0   0  -2   0
 	"tenochtitlan":             0x00fe0000, //   0   0  -2   0
 	"terass":                   0x000000ff, //  -1   0   0   0
+	"terebra":                  0x00ff0000, //   0   0  -1   0
 	"terminalspunk":            0x00fe0000, //   0   0  -2   0
 	"termspunk":                0x00fe0000, //   0   0  -2   0
 	"terrapene":                0x00ff0000, //   0   0  -1   0
@@ -9389,15 +10756,45 @@ var wordValues = map[string]uint32{
 	"thesemen":                 0x00fe0000, //   0   0  -2   0
 	"theshe":                   0x00ff0000, //   0   0  -1   0
 	"thesispunk":               0x00fe0000, //   0   0  -2   0
+	"thesissydney":             0xff000000, //   0   0   0  -1
+	"thesissymantec":           0xff000000, //   0   0   0  -1
+	"thesissymbol":             0xff000000, //   0   0   0  -1
+	"thesissympathy":           0xff000000, //   0   0   0  -1
+	"thesissymphony":           0xff000000, //   0   0   0  -1
+	"thesissymposium":          0xff000000, //   0   0   0  -1
+	"thesissymptoms":           0xff000000, //   0   0   0  -1
+	"thesissync":               0xff000000, //   0   0   0  -1
+	"thesissyndicate":          0xff000000, //   0   0   0  -1
+	"thesissyndication":        0xff000000, //   0   0   0  -1
+	"thesissyndrome":           0xff000000, //   0   0   0  -1
+	"thesissynopsis":           0xff000000, //   0   0   0  -1
+	"thesissyntax":             0xff000000, //   0   0   0  -1
+	"thesissynthesis":          0xff000000, //   0   0   0  -1
+	"thesissynthetic":          0xff000000, //   0   0   0  -1
+	"thesissyracuse":           0xff000000, //   0   0   0  -1
+	"thesissyria":              0xff000000, //   0   0   0  -1
+	"thesissys":                0xff000000, //   0   0   0  -1
 	"thicknesspunk":            0x00fe0000, //   0   0  -2   0
 	"thingspunk":               0x00fe0000, //   0   0  -2   0
 	"thinkspunk":               0x00fe0000, //   0   0  -2   0
+	"thirstful":                0xff000000, //   0   0   0  -1
+	"thomomys":                 0x0000ff00, //   0  -1   0   0
 	"thongspunk":               0x00fe0000, //   0   0  -2   0
 	"thorny":                   0x00fe0000, //   0   0  -2   0
 	"thortveitite":             0x00fe0000, //   0   0  -2   0
+	"thoughate":                0xff000000, //   0   0   0  -1
 	"thoughtspunk":             0x00fe0000, //   0   0  -2   0
 	"thousandspunk":            0x00fe0000, //   0   0  -2   0
 	"threatspunk":              0x00fe0000, //   0   0  -2   0
+	"threesome":                0x00020000, //   0   0   2   0
+	"threesomebody":            0x00fe0000, //   0   0  -2   0
+	"threesomehow":             0x00fe0000, //   0   0  -2   0
+	"threesomeone":             0x00fe0000, //   0   0  -2   0
+	"threesomerset":            0x00fe0000, //   0   0  -2   0
+	"threesomething":           0x00fe0000, //   0   0  -2   0
+	"threesometimes":           0x00fe0000, //   0   0  -2   0
+	"threesomewhat":            0x00fe0000, //   0   0  -2   0
+	"threesomewhere":           0x00fe0000, //   0   0  -2   0
 	"thricecock":               0x00ff00ff, //  -1   0  -1   0
 	"throatwatch":              0x00fe0000, //   0   0  -2   0
 	"throatwater":              0x00fe0000, //   0   0  -2   0
@@ -9508,6 +10905,7 @@ var wordValues = map[string]uint32{
 	"tomatoespunk":             0x00fe0000, //   0   0  -2   0
 	"tomtit":                   0x00fe0000, //   0   0  -2   0
 	"toolspunk":                0x00fe0000, //   0   0  -2   0
+	"toothate":                 0xff000000, //   0   0   0  -1
 	"topissn":                  0x000000ff, //  -1   0   0   0
 	"topissue":                 0x000000ff, //  -1   0   0   0
 	"topoops":                  0x000000ff, //  -1   0   0   0
@@ -9516,6 +10914,9 @@ var wordValues = map[string]uint32{
 	"tosser":                   0x00000001, //   1   0   0   0
 	"totalspunk":               0x00fe0000, //   0   0  -2   0
 	"totanus":                  0x000000ff, //  -1   0   0   0
+	"touchate":                 0xff000000, //   0   0   0  -1
+	"touchink":                 0x0000fe00, //   0  -2   0   0
+	"toughate":                 0xff000000, //   0   0   0  -1
 	"tournamentspunk":          0x00fe0000, //   0   0  -2   0
 	"towardspunk":              0x00fe0000, //   0   0  -2   0
 	"towcock":                  0x00ff00ff, //  -1   0  -1   0
@@ -9578,11 +10979,15 @@ var wordValues = map[string]uint32{
 	"tremendouspunk":           0x00fe0000, //   0   0  -2   0
 	"trialspunk":               0x00fe0000, //   0   0  -2   0
 	"tribespunk":               0x00fe0000, //   0   0  -2   0
+	"tribrac":                  0x00ff0000, //   0   0  -1   0
+	"trichoepithelioma":        0x00ffff00, //   0  -1  -1   0
 	"trickspunk":               0x00fe0000, //   0   0  -2   0
 	"triespunk":                0x00fe0000, //   0   0  -2   0
 	"trimjob":                  0x00fe0000, //   0   0  -2   0
 	"tripsacum":                0x00fe0000, //   0   0  -2   0
+	"tristful":                 0xff000000, //   0   0   0  -1
 	"triticum":                 0x00fe0000, //   0   0  -2   0
+	"trochate":                 0xff000000, //   0   0   0  -1
 	"truckspunk":               0x00fe0000, //   0   0  -2   0
 	"trusteespunk":             0x00fe0000, //   0   0  -2   0
 	"trustspunk":               0x00fe0000, //   0   0  -2   0
@@ -9591,6 +10996,7 @@ var wordValues = map[string]uint32{
 	"trustwatson":              0x00fe0000, //   0   0  -2   0
 	"trustwatt":                0x00fe0000, //   0   0  -2   0
 	"tubespunk":                0x00fe0000, //   0   0  -2   0
+	"tuckahoe":                 0x00ffff00, //   0  -1  -1   0
 	"tucum":                    0x00fe0000, //   0   0  -2   0
 	"tunespunk":                0x00fe0000, //   0   0  -2   0
 	"turbonerve":               0x00fe0000, //   0   0  -2   0
@@ -9612,6 +11018,7 @@ var wordValues = map[string]uint32{
 	"turdoid":                  0x000000ff, //  -1   0   0   0
 	"turdus":                   0x000000ff, //  -1   0   0   0
 	"turfage":                  0x0000fd00, //   0  -3   0   0
+	"turkishate":               0xff000000, //   0   0   0  -1
 	"turncock":                 0x00ff00ff, //  -1   0  -1   0
 	"turnspunk":                0x00fe0000, //   0   0  -2   0
 	"tutorialspunk":            0x00fe0000, //   0   0  -2   0
@@ -9627,7 +11034,11 @@ var wordValues = map[string]uint32{
 	"tympanal":                 0x00ff00ff, //  -1   0  -1   0
 	"typenissan":               0x00fe00fe, //  -2   0  -2   0
 	"typespunk":                0x00fe0000, //   0   0  -2   0
+	"typhoean":                 0x00ffff00, //   0  -1  -1   0
+	"typhoemia":                0x00ffff00, //   0  -1  -1   0
+	"typhoeus":                 0x00ffff00, //   0  -1  -1   0
 	"typicum":                  0x00fe0000, //   0   0  -2   0
+	"ugly":                     0x01000000, //   0   0   0   1
 	"ultrapeace":               0x00ff0000, //   0   0  -1   0
 	"ultrapeak":                0x00ff0000, //   0   0  -1   0
 	"ultrapeas":                0x00ff0000, //   0   0  -1   0
@@ -9636,7 +11047,11 @@ var wordValues = map[string]uint32{
 	"ultrapeople":              0x00ff0000, //   0   0  -1   0
 	"ultrapepper":              0x00ff0000, //   0   0  -1   0
 	"ultrapet":                 0x00ff0000, //   0   0  -1   0
+	"ultraugly":                0xff000000, //   0   0   0  -1
+	"umbra":                    0x00ff0000, //   0   0  -1   0
 	"unanalyzably":             0x00ff00ff, //  -1   0  -1   0
+	"unazinc":                  0x0000ff00, //   0  -1   0   0
+	"unazip":                   0x0000ff00, //   0  -1   0   0
 	"unbiassable":              0x000000ff, //  -1   0   0   0
 	"unbloody":                 0x000000ff, //  -1   0   0   0
 	"uncock":                   0x00ff00ff, //  -1   0  -1   0
@@ -9647,17 +11062,21 @@ var wordValues = map[string]uint32{
 	"undersexton":              0x00ff0000, //   0   0  -1   0
 	"unfagged":                 0x0000fd00, //   0  -3   0   0
 	"unfagoted":                0x0000fd00, //   0  -3   0   0
+	"unfatty":                  0xff00ff00, //   0  -1   0  -1
+	"unhate":                   0xff000000, //   0   0   0  -1
 	"unhorny":                  0x00fe0000, //   0   0  -2   0
 	"unicum":                   0x00fe0000, //   0   0  -2   0
 	"unisex":                   0x00ff0000, //   0   0  -1   0
 	"unixrated":                0x00ff0000, //   0   0  -1   0
 	"unnaked":                  0x00ff0000, //   0   0  -1   0
 	"unporness":                0x00fe0000, //   0   0  -2   0
+	"unpregnant":               0x00ff0000, //   0   0  -1   0
 	"unretardable":             0xff00ff00, //   0  -1   0  -1
 	"unretarded":               0xff00ff00, //   0  -1   0  -1
 	"unsex":                    0x00ff0000, //   0   0  -1   0
 	"unstupid":                 0xff000000, //   0   0   0  -1
 	"untithability":            0x00fe0000, //   0   0  -2   0
+	"unugly":                   0xff000000, //   0   0   0  -1
 	"upcock":                   0x00ff00ff, //  -1   0  -1   0
 	"upcrap":                   0x000000ff, //  -1   0   0   0
 	"upcuntil":                 0x00ffff00, //   0  -1  -1   0
@@ -9667,6 +11086,7 @@ var wordValues = map[string]uint32{
 	"upprick":                  0x000000fe, //  -2   0   0   0
 	"upspunk":                  0x00fe0000, //   0   0  -2   0
 	"uranus":                   0x000000ff, //  -1   0   0   0
+	"urethrorrhoea":            0x00ffff00, //   0  -1  -1   0
 	"urethrosexual":            0x00ff0000, //   0   0  -1   0
 	"urinosexual":              0x00ff0000, //   0   0  -1   0
 	"urlspunk":                 0x00fe0000, //   0   0  -2   0
@@ -9680,6 +11100,7 @@ var wordValues = map[string]uint32{
 	"usespunk":                 0x00fe0000, //   0   0  -2   0
 	"usgspunk":                 0x00fe0000, //   0   0  -2   0
 	"uspspunk":                 0x00fe0000, //   0   0  -2   0
+	"utahate":                  0xff000000, //   0   0   0  -1
 	"utcrap":                   0x000000ff, //  -1   0   0   0
 	"utcuntil":                 0x00ffff00, //   0  -1  -1   0
 	"utcuntitled":              0x00ffff00, //   0  -1  -1   0
@@ -9778,6 +11199,8 @@ var wordValues = map[string]uint32{
 	"vcrapr":                   0x000000ff, //  -1   0   0   0
 	"vcrapt":                   0x000000ff, //  -1   0   0   0
 	"vectitation":              0x00fe0000, //   0   0  -2   0
+	"veldschoen":               0x00ffff00, //   0  -1  -1   0
+	"veldtschoen":              0x00ffff00, //   0  -1  -1   0
 	"velvetwatch":              0x00fe0000, //   0   0  -2   0
 	"velvetwater":              0x00fe0000, //   0   0  -2   0
 	"velvetwatson":             0x00fe0000, //   0   0  -2   0
@@ -9791,18 +11214,27 @@ var wordValues = map[string]uint32{
 	"vermontwatt":              0x00fe0000, //   0   0  -2   0
 	"versemen":                 0x00fe0000, //   0   0  -2   0
 	"versuspunk":               0x00fe0000, //   0   0  -2   0
+	"vertebra":                 0x00ff0000, //   0   0  -1   0
 	"verzeichnispunk":          0x00fe0000, //   0   0  -2   0
 	"vesselspunk":              0x00fe0000, //   0   0  -2   0
 	"vestiture":                0x00fe0000, //   0   0  -2   0
 	"veteranspunk":             0x00fe0000, //   0   0  -2   0
 	"vhspunk":                  0x00fe0000, //   0   0  -2   0
 	"viaticum":                 0x00fe0000, //   0   0  -2   0
+	"vibracula":                0x00ff0000, //   0   0  -1   0
+	"vibraculoid":              0x00ff0000, //   0   0  -1   0
+	"vibraculum":               0x00ff0000, //   0   0  -1   0
+	"vibraharp":                0x00ff0000, //   0   0  -1   0
+	"vibraphone":               0x00ff0000, //   0   0  -1   0
+	"vibraphonist":             0x00ff0000, //   0   0  -1   0
 	"vibratorspunk":            0x00fe0000, //   0   0  -2   0
 	"vicrap":                   0x000000ff, //  -1   0   0   0
 	"victimspunk":              0x00fe0000, //   0   0  -2   0
 	"vicuntil":                 0x00ffff00, //   0  -1  -1   0
 	"vicuntitled":              0x00ffff00, //   0  -1  -1   0
 	"vicunto":                  0x00ffff00, //   0  -1  -1   0
+	"viennazinc":               0x0000ff00, //   0  -1   0   0
+	"viennazip":                0x0000ff00, //   0  -1   0   0
 	"vietnamesemen":            0x00fe0000, //   0   0  -2   0
 	"viewerspunk":              0x00fe0000, //   0   0  -2   0
 	"viewspunk":                0x00fe0000, //   0   0  -2   0
@@ -9902,8 +11334,10 @@ var wordValues = map[string]uint32{
 	"warspunk":                 0x00fe0000, //   0   0  -2   0
 	"washita":                  0x000000ff, //  -1   0   0   0
 	"wassup":                   0x000000ff, //  -1   0   0   0
+	"watchate":                 0xff000000, //   0   0   0  -1
 	"watcheshe":                0x00ff0000, //   0   0  -1   0
 	"watchespunk":              0x00fe0000, //   0   0  -2   0
+	"watchink":                 0x0000fe00, //   0  -2   0   0
 	"waterspunk":               0x00fe0000, //   0   0  -2   0
 	"wattspunk":                0x00fe0000, //   0   0  -2   0
 	"wattwatch":                0x00fe0000, //   0   0  -2   0
@@ -9913,6 +11347,7 @@ var wordValues = map[string]uint32{
 	"wavespunk":                0x00fe0000, //   0   0  -2   0
 	"waxrated":                 0x00ff0000, //   0   0  -1   0
 	"wayspunk":                 0x00fe0000, //   0   0  -2   0
+	"wealthate":                0xff000000, //   0   0   0  -1
 	"weathercock":              0x00ff00ff, //  -1   0  -1   0
 	"webmasterbat":             0x00ff0000, //   0   0  -1   0
 	"weddingspunk":             0x00fe0000, //   0   0  -2   0
@@ -9920,6 +11355,7 @@ var wordValues = map[string]uint32{
 	"weightspunk":              0x00fe0000, //   0   0  -2   0
 	"wellnesspunk":             0x00fe0000, //   0   0  -2   0
 	"wellspunk":                0x00fe0000, //   0   0  -2   0
+	"welshate":                 0xff000000, //   0   0   0  -1
 	"wendykeen":                0x00ffffff, //  -1  -1  -1   0
 	"wendykeep":                0x00ffffff, //  -1  -1  -1   0
 	"wendykeith":               0x00ffffff, //  -1  -1  -1   0
@@ -9936,13 +11372,121 @@ var wordValues = map[string]uint32{
 	"wetwatt":                  0x00fe0000, //   0   0  -2   0
 	"wharfage":                 0x0000fd00, //   0  -3   0   0
 	"wheelspunk":               0x00fe0000, //   0   0  -2   0
+	"whichate":                 0xff000000, //   0   0   0  -1
+	"whichink":                 0x0000fe00, //   0  -2   0   0
 	"whilstwatch":              0x00fe0000, //   0   0  -2   0
 	"whilstwater":              0x00fe0000, //   0   0  -2   0
 	"whilstwatson":             0x00fe0000, //   0   0  -2   0
 	"whilstwatt":               0x00fe0000, //   0   0  -2   0
+	"whipcracker":              0x0000ff00, //   0  -1   0   0
 	"whisterpoop":              0x000000ff, //  -1   0   0   0
 	"whitehass":                0x000000ff, //  -1   0   0   0
+	"whoever":                  0x00ffff00, //   0  -1  -1   0
+	"whomoak":                  0x0000ff00, //   0  -1   0   0
+	"whomoasis":                0x0000ff00, //   0  -1   0   0
+	"whomobesity":              0x0000ff00, //   0  -1   0   0
+	"whomobile":                0x0000ff00, //   0  -1   0   0
+	"whomobility":              0x0000ff00, //   0  -1   0   0
+	"whomobituaries":           0x0000ff00, //   0  -1   0   0
+	"whomobj":                  0x0000ff00, //   0  -1   0   0
+	"whomobligation":           0x0000ff00, //   0  -1   0   0
+	"whomobservation":          0x0000ff00, //   0  -1   0   0
+	"whomobserve":              0x0000ff00, //   0  -1   0   0
+	"whomobtain":               0x0000ff00, //   0  -1   0   0
+	"whomobvious":              0x0000ff00, //   0  -1   0   0
+	"whomoccasion":             0x0000ff00, //   0  -1   0   0
+	"whomoccupation":           0x0000ff00, //   0  -1   0   0
+	"whomoccupied":             0x0000ff00, //   0  -1   0   0
+	"whomoccur":                0x0000ff00, //   0  -1   0   0
+	"whomocean":                0x0000ff00, //   0  -1   0   0
+	"whomoclc":                 0x0000ff00, //   0  -1   0   0
+	"whomoct":                  0x0000ff00, //   0  -1   0   0
+	"whomod":                   0x0000ff00, //   0  -1   0   0
+	"whomoecd":                 0x0000ff00, //   0  -1   0   0
+	"whomoem":                  0x0000ff00, //   0  -1   0   0
+	"whomoff":                  0x0000ff00, //   0  -1   0   0
+	"whomoften":                0x0000ff00, //   0  -1   0   0
+	"whomohio":                 0x0000ff00, //   0  -1   0   0
+	"whomoil":                  0x0000ff00, //   0  -1   0   0
+	"whomoisture":              0x0000ff00, //   0  -1   0   0
+	"whomokay":                 0x0000ff00, //   0  -1   0   0
+	"whomoklahoma":             0x0000ff00, //   0  -1   0   0
+	"whomold":                  0x0000ff00, //   0  -1   0   0
+	"whomolecular":             0x0000ff00, //   0  -1   0   0
+	"whomolecules":             0x0000ff00, //   0  -1   0   0
+	"whomolive":                0x0000ff00, //   0  -1   0   0
+	"whomolympic":              0x0000ff00, //   0  -1   0   0
+	"whomolympus":              0x0000ff00, //   0  -1   0   0
+	"whomom":                   0x0000ff00, //   0  -1   0   0
+	"whomon":                   0x0000ff00, //   0  -1   0   0
+	"whomood":                  0x0000ff00, //   0  -1   0   0
+	"whomoon":                  0x0000ff00, //   0  -1   0   0
+	"whomooo":                  0x0000ff00, //   0  -1   0   0
+	"whomoops":                 0x0000ff00, //   0  -1   0   0
+	"whomoore":                 0x0000ff00, //   0  -1   0   0
+	"whomopen":                 0x0000ff00, //   0  -1   0   0
+	"whomopera":                0x0000ff00, //   0  -1   0   0
+	"whomopinion":              0x0000ff00, //   0  -1   0   0
+	"whomopponent":             0x0000ff00, //   0  -1   0   0
+	"whomopportunities":        0x0000ff00, //   0  -1   0   0
+	"whomopportunity":          0x0000ff00, //   0  -1   0   0
+	"whomopposed":              0x0000ff00, //   0  -1   0   0
+	"whomopposite":             0x0000ff00, //   0  -1   0   0
+	"whomopposition":           0x0000ff00, //   0  -1   0   0
+	"whomopt":                  0x0000ff00, //   0  -1   0   0
+	"whomoracle":               0x0000ff00, //   0  -1   0   0
+	"whomoral":                 0x0000ff00, //   0  -1   0   0
+	"whomorange":               0x0000ff00, //   0  -1   0   0
+	"whomorbit":                0x0000ff00, //   0  -1   0   0
+	"whomorchestra":            0x0000ff00, //   0  -1   0   0
+	"whomorder":                0x0000ff00, //   0  -1   0   0
+	"whomordinance":            0x0000ff00, //   0  -1   0   0
+	"whomordinary":             0x0000ff00, //   0  -1   0   0
+	"whomore":                  0x0000ff00, //   0  -1   0   0
+	"whomorg":                  0x0000ff00, //   0  -1   0   0
+	"whomoriental":             0x0000ff00, //   0  -1   0   0
+	"whomorientation":          0x0000ff00, //   0  -1   0   0
+	"whomoriented":             0x0000ff00, //   0  -1   0   0
+	"whomorigin":               0x0000ff00, //   0  -1   0   0
+	"whomorlando":              0x0000ff00, //   0  -1   0   0
+	"whomorleans":              0x0000ff00, //   0  -1   0   0
+	"whomorning":               0x0000ff00, //   0  -1   0   0
+	"whomorocco":               0x0000ff00, //   0  -1   0   0
+	"whomorris":                0x0000ff00, //   0  -1   0   0
+	"whomortality":             0x0000ff00, //   0  -1   0   0
+	"whomortgage":              0x0000ff00, //   0  -1   0   0
+	"whomoscar":                0x0000ff00, //   0  -1   0   0
+	"whomoscow":                0x0000ff00, //   0  -1   0   0
+	"whomoses":                 0x0000ff00, //   0  -1   0   0
+	"whomoss":                  0x0000ff00, //   0  -1   0   0
+	"whomost":                  0x0000ff00, //   0  -1   0   0
+	"whomotel":                 0x0000ff00, //   0  -1   0   0
+	"whomother":                0x0000ff00, //   0  -1   0   0
+	"whomotion":                0x0000ff00, //   0  -1   0   0
+	"whomotivated":             0x0000ff00, //   0  -1   0   0
+	"whomotivation":            0x0000ff00, //   0  -1   0   0
+	"whomotor":                 0x0000ff00, //   0  -1   0   0
+	"whomottawa":               0x0000ff00, //   0  -1   0   0
+	"whomought":                0x0000ff00, //   0  -1   0   0
+	"whomount":                 0x0000ff00, //   0  -1   0   0
+	"whomour":                  0x0000ff00, //   0  -1   0   0
+	"whomouse":                 0x0000ff00, //   0  -1   0   0
+	"whomout":                  0x0000ff00, //   0  -1   0   0
+	"whomoval":                 0x0000ff00, //   0  -1   0   0
+	"whomove":                  0x0000ff00, //   0  -1   0   0
+	"whomovie":                 0x0000ff00, //   0  -1   0   0
+	"whomoving":                0x0000ff00, //   0  -1   0   0
+	"whomowen":                 0x0000ff00, //   0  -1   0   0
+	"whomown":                  0x0000ff00, //   0  -1   0   0
+	"whomoxford":               0x0000ff00, //   0  -1   0   0
+	"whomoxide":                0x0000ff00, //   0  -1   0   0
+	"whomoxygen":               0x0000ff00, //   0  -1   0   0
+	"whomozambique":            0x0000ff00, //   0  -1   0   0
+	"whomozilla":               0x0000ff00, //   0  -1   0   0
+	"whomozone":                0x0000ff00, //   0  -1   0   0
 	"whore":                    0x00020200, //   0   2   2   0
+	"widthate":                 0xff000000, //   0   0   0  -1
+	"wigga":                    0x00000201, //   1   2   0   0
 	"wildernesspunk":           0x00fe0000, //   0   0  -2   0
 	"williamspunk":             0x00fe0000, //   0   0  -2   0
 	"windowspunk":              0x00fe0000, //   0   0  -2   0
@@ -9951,13 +11495,20 @@ var wordValues = map[string]uint32{
 	"wingspunk":                0x00fe0000, //   0   0  -2   0
 	"winnerspunk":              0x00fe0000, //   0   0  -2   0
 	"winterdykes":              0x00ffffff, //  -1  -1  -1   0
+	"wisecracker":              0x0000ff00, //   0  -1   0   0
 	"wisemen":                  0x00fe0000, //   0   0  -2   0
+	"wishate":                  0xff000000, //   0   0   0  -1
 	"wishespunk":               0x00fe0000, //   0   0  -2   0
+	"wistful":                  0xff000000, //   0   0   0  -1
 	"wistit":                   0x00fe0000, //   0   0  -2   0
+	"witchate":                 0xff000000, //   0   0   0  -1
+	"witchink":                 0x0000fe00, //   0  -2   0   0
+	"withate":                  0xff000000, //   0   0   0  -1
 	"witnessespunk":            0x00fe0000, //   0   0  -2   0
 	"witnesspunk":              0x00fe0000, //   0   0  -2   0
 	"wivespunk":                0x00fe0000, //   0   0  -2   0
 	"woodcock":                 0x00ff00ff, //  -1   0  -1   0
+	"woodcracker":              0x0000ff00, //   0  -1   0   0
 	"woodspunk":                0x00fe0000, //   0   0  -2   0
 	"woollybutt":               0x000000ff, //  -1   0   0   0
 	"wordspunk":                0x00fe0000, //   0   0  -2   0
@@ -9970,10 +11521,14 @@ var wordValues = map[string]uint32{
 	"worstwater":               0x00fe0000, //   0   0  -2   0
 	"worstwatson":              0x00fe0000, //   0   0  -2   0
 	"worstwatt":                0x00fe0000, //   0   0  -2   0
+	"worthate":                 0xff000000, //   0   0   0  -1
 	"writerspunk":              0x00fe0000, //   0   0  -2   0
 	"writespunk":               0x00fe0000, //   0   0  -2   0
 	"writingspunk":             0x00fe0000, //   0   0  -2   0
 	"xanaxrated":               0x00ff0000, //   0   0  -1   0
+	"xanthate":                 0xff000000, //   0   0   0  -1
+	"xanthomonas":              0x0000ff00, //   0  -1   0   0
+	"xanthorrhoea":             0x00ffff00, //   0  -1  -1   0
 	"xeroxrated":               0x00ff0000, //   0   0  -1   0
 	"xnxxrated":                0x00ff0000, //   0   0  -1   0
 	"xrated":                   0x00010000, //   0   0   1   0
@@ -9982,8 +11537,15 @@ var wordValues = map[string]uint32{
 	"yachtwater":               0x00fe0000, //   0   0  -2   0
 	"yachtwatson":              0x00fe0000, //   0   0  -2   0
 	"yachtwatt":                0x00fe0000, //   0   0  -2   0
+	"yamahatea":                0xff000000, //   0   0   0  -1
+	"yamahatech":               0xff000000, //   0   0   0  -1
+	"yamahatee":                0xff000000, //   0   0   0  -1
+	"yamahatemp":               0xff000000, //   0   0   0  -1
+	"yamahaten":                0xff000000, //   0   0   0  -1
+	"yamahatex":                0xff000000, //   0   0   0  -1
 	"yardspunk":                0x00fe0000, //   0   0  -2   0
 	"yass":                     0x000000ff, //  -1   0   0   0
+	"yeahate":                  0xff000000, //   0   0   0  -1
 	"yercum":                   0x00fe0000, //   0   0  -2   0
 	"yespunk":                  0x00fe0000, //   0   0  -2   0
 	"yetwatch":                 0x00fe0000, //   0   0  -2   0
@@ -9991,8 +11553,13 @@ var wordValues = map[string]uint32{
 	"yetwatson":                0x00fe0000, //   0   0  -2   0
 	"yetwatt":                  0x00fe0000, //   0   0  -2   0
 	"yieldspunk":               0x00fe0000, //   0   0  -2   0
+	"youthate":                 0xff000000, //   0   0   0  -1
 	"yrspunk":                  0x00fe0000, //   0   0  -2   0
+	"zabra":                    0x00ff0000, //   0   0  -1   0
 	"zaddick":                  0x00ff00ff, //  -1   0  -1   0
+	"zambra":                   0x00ff0000, //   0   0  -1   0
+	"zebra":                    0x00ff0000, //   0   0  -1   0
+	"zestful":                  0xff000000, //   0   0   0  -1
 	"zincest":                  0x00fe0000, //   0   0  -2   0
 	"zincum":                   0x00fe0000, //   0   0  -2   0
 	"zipissn":                  0x000000ff, //  -1   0   0   0

@@ -33,6 +33,7 @@ func init() {
 	}
 }
 
+// Replace the key with any one of the characters in the value
 var replacements = [...]string{
 	'!': "li",
 	'@': "a",
@@ -68,103 +69,131 @@ func IsInappropriate(text string) bool {
 // IsInappropriate returns whether a phrase contains enough words matching the
 // types flag to meet or exceed InappropriateThreshold
 func Is(text string, types Type) bool {
+	// Sanitize input
 	buf := make([]byte, 0, len(text))
 	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
 	text = string(buf[:n])
+
+	// How many characters ago the last separator character was observed,
+	// expressed as an upper and a lower bound in relation to the current queue
+	// of matches
 	lastSepMin := 0
 	lastSepMax := 0
 
+	// Same as above, but for replacements
+	lastReplacementMin := 0
+	lastReplacementMax := 0
+
+	// Scan status
 	var matches radix.Queue
 	inappropriateLevel := 0
-
 	var lastMatchable byte
+
 	for _, textRune := range text {
-		if textRune >= 0x0020 && textRune <= 0x007E {
-			textByte := byte(textRune)
-			var textBytes string
-			lastSepMin++
-			lastSepMax++
+		// Unhandled runes (not printable, not representable as byte, etc.)
+		if textRune < 0x0020 || textRune > 0x007E {
+			continue
+		}
 
-			ok := true
-			matchable := false
-			skippable := false
+		textByte := byte(textRune)
+		var textBytes string
+		lastSepMin++
+		lastSepMax++
+		lastReplacementMin++
+		lastReplacementMax++
 
-			var replacement string
-			if int(textByte) < len(replacements) {
-				replacement = replacements[textByte]
-			}
+		matchable := false
+		skippable := false
 
-			switch {
-			case textByte >= 'a' && textByte <= 'z':
-				matchable = true
-			case textByte >= 'A' && textByte <= 'Z':
-				textByte += 'a' - 'A'
-				matchable = true
-			case replacement != "":
-				textByte = replacement[0]
-				textBytes = replacement
-				matchable = true
+		var replacement string
+		if int(textByte) < len(replacements) {
+			replacement = replacements[textByte]
+		}
+
+		switch {
+		case textByte >= 'A' && textByte <= 'Z':
+			textByte += 'a' - 'A'
+			fallthrough
+		case textByte >= 'a' && textByte <= 'z':
+			matchable = true
+		case replacement != "":
+			textByte = replacement[0]
+			textBytes = replacement
+			matchable = true
+			lastReplacementMin = 0
+			lastReplacementMax = 0
+		default:
+			switch textByte {
+			case '_', '.', ',', '*':
+				lastReplacementMin = 0
+				lastReplacementMax = 0
+				fallthrough
+			case ' ', '-':
+				skippable = true
+				lastSepMin = 0
+				lastSepMax = 0
 			default:
-				switch textByte {
-				case ' ', '_', '-', '.', ',', '*':
-					skippable = true
-					lastSepMin = 0
-					lastSepMax = 0
-				default:
-					ok = false
+				continue
+			}
+		}
+
+		if textByte == lastMatchable {
+			 // this character doesn't count so cancel the increments to min
+			lastSepMin--
+			lastReplacementMin--
+		}
+
+		if matchable {
+			matches.Append(tree.Root())
+
+			originalLength := matches.Len()
+			for i := 0; i < originalLength; i++ {
+				match := matches.Remove()
+
+				if skippable || textByte == lastMatchable {
+					matches.Append(match)
 				}
-			}
 
-			if textByte == lastMatchable {
-				lastSepMin-- // this character doesn't count
-			}
+				// Process textBytes as multiple textBytes or textByte
+				loops := 1
+				if len(textBytes) > 1 {
+					loops = len(textBytes)
+				}
 
-			if ok {
-				if matchable {
-					matches.Append(tree.Root())
+				for i := 0; i < loops; i++ {
+					loopTextByte := textByte
+					if len(textBytes) > 0 {
+						loopTextByte = textBytes[i]
+					}
+					next := match.Next(loopTextByte)
 
-					originalLength := matches.Len()
-					for i := 0; i < originalLength; i++ {
-						match := matches.Remove()
+					if next == nil {
+						continue
+					}
 
-						if textByte == lastMatchable {
-							matches.Append(match)
-						}
+					if next.Word() {
+						if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
+							match := next.Data() & uint32(types)
+							for i := 0; i < 4; i++ {
+								level := int(int8(match >> (i * 8)))
 
-						// Process textBytes as multiple textBytes or textByte
-						loops := 1
-						if len(textBytes) > 1 {
-							loops = len(textBytes)
-						}
-
-						for i := 0; i < loops; i++ {
-							loopTextByte := textByte
-							if len(textBytes) > 0 {
-								loopTextByte = textBytes[i]
-							}
-							next := match.Next(loopTextByte)
-
-							if next != nil {
-								if next.Word() {
-									if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
-										match := next.Data() & uint32(types)
-										for i := 0; i < 4; i++ {
-											inappropriateLevel += int(int8(match >> (i * 8)))
-										}
-									}
+								// False positives that contain replacements are not matched
+								if level > 0 || next.Depth() - 1 <= lastReplacementMax {
+									inappropriateLevel += level
 								}
-
-								matches.Append(next)
 							}
 						}
 					}
 
-					lastMatchable = textByte
-				} else if !skippable {
-					matches.Clear()
+					matches.Append(next)
 				}
 			}
+
+			lastMatchable = textByte
+		} else if !skippable {
+			matches.Clear()
 		}
 	}
+
 	return inappropriateLevel >= InappropriateThreshold
 }

@@ -122,8 +122,8 @@ func TestAnalyzeWikipedia(t *testing.T) {
 			} else {
 				correctOk++
 			}
-		} else {
-			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", phrase, analysis.IsInappropriate(), offensive)
+		} else if len(phrase) < 40 {
+			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
 		}
 
 		total++
