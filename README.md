@@ -50,6 +50,7 @@ $ go run hello_world.go
 
 ## Comparison
 Accuracy was evaluated based on the first 50,000 items from this [dataset of moderated comments](https://raw.githubusercontent.com/vzhou842/profanity-check/master/profanity_check/data/clean_data.csv).
+
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:||:-----:|:-----:|:-----:|
 |[moderation](https://github.com/finnbear/moderation)|0.63s|91.78%|Current API version is not stable|
