@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"flag"
+	"fmt"
 	"github.com/finnbear/moderation"
 )
 
@@ -17,7 +17,7 @@ func main() {
 	shorter := input
 	for moderation.Is(shorter, 0xffffffff) { // satisfies all bitmasks
 		input = shorter
-		shorter = shorter[:len(shorter) - 1]
+		shorter = shorter[:len(shorter)-1]
 	}
 
 	shorter = input

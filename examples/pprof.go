@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/csv"
 	"github.com/finnbear/moderation"
+	"io"
 	"log"
 	"os"
 	"runtime/pprof"
@@ -18,9 +20,25 @@ func main() {
 	}
 	defer pprof.StopCPUProfile()
 
-	for i := 0; i < 100000; i++ {
-		moderation.IsInappropriate("hello")
-		moderation.IsInappropriate("sh1t")
-		moderation.IsInappropriate("Hello John Doe, I hope you're feeling well, as I come today bearing shitty news regarding your favorite chocolate chip cookie brand")
+	wikiModerationData, err := os.Open("../wikipedia-test.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	reader := csv.NewReader(wikiModerationData)
+
+	for total := 0; total < 50000; total++ {
+		fields, err := reader.Read()
+		if err != nil {
+			if err == io.EOF {
+				break
+			}
+			log.Fatal(err)
+		}
+		_ = moderation.IsInappropriate(fields[1])
+	}
+
+	err = wikiModerationData.Close()
+	if err != nil {
+		log.Fatal(err)
 	}
 }

@@ -28,8 +28,8 @@ var (
 
 func init() {
 	tree = radix.New()
-	for word, value := range wordValues {
-		tree.Add(word, value)
+	for _, wv := range wordValues {
+		tree.Add(wv.word, wv.value)
 	}
 }
 
@@ -124,11 +124,11 @@ func Is(text string, types Type) bool {
 			lastReplacementMax = 0
 		default:
 			switch textByte {
-			case '_', '.', ',', '*':
+			case '*': // these count as replacements
 				lastReplacementMin = 0
 				lastReplacementMax = 0
 				fallthrough
-			case ' ', '-':
+			case ' ', '~', '-', '_', '.', ',': // false positives may contain these
 				skippable = true
 				lastSepMin = 0
 				lastSepMax = 0
@@ -137,21 +137,30 @@ func Is(text string, types Type) bool {
 			}
 		}
 
-		if textByte == lastMatchable {
-			 // this character doesn't count so cancel the increments to min
-			lastSepMin--
-			lastReplacementMin--
-		}
-
 		if matchable {
-			matches.Append(tree.Root())
+			if textByte == lastMatchable {
+				// this character doesn't count so cancel the increments to min
+				lastSepMin--
+				lastReplacementMin--
+			} else {
+				// Add a new blank match to assume the new byte
+				matches.Append(tree.Root())
+			}
 
+			//println(string([]byte{textByte}), textBytes)
 			originalLength := matches.Len()
-			for i := 0; i < originalLength; i++ {
+			for m := 0; m < originalLength; m++ {
 				match := matches.Remove()
 
+				// Technically should compare to previous byte of given match,
+				// but this would be slower and give similar results for the
+				// given replacements
 				if skippable || textByte == lastMatchable {
-					matches.Append(match)
+					// Undo remove
+					matches.AppendUnique(match)
+					//println("=", match.Str, match.Depth())
+				} else {
+					//println("-", match.Str, match.Depth())
 				}
 
 				// Process textBytes as multiple textBytes or textByte
@@ -160,10 +169,10 @@ func Is(text string, types Type) bool {
 					loops = len(textBytes)
 				}
 
-				for i := 0; i < loops; i++ {
+				for l := 0; l < loops; l++ {
 					loopTextByte := textByte
 					if len(textBytes) > 0 {
-						loopTextByte = textBytes[i]
+						loopTextByte = textBytes[l]
 					}
 					next := match.Next(loopTextByte)
 
@@ -178,7 +187,7 @@ func Is(text string, types Type) bool {
 								level := int(int8(match >> (i * 8)))
 
 								// False positives that contain replacements are not matched
-								if level > 0 || next.Depth() - 1 <= lastReplacementMax {
+								if level > 0 || next.Depth()-1 <= lastReplacementMax {
 									inappropriateLevel += level
 								}
 							}
@@ -186,6 +195,7 @@ func Is(text string, types Type) bool {
 					}
 
 					matches.Append(next)
+					//println("+", next.Str, next.Depth(), " <- ", match.Depth())
 				}
 			}
 
