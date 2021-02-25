@@ -53,8 +53,8 @@ Accuracy was evaluated based on the first 50,000 items from this [dataset of mod
 
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:||:-----:|:-----:|:-----:|
-|[moderation](https://github.com/finnbear/moderation)|0.63s|91.78%|Current API version is not stable|
-|[go-away](https://github.com/TwinProduction/go-away)|1.09s|82.07%|Many false positives from combined words like "push it"|
+|https://github.com/finnbear/moderation|0.63s|91.78%|Current API version is not stable|
+|https://github.com/TwinProduction/go-away|1.09s|82.07%|Many false positives from combined words like "push it"|
 
 
 ## Acknowledgements
