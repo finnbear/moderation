@@ -126,6 +126,8 @@ func TestAnalyzeWikipedia(t *testing.T) {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
 		}
 
+		_, _ = Censor(phrase, Inappropriate)
+
 		total++
 		if offensive {
 			totalNok++

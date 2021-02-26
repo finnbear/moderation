@@ -14,19 +14,23 @@ func init() {
 }
 
 func main() {
+	fmt.Println("Original phrase: " + input)
+	censored, numCensored := moderation.Censor(input, moderation.Inappropriate)
+	fmt.Printf("Censored phrase: %s (%d characters replaced)\n", censored, numCensored)
+
 	shorter := input
-	for moderation.Is(shorter, 0xffffffff) { // satisfies all bitmasks
+	for moderation.Is(shorter, moderation.Any) { // satisfies all bitmasks
 		input = shorter
 		shorter = shorter[:len(shorter)-1]
 	}
 
 	shorter = input
-	for moderation.IsInappropriate(shorter) {
+	for moderation.Is(shorter, moderation.Any) {
 		input = shorter
 		shorter = shorter[1:]
 	}
 
-	if moderation.IsInappropriate(input) {
+	if moderation.Is(input, moderation.Any) {
 		fmt.Printf("Found inappropriate phrase: %s\n", input)
 	} else {
 		fmt.Println("No inappropriate phrase found")

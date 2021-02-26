@@ -17,6 +17,8 @@ const (
 	Offensive
 	Sexual
 	Mean
+	Inappropriate      = Profane | Offensive | Sexual
+	Any           Type = 0xffffffff
 )
 
 var (
@@ -56,6 +58,11 @@ var replacements = [...]string{
 
 var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 
+const (
+	minMatchable rune = 0x0020
+	maxMatchable rune = 0x007E
+)
+
 // IsInappropriate returns whether a phrase contains enough inappropriate words
 // to meet or exceed InappropriateThreshold
 //
@@ -66,13 +73,22 @@ func IsInappropriate(text string) bool {
 	return Is(text, Profane|Offensive|Sexual)
 }
 
-// IsInappropriate returns whether a phrase contains enough words matching the
+// Is returns whether a phrase contains enough words matching the
 // types flag to meet or exceed InappropriateThreshold
 func Is(text string, types Type) bool {
-	// Sanitize input
-	buf := make([]byte, 0, len(text))
-	_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
-	text = string(buf[:n])
+	// Sanitize input, if needed
+	needsSanitize := false
+	for _, textRune := range text {
+		if textRune < minMatchable || maxMatchable < textRune {
+			needsSanitize = true
+			break
+		}
+	}
+	if needsSanitize {
+		buf := make([]byte, 0, len(text))
+		_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
+		text = string(buf[:n])
+	}
 
 	// How many characters ago the last separator character was observed,
 	// expressed as an upper and a lower bound in relation to the current queue
@@ -91,7 +107,7 @@ func Is(text string, types Type) bool {
 
 	for _, textRune := range text {
 		// Unhandled runes (not printable, not representable as byte, etc.)
-		if textRune < 0x0020 || textRune > 0x007E {
+		if textRune < minMatchable || maxMatchable < textRune {
 			continue
 		}
 
