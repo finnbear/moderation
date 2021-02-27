@@ -81,6 +81,16 @@ func ExampleIs_shit_sexual_or_mean() {
 	// Output: false
 }
 
+func ExampleIs_HELLO_THERE_spam() {
+	fmt.Println(Is("HELLO THERE", Spam))
+	// Output: true
+}
+
+func ExampleIs_duuuuuuuuumb_spam() {
+	fmt.Println(Is("duuuuuuuuumb", Spam))
+	// Output: true
+}
+
 func ExampleIsInappropriate_hello() {
 	fmt.Println(IsInappropriate("hello"))
 	// Output: false
@@ -105,7 +115,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 	totalOk := 0
 	totalNok := 0
 
-	for total < 50000 {
+	for total < 100000 {
 		fields, err := reader.Read()
 		if err != nil {
 			if err == io.EOF {
@@ -115,7 +125,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		}
 		phrase := fields[1]
 		offensive := fields[0] == "1"
-		if Is(phrase, Profane|Offensive|Sexual|Mean) == offensive {
+		if Is(phrase, Profane|Offensive|Sexual|Mean|Spam) == offensive {
 			correct++
 			if offensive {
 				correctNok++
@@ -126,7 +136,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
 		}
 
-		_, _ = Censor(phrase, Inappropriate)
+		//_, _ = Censor(phrase, Inappropriate)
 
 		total++
 		if offensive {

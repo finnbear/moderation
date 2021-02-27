@@ -10,9 +10,9 @@
 2. Minimum possible allocations, processing time, and binary size
 3. Minimum false negatives (including text like `h3110_w0r!d`)
 4. Minimum false positives
-5. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean (spam, violence, contact info, etc.)
-6. (Future) Implement a way to censor text
-7. (Future) basic support for languages other than English
+5. Provide a way to censor text
+6. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean (spam, violence, contact info, etc.)
+7. (Future) Basic support for languages other than English
 
 ## Example
 ```go
@@ -49,12 +49,12 @@ $ go run hello_world.go
 ```
 
 ## Comparison
-Accuracy was evaluated based on the first 50,000 items from this [dataset of moderated comments](https://raw.githubusercontent.com/vzhou842/profanity-check/master/profanity_check/data/clean_data.csv).
+Accuracy was evaluated based on the first 100,000 items from this [dataset of moderated comments](https://raw.githubusercontent.com/vzhou842/profanity-check/master/profanity_check/data/clean_data.csv).
 
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:|:-----:|:-----:|:-----:|
-|[finnbear/moderation](https://github.com/finnbear/moderation)|0.63s|91.78%|Current API version is not stable|
-|[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|1.09s|82.07%|Many false positives from combined words like "push it"|
+|[finnbear/moderation](https://github.com/finnbear/moderation)|1.23s|92.71%|Current API version is not stable|
+|[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|2.20s|82.14%|Many false positives from combined words like "push it"|
 
 
 ## Acknowledgements

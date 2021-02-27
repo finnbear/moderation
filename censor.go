@@ -7,7 +7,7 @@ var CensorReplacment rune = '*'
 // Censor returns a string with all but the first character of any inappropriate
 // segment replaced with CensorReplacment
 //
-// It is currently Experimental
+// It is currently Experimental and not fully tested
 func Censor(text string, types Type) (censoredText string, replaced int) {
 	// Fast path
 	if len(text) == 0 || !Is(text, types) {
@@ -19,6 +19,8 @@ func Censor(text string, types Type) (censoredText string, replaced int) {
 	censored := make([]rune, 0, str.RuneCount())
 
 	start := 0
+
+	// TODO: scan ahead for false positives
 
 	for i := start; i <= str.RuneCount(); i++ {
 		slice := str.Slice(start, i)

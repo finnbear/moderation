@@ -28,7 +28,7 @@ func testWikipedia(t *testing.T, isInappropriate func(string) bool) {
 	correct := 0
 	total := 0
 
-	for total < 50000 {
+	for total < 100000 {
 		fields, err := reader.Read()
 		if err != nil {
 			if err == io.EOF {

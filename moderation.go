@@ -13,12 +13,13 @@ import (
 type Type uint32
 
 const (
-	Profane Type = 255 << (iota * 8)
+	Profane Type = 1 << iota
 	Offensive
 	Sexual
 	Mean
-	Inappropriate      = Profane | Offensive | Sexual
-	Any           Type = 0xffffffff
+	Spam
+	Inappropriate = Profane | Offensive | Sexual
+	Any           = Profane | Offensive | Sexual | Spam | Mean
 )
 
 var (
@@ -105,6 +106,10 @@ func Is(text string, types Type) bool {
 	inappropriateLevel := 0
 	var lastMatchable byte
 
+	// For spam detection purposes
+	var upperCount int
+	var repetitionCount int
+
 	for _, textRune := range text {
 		// Unhandled runes (not printable, not representable as byte, etc.)
 		if textRune < minMatchable || maxMatchable < textRune {
@@ -128,6 +133,7 @@ func Is(text string, types Type) bool {
 
 		switch {
 		case textByte >= 'A' && textByte <= 'Z':
+			upperCount++
 			textByte += 'a' - 'A'
 			fallthrough
 		case textByte >= 'a' && textByte <= 'z':
@@ -155,6 +161,8 @@ func Is(text string, types Type) bool {
 
 		if matchable {
 			if textByte == lastMatchable {
+				repetitionCount++
+
 				// this character doesn't count so cancel the increments to min
 				lastSepMin--
 				lastReplacementMin--
@@ -198,8 +206,12 @@ func Is(text string, types Type) bool {
 
 					if next.Word() {
 						if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
-							match := next.Data() & uint32(types)
+							match := next.Data()
 							for i := 0; i < 4; i++ {
+								if types&Type(1<<i) == 0 {
+									continue
+								}
+
 								level := int(int8(match >> (i * 8)))
 
 								// False positives that contain replacements are not matched
@@ -219,6 +231,11 @@ func Is(text string, types Type) bool {
 		} else if !skippable {
 			matches.Clear()
 		}
+	}
+
+	if types&Spam != 0 && len(text) > 5 {
+		spamPercent := (100 / 2) * (upperCount + repetitionCount) / len(text)
+		inappropriateLevel += spamPercent / 30
 	}
 
 	return inappropriateLevel >= InappropriateThreshold

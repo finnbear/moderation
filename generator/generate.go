@@ -288,7 +288,15 @@ filtering:
 				// is a profane word, so is not false positive
 				continue filtering
 			}
-			if strings.Index(word, profanity) != -1 {
+			idx := strings.Index(word, profanity)
+			if idx != -1 {
+				/*
+					TODO: Fix
+					if (len(profanity) <= 3 || (len(profanity) <= 4 && profanity[0] == 's')) && idx != 0 { // reduce errors with short profanities
+						continue
+					}
+				*/
+
 				falsePositiveValue = falsePositiveValue.Sub(value)
 			}
 		}
@@ -464,14 +472,14 @@ func fmtValues(m map[string]Values) (literal, csv string) {
 	}
 	literalBuilder.WriteString("}")
 	/*
-	builder.WriteString("map[string]uint32{\n")
-	for _, word := range slice {
-		values := m[word]
-		wordPadding := paddingString(longest - len(word))
-		line := fmt.Sprintf("	\"%s\":%s 0x%08x, // %3d %3d %3d %3d\n", word, wordPadding, values.Pack(), values[0], values[1], values[2], values[3])
-		builder.WriteString(line)
-	}
-	builder.WriteString("}")
+		builder.WriteString("map[string]uint32{\n")
+		for _, word := range slice {
+			values := m[word]
+			wordPadding := paddingString(longest - len(word))
+			line := fmt.Sprintf("	\"%s\":%s 0x%08x, // %3d %3d %3d %3d\n", word, wordPadding, values.Pack(), values[0], values[1], values[2], values[3])
+			builder.WriteString(line)
+		}
+		builder.WriteString("}")
 	*/
 	return literalBuilder.String(), csvBuilder.String()
 }
