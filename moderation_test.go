@@ -81,7 +81,7 @@ func ExampleIs_shit_sexual_or_mean() {
 	// Output: false
 }
 
-func ExampleIs_HELLO_THERE_spam() {
+func ExampleIs_caps_spam() {
 	fmt.Println(Is("HELLO THERE", Spam))
 	// Output: true
 }
