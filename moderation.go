@@ -91,15 +91,7 @@ func Is(text string, types Type) bool {
 		text = string(buf[:n])
 	}
 
-	// How many characters ago the last separator character was observed,
-	// expressed as an upper and a lower bound in relation to the current queue
-	// of matches
-	lastSepMin := 0
-	lastSepMax := 0
-
-	// Same as above, but for replacements
-	lastReplacementMin := 0
-	lastReplacementMax := 0
+	separate := true
 
 	// Scan status
 	var matches radix.Queue
@@ -111,19 +103,11 @@ func Is(text string, types Type) bool {
 	var repetitionCount int
 
 	for _, textRune := range text {
-		// Unhandled runes (not printable, not representable as byte, etc.)
-		if textRune < minMatchable || maxMatchable < textRune {
-			continue
-		}
-
 		textByte := byte(textRune)
 		var textBytes string
-		lastSepMin++
-		lastSepMax++
-		lastReplacementMin++
-		lastReplacementMax++
 
 		matchable := false
+		replaced := false
 		skippable := false
 
 		var replacement string
@@ -132,6 +116,13 @@ func Is(text string, types Type) bool {
 		}
 
 		switch {
+		case textRune < minMatchable || maxMatchable < textRune:
+			// Unhandled runes (not printable, not representable as byte, etc.)
+			// matchable = false
+			switch textRune {
+			case '\n', '\r', '\t':
+				skippable = true
+			}
 		case textByte >= 'A' && textByte <= 'Z':
 			upperCount++
 			textByte += 'a' - 'A'
@@ -142,36 +133,25 @@ func Is(text string, types Type) bool {
 			textByte = replacement[0]
 			textBytes = replacement
 			matchable = true
-			lastReplacementMin = 0
-			lastReplacementMax = 0
 		default:
 			switch textByte {
 			case '*': // these count as replacements
-				lastReplacementMin = 0
-				lastReplacementMax = 0
+				replaced = true
 				fallthrough
 			case ' ', '~', '-', '_', '.', ',': // false positives may contain these
 				skippable = true
-				lastSepMin = 0
-				lastSepMax = 0
-			default:
-				continue
 			}
 		}
 
 		if matchable {
 			if textByte == lastMatchable {
 				repetitionCount++
-
-				// this character doesn't count so cancel the increments to min
-				lastSepMin--
-				lastReplacementMin--
-			} else {
-				// Add a new blank match to assume the new byte
-				matches.Append(tree.Root())
 			}
 
-			//println(string([]byte{textByte}), textBytes)
+			// Add a new blank match to assume the new byte
+			//println(string([]byte{textByte}), "\t", separate)
+			matches.AppendUnique(radix.Match{Node: tree.Root(), Length: 0, Replaced: false, Separate: separate})
+			//println("+", "root", separate, replaced)
 			originalLength := matches.Len()
 			for m := 0; m < originalLength; m++ {
 				match := matches.Remove()
@@ -179,12 +159,12 @@ func Is(text string, types Type) bool {
 				// Technically should compare to previous byte of given match,
 				// but this would be slower and give similar results for the
 				// given replacements
-				if skippable || textByte == lastMatchable {
-					// Undo remove
-					matches.AppendUnique(match)
-					//println("=", match.Str, match.Depth())
+				if (skippable || textByte == lastMatchable) && match.Length > 0 {
+					// Undo remove (and add one to length)
+					matches.AppendUnique(radix.Match{Node: match.Node, Length: match.Length + 1, Replaced: replaced || match.Replaced, Separate: match.Separate})
+					//println("=", match.Node.Depth(), match.Separate, match.Replaced)
 				} else {
-					//println("-", match.Str, match.Depth())
+					//println("-", match.Node.Depth(), match.Separate, match.Replaced)
 				}
 
 				// Process textBytes as multiple textBytes or textByte
@@ -198,32 +178,33 @@ func Is(text string, types Type) bool {
 					if len(textBytes) > 0 {
 						loopTextByte = textBytes[l]
 					}
-					next := match.Next(loopTextByte)
+
+					next := match.Node.Next(loopTextByte)
 
 					if next == nil {
 						continue
 					}
 
 					if next.Word() {
-						if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || (next.Depth() >= lastSepMin && next.Depth() <= lastSepMax) {
-							match := next.Data()
+						if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || match.Separate {
+							data := next.Data()
 							for i := 0; i < 4; i++ {
 								if types&Type(1<<i) == 0 {
 									continue
 								}
 
-								level := int(int8(match >> (i * 8)))
+								level := int(int8(data >> (i * 8)))
 
 								// False positives that contain replacements are not matched
-								if level > 0 || next.Depth()-1 <= lastReplacementMax {
+								if level > 0 || !(match.Replaced || replaced) {
 									inappropriateLevel += level
 								}
 							}
 						}
 					}
 
-					matches.Append(next)
-					//println("+", next.Str, next.Depth(), " <- ", match.Depth())
+					matches.Append(radix.Match{Node: next, Length: match.Length + 1, Replaced: replaced || match.Replaced, Separate: match.Separate})
+					//println("+", next.Depth(), match.Separate, match.Replaced)
 				}
 			}
 
@@ -231,6 +212,8 @@ func Is(text string, types Type) bool {
 		} else if !skippable {
 			matches.Clear()
 		}
+
+		separate = skippable || !matchable
 	}
 
 	if types&Spam != 0 && len(text) > 5 {

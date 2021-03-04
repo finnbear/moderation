@@ -2,6 +2,8 @@ acock
 arsehole
 asshole
 (.*)bastard(.*)
+bitchain
+bitchar
 bitchi
 bitches(.*)
 bitcho
@@ -31,6 +33,8 @@ jackass
 livesex
 masturbate
 motherfuck(.*)
+necrap
+nidiot
 (.*)nigger(.*)
 nude(.*)
 penises

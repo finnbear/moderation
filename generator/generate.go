@@ -290,12 +290,9 @@ filtering:
 			}
 			idx := strings.Index(word, profanity)
 			if idx != -1 {
-				/*
-					TODO: Fix
-					if (len(profanity) <= 3 || (len(profanity) <= 4 && profanity[0] == 's')) && idx != 0 { // reduce errors with short profanities
-						continue
-					}
-				*/
+				if (len(profanity) <= 3 || (len(profanity) <= 4 && profanity[0] == 's')) && idx != 0 { // reduce errors with short profanities
+					continue
+				}
 
 				falsePositiveValue = falsePositiveValue.Sub(value)
 			}

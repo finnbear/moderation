@@ -1,7 +1,7 @@
 package radix
 
 type Queue struct {
-	Storage    [32]*Node // at least longestWord * 2 because some characters turn into 2 matches
+	Storage    [32]Match // at least longestWord * 2 because some characters turn into 2 matches
 	length     int
 	readIndex  int
 	writeIndex int
@@ -10,7 +10,7 @@ type Queue struct {
 const debug = false
 
 // appends to back
-func (queue *Queue) Append(node *Node) {
+func (queue *Queue) Append(match Match) {
 	queue.length++
 
 	if debug {
@@ -19,16 +19,16 @@ func (queue *Queue) Append(node *Node) {
 		}
 	}
 
-	queue.Storage[queue.writeIndex] = node
+	queue.Storage[queue.writeIndex] = match
 	queue.writeIndex = (queue.writeIndex + 1) % len(queue.Storage)
 }
 
 // appends to back if queue does not already contain node
-func (queue *Queue) AppendUnique(node *Node) {
+func (queue *Queue) AppendUnique(match Match) {
 	unique := true
 	for i := 0; i < queue.length; i++ {
 		idx := (queue.readIndex + i) % len(queue.Storage)
-		if queue.Storage[idx] == node {
+		if queue.Storage[idx].EqualsExceptLength(match) {
 			unique = false
 			break
 		}
@@ -38,11 +38,11 @@ func (queue *Queue) AppendUnique(node *Node) {
 		return
 	}
 
-	queue.Append(node)
+	queue.Append(match)
 }
 
 // removes from front
-func (queue *Queue) Remove() (node *Node) {
+func (queue *Queue) Remove() (match Match) {
 	queue.length--
 
 	if debug {
@@ -51,13 +51,15 @@ func (queue *Queue) Remove() (node *Node) {
 		}
 	}
 
-	node = queue.Storage[queue.readIndex]
+	match = queue.Storage[queue.readIndex]
 	queue.readIndex = (queue.readIndex + 1) % len(queue.Storage)
 	return
 }
 
 func (queue *Queue) Clear() {
 	queue.length = 0
+	queue.readIndex = 0
+	queue.writeIndex = 0
 }
 
 func (queue *Queue) Len() int {

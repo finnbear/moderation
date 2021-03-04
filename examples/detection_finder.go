@@ -15,11 +15,12 @@ func init() {
 
 func main() {
 	fmt.Println("Original phrase: " + input)
+	fmt.Printf("Inappropriate: %t\n", moderation.IsInappropriate(input))
 	censored, numCensored := moderation.Censor(input, moderation.Inappropriate)
 	fmt.Printf("Censored phrase: %s (%d characters replaced)\n", censored, numCensored)
 
 	shorter := input
-	for moderation.Is(shorter, moderation.Any) { // satisfies all bitmasks
+	for moderation.Is(shorter, moderation.Any) {
 		input = shorter
 		shorter = shorter[:len(shorter)-1]
 	}
