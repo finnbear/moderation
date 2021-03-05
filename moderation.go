@@ -9,7 +9,11 @@ import (
 	"unicode"
 )
 
-// Types of inappropriate (combinable with bitwise OR)
+// Types of inappropriatness
+//
+// For compability, only pass a single Type or a bitwise OR of multiple Type's,
+// and always reference Type's by name as their value may change from version
+// to version. Other operations on Type's are not supported.
 type Type uint32
 
 const (
@@ -20,13 +24,36 @@ const (
 	Spam
 	Inappropriate = Profane | Offensive | Sexual
 	Any           = Profane | Offensive | Sexual | Spam | Mean
+
+	minMatchable rune = 0x0020
+	maxMatchable rune = 0x007E
 )
 
 var (
-	// The threshold where a phrase is considered inappropriate
-	InappropriateThreshold int = 1
-
 	tree *radix.Tree
+
+	// Replace the key with any one of the characters in the value
+	replacements = [...]string{
+		'!': "li",
+		'@': "a",
+		'4': "a",
+		'8': "b",
+		'6': "b",
+		'(': "c",
+		'<': "c",
+		'3': "eg",
+		'9': "gq",
+		'#': "h",
+		'1': "li",
+		'0': "o",
+		'5': "s",
+		'$': "s",
+		'+': "t",
+		'7': "t",
+		'2': "z",
+	}
+
+	removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 )
 
 func init() {
@@ -36,66 +63,39 @@ func init() {
 	}
 }
 
-// Replace the key with any one of the characters in the value
-var replacements = [...]string{
-	'!': "li",
-	'@': "a",
-	'4': "a",
-	'8': "b",
-	'6': "b",
-	'(': "c",
-	'<': "c",
-	'3': "eg",
-	'9': "gq",
-	'#': "h",
-	'1': "li",
-	'0': "o",
-	'5': "s",
-	'$': "s",
-	'+': "t",
-	'7': "t",
-	'2': "z",
-}
-
-var removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
-
-const (
-	minMatchable rune = 0x0020
-	maxMatchable rune = 0x007E
-)
-
 // IsInappropriate returns whether a phrase contains enough inappropriate words
 // to meet or exceed InappropriateThreshold
 //
 // Equivalent to
+//  moderation.Is(text, moderation.Inappropriate)
+//
+// Also, for the time being, equivalent to
 //  moderation.Is(text, moderation.Profane|moderation.Offensive|moderation.Sexual)
 //
 func IsInappropriate(text string) bool {
-	return Is(text, Profane|Offensive|Sexual)
+	return Is(text, Inappropriate)
 }
 
-// Is returns whether a phrase contains enough words matching the
-// types flag to meet or exceed InappropriateThreshold
+// Is returns whether a phrase contains words matching the
+// types flag
 func Is(text string, types Type) bool {
-	// Sanitize input, if needed
-	needsSanitize := false
+	// Figure out if sanitization is needed, and if so, do it
 	for _, textRune := range text {
 		if textRune < minMatchable || maxMatchable < textRune {
-			needsSanitize = true
+			// Sanitize
+			buf := make([]byte, 0, len(text))
+			_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
+			text = string(buf[:n])
+
+			// Done sanitizing, stop scanning
 			break
 		}
 	}
-	if needsSanitize {
-		buf := make([]byte, 0, len(text))
-		_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
-		text = string(buf[:n])
-	}
-
-	separate := true
 
 	// Scan status
 	var matches radix.Queue
 	inappropriateLevel := 0
+	separate := true // whether the previous character was a separator
 	var lastMatchable byte
 
 	// For spam detection purposes
@@ -148,7 +148,7 @@ func Is(text string, types Type) bool {
 				repetitionCount++
 			}
 
-			// Add a new blank match to assume the new byte
+			// Add a new blank match to assume the new byte(s)
 			//println(string([]byte{textByte}), "\t", separate)
 			matches.AppendUnique(radix.Match{Node: tree.Root(), Length: 0, Replaced: false, Separate: separate})
 			//println("+", "root", separate, replaced)
@@ -221,5 +221,5 @@ func Is(text string, types Type) bool {
 		inappropriateLevel += spamPercent / 30
 	}
 
-	return inappropriateLevel >= InappropriateThreshold
+	return inappropriateLevel > 0
 }
