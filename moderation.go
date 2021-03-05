@@ -30,7 +30,7 @@ const (
 )
 
 var (
-	tree *radix.Tree
+	tree radix.Tree = radix.New()
 
 	// Replace the key with any one of the characters in the value
 	replacements = [...]string{
@@ -57,7 +57,6 @@ var (
 )
 
 func init() {
-	tree = radix.New()
 	for _, wv := range wordValues {
 		tree.Add(wv.word, wv.value)
 	}

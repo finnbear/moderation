@@ -12,8 +12,8 @@ type Tree struct {
 	length int
 }
 
-func New() *Tree {
-	return &Tree{root: &Node{}}
+func New() Tree {
+	return Tree{root: &Node{}}
 }
 
 func (tree *Tree) Root() *Node {
