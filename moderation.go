@@ -9,7 +9,7 @@ import (
 	"unicode"
 )
 
-// Types of inappropriatness
+// Types of inappropriateness
 //
 // For compability, only pass a single Type or a bitwise OR of multiple Type's,
 // and always reference Type's by name as their value may change from version
