@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 	"testing"
 )
 
@@ -70,6 +71,21 @@ func TestAnalyze(t *testing.T) {
 		inappropriate := IsInappropriate(testCase.phrase)
 		if inappropriate != testCase.offensive {
 			//t.Errorf("phrase=\"%s\" analysis offensive=%v actual offensive=%v", testCase.phrase, inappropriate, testCase.offensive)
+		}
+	}
+}
+
+func TestRedundantReplacement(t *testing.T) {
+	for c, s := range replacements {
+		if strings.ContainsRune(s, rune(c)) {
+			t.Errorf("byte replacement %s is redundant\n", string([]byte{byte(c)}))
+			t.Fail()
+		}
+	}
+	for c, s := range runeReplacements {
+		if strings.ContainsRune(s, c) {
+			t.Errorf("rune replacement %s is redundant\n", string([]rune{c}))
+			t.Fail()
 		}
 	}
 }
