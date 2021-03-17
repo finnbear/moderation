@@ -32,27 +32,6 @@ const (
 var (
 	tree radix.Tree = radix.New()
 
-	// Replace the key with any one of the characters in the value
-	replacements = [...]string{
-		'!': "li",
-		'@': "a",
-		'4': "a",
-		'8': "b",
-		'6': "b",
-		'(': "c",
-		'<': "c",
-		'3': "eg",
-		'9': "gq",
-		'#': "h",
-		'1': "li",
-		'0': "o",
-		'5': "s",
-		'$': "s",
-		'+': "t",
-		'7': "t",
-		'2': "z",
-	}
-
 	removeAccentsTransform = transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 )
 
@@ -112,16 +91,15 @@ func Is(text string, types Type) bool {
 		var replacement string
 		if int(textByte) < len(replacements) {
 			replacement = replacements[textByte]
+		} else if textRune > maxMatchable {
+			replacement = runeReplacements[textRune]
+			if replacement == "" {
+				lowerRune := unicode.ToLower(textRune)
+				replacement = runeReplacements[lowerRune]
+			}
 		}
 
 		switch {
-		case textRune < minMatchable || maxMatchable < textRune:
-			// Unhandled runes (not printable, not representable as byte, etc.)
-			// matchable = false
-			switch textRune {
-			case '\n', '\r', '\t':
-				skippable = true
-			}
 		case textByte >= 'A' && textByte <= 'Z':
 			upperCount++
 			textByte += 'a' - 'A'
@@ -132,6 +110,13 @@ func Is(text string, types Type) bool {
 			textByte = replacement[0]
 			textBytes = replacement
 			matchable = true
+		case textRune < minMatchable || maxMatchable < textRune:
+			// Unhandled runes (not printable, not representable as byte, etc.)
+			// matchable = false
+			switch textRune {
+			case '\n', '\r', '\t':
+				skippable = true
+			}
 		default:
 			switch textByte {
 			case '*': // these count as replacements

@@ -11,7 +11,7 @@
 3. Minimum false negatives (including text like `h3110_w0r!d`)
 4. Minimum false positives
 5. Provide a way to censor text
-6. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean (spam, violence, contact info, etc.)
+6. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean, spam (violence, contact info, etc.)
 7. (Future) Basic support for languages other than English
 
 ## Example
@@ -53,7 +53,7 @@ Accuracy was evaluated based on the first 100,000 items from this [dataset of mo
 
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:|:-----:|:-----:|:-----:|
-|[finnbear/moderation](https://github.com/finnbear/moderation)|1.52s|91.18%|Current API version is not stable|
+|[finnbear/moderation](https://github.com/finnbear/moderation)|1.66s|91.12%|Current API version is not stable|
 |[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|2.20s|82.14%|Many false positives from combined words like "push it"|
 
 

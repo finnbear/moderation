@@ -27,6 +27,7 @@ func TestAnalyze(t *testing.T) {
 		{"ass", true},
 		{"glass", false},
 		{"ÄšŚ", true},
+		{"ĂżŽ", true},
 		{"sex", true},
 		{"hello_world-sex_word", true},
 		{"sexy", true},
@@ -38,6 +39,8 @@ func TestAnalyze(t *testing.T) {
 		{"push it", false},
 		{"carcass", false},
 		{"retarded", true},
+		{"βιτ⊂η", true}, // greek letters
+		{"ⓅɄȿⓢⓨ", true},
 		{"I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year and found him in deep conversation with a very stout, florid-faced, elderly gentleman with fiery red hair.", false},
 		{"With an apology for my intrusion, I was about to withdraw when Holmes pulled me abruptly into the room and closed the door behind me.", false},
 		{"You could not possibly have come at a better time, my dear Watson, he said cordially", false},
@@ -133,7 +136,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 				correctOk++
 			}
 		} else if len(phrase) < 40 {
-			fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
+			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
 		}
 
 		//_, _ = Censor(phrase, Inappropriate)

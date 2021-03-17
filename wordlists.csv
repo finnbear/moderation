@@ -1,6 +1,7 @@
 word,profane,offensive,sexual,mean
 pp                      ,  0,  0,  2,  0
 ass                     ,  2,  0,  0,  0
+azz                     ,  1,  0,  0,  0
 bra                     ,  0,  0,  1,  0
 cum                     ,  0,  0,  3,  0
 fag                     ,  0,  3,  1,  0
@@ -79,6 +80,7 @@ pube                    ,  0,  0,  3,  0
 pusy                    ,  0,  2,  2,  0
 rape                    ,  0,  0,  3,  0
 scum                    ,  0,  0,  2,  2
+secs                    ,  0,  0,  1,  0
 shit                    ,  2,  0,  0,  0
 slut                    ,  0,  2,  2,  0
 stfu                    ,  0,  0,  0,  2
@@ -299,6 +301,7 @@ bedumb                  ,  0,  0,  0, -1
 biatch                  ,  0,  2,  2,  0
 bichir                  ,  0, -2, -2,  0
 bichos                  ,  0, -2, -2,  0
+bitsch                  ,  0,  2,  2,  0
 bloody                  ,  2,  0,  0,  0
 boclit                  ,  0,  0, -3,  0
 bocrap                  , -1,  0,  0,  0
@@ -1113,6 +1116,8 @@ bitchef                 ,  0, -2, -2,  0
 bitchem                 ,  0, -2, -2,  0
 bitchen                 ,  0, -2, -2,  0
 bitchip                 ,  0, -2, -2,  0
+bitschi                 ,  0, -2, -2,  0
+bitscho                 ,  0, -2, -2,  0
 bladego                 ,  0, -3,  0,  0
 blahate                 ,  0,  0,  0, -2
 blowjob                 ,  0,  0,  3,  0
@@ -2411,6 +2416,13 @@ bitchoir                ,  0, -2, -2,  0
 bitchose                ,  0, -2, -2,  0
 bitchris                ,  0, -2, -2,  0
 bitchuck                ,  0, -2, -2,  0
+bitschad                ,  0, -2, -2,  0
+bitschan                ,  0, -2, -2,  0
+bitschar                ,  0, -2, -2,  0
+bitschat                ,  0, -2, -2,  0
+bitschef                ,  0, -2, -2,  0
+bitschem                ,  0, -2, -2,  0
+bitschen                ,  0, -2, -2,  0
 blondego                ,  0, -3,  0,  0
 bloodyea                , -2,  0,  0,  0
 bloodyen                , -2,  0,  0,  0
@@ -4134,6 +4146,18 @@ bitchorus               ,  0, -2, -2,  0
 bitchrome               ,  0, -2, -2,  0
 bitchubby               ,  0, -2, -2,  0
 bitchurch               ,  0, -2, -2,  0
+bitschain               ,  0, -2, -2,  0
+bitschair               ,  0, -2, -2,  0
+bitschaos               ,  0, -2, -2,  0
+bitschase               ,  0, -2, -2,  0
+bitscheap               ,  0, -2, -2,  0
+bitscheat               ,  0, -2, -2,  0
+bitscheck               ,  0, -2, -2,  0
+bitschess               ,  0, -2, -2,  0
+bitschest               ,  0, -2, -2,  0
+bitschevy               ,  0, -2, -2,  0
+bitschris               ,  0, -2, -2,  0
+bitschuck               ,  0, -2, -2,  0
 blahellis               , -1,  0,  0,  0
 bloodyale               , -2,  0,  0,  0
 bloodyang               , -2,  0,  0,  0
@@ -5248,6 +5272,7 @@ pathspunk               ,  0,  0, -3,  0
 patwatson               ,  0,  0, -3,  0
 pctwatson               ,  0,  0, -3,  0
 pdtwatson               ,  0,  0, -3,  0
+pedophile               ,  0,  0,  2,  0
 peepeeing               , -2,  0, -2,  0
 peerspunk               ,  0,  0, -3,  0
 pelecanus               , -2,  0,  0,  0
@@ -6045,6 +6070,14 @@ bitchicago              ,  0, -2, -2,  0
 bitchinese              ,  0, -2, -2,  0
 bitchiness              ,  0, -2, -2,  0
 bitchronic              ,  0, -2, -2,  0
+bitschapel              ,  0, -2, -2,  0
+bitscheers              ,  0, -2, -2,  0
+bitscheese              ,  0, -2, -2,  0
+bitscheque              ,  0, -2, -2,  0
+bitscherry              ,  0, -2, -2,  0
+bitschrome              ,  0, -2, -2,  0
+bitschubby              ,  0, -2, -2,  0
+bitschurch              ,  0, -2, -2,  0
 blackballs              ,  0,  0, -1,  0
 blackspunk              ,  0,  0, -3,  0
 bloodyacht              , -2,  0,  0,  0
@@ -7745,6 +7778,12 @@ bitchampion             ,  0, -2, -2,  0
 bitcharging             ,  0, -2, -2,  0
 bitchoosing             ,  0, -2, -2,  0
 bitchrysler             ,  0, -2, -2,  0
+bitschamber             ,  0, -2, -2,  0
+bitschapter             ,  0, -2, -2,  0
+bitschassis             ,  0, -2, -2,  0
+bitschedule             ,  0, -2, -2,  0
+bitschelsea             ,  0, -2, -2,  0
+bitschronic             ,  0, -2, -2,  0
 blackbreast             ,  0,  0, -2,  0
 blahelliott             , -1,  0,  0,  0
 blanketwatt             ,  0,  0, -3,  0
@@ -9151,6 +9190,8 @@ bitcharacter            ,  0, -2, -2,  0
 bitcharlotte            ,  0, -2, -2,  0
 bitchevrolet            ,  0, -2, -2,  0
 bitchocolate            ,  0, -2, -2,  0
+bitschampion            ,  0, -2, -2,  0
+bitschrysler            ,  0, -2, -2,  0
 blanketwatch            ,  0,  0, -3,  0
 blanketwater            ,  0,  0, -3,  0
 bloggerspunk            ,  0,  0, -3,  0
@@ -10210,6 +10251,10 @@ bikinigravity           , -3, -5,  0,  0
 bikinigriffin           , -3, -5,  0,  0
 bikinigrocery           , -3, -5,  0,  0
 bitcharitable           ,  0, -2, -2,  0
+bitschallenge           ,  0, -2, -2,  0
+bitschampagne           ,  0, -2, -2,  0
+bitscheduling           ,  0, -2, -2,  0
+bitschevrolet           ,  0, -2, -2,  0
 blanketwatson           ,  0,  0, -3,  0
 bonerelevance           ,  0,  0, -3,  0
 bonereligious           ,  0,  0, -3,  0
@@ -11330,6 +11375,7 @@ ballsustainable         ,  0,  0, -1,  0
 ballswitzerland         ,  0,  0, -1,  0
 beanalbuquerque         , -2,  0, -2,  0
 biographiespunk         ,  0,  0, -3,  0
+bitschallenging         ,  0, -2, -2,  0
 bloodyugoslavia         , -2,  0,  0,  0
 bonereliability         ,  0,  0, -3,  0
 bonerenaissance         ,  0,  0, -3,  0
