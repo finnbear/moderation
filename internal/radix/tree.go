@@ -38,31 +38,6 @@ func (tree *Tree) Add(word string, data uint32) {
 	}
 }
 
-func (tree *Tree) Remove(word string) {
-	current := tree.root
-	for i := 0; i < len(word); i++ {
-		next := current.Next(word[i])
-		if next == nil {
-			break
-		}
-		if i == len(word)-1 {
-			if next.word {
-				tree.length--
-			}
-			if next.hasChildren {
-				next.data = 0
-				next.word = false
-			} else {
-				current.children[word[i]-chOffset] = nil
-				// TODO: update hasChildren
-				// TODO: update higher nodes
-			}
-			break
-		}
-		current = next
-	}
-}
-
 func (tree *Tree) get(word string) (node *Node) {
 	current := tree.root
 	for i := 0; i < len(word); i++ {

@@ -100,19 +100,19 @@ func Is(text string, types Type) bool {
 		}
 
 		switch {
+		case textByte >= 'a' && textByte <= 'z': // most likely case
+			matchable = true
 		case textByte >= 'A' && textByte <= 'Z':
 			upperCount++
 			textByte += 'a' - 'A'
-			fallthrough
-		case textByte >= 'a' && textByte <= 'z':
 			matchable = true
-		case replacement != "":
+		case replacement != "": // if there is a valid set of replacements
 			textByte = replacement[0]
 			textBytes = replacement
 			matchable = true
 		case textRune < minMatchable || maxMatchable < textRune:
 			// Unhandled runes (not printable, not representable as byte, etc.)
-			// matchable = false
+			// matchable = false implied
 			switch textRune {
 			case '\n', '\r', '\t':
 				skippable = true
@@ -200,9 +200,13 @@ func Is(text string, types Type) bool {
 		separate = skippable || !matchable
 	}
 
+	// Min length is arbitrary, but must be > 0 to avoid dividing by zero
 	if types&Spam != 0 && len(text) > 5 {
 		spamPercent := (100 / 2) * (upperCount + repetitionCount) / len(text)
-		inappropriateLevel += spamPercent / 30
+
+		// 32 is arbitrary, but determines the relationship between spamPercent
+		// and inappropriateLevel
+		inappropriateLevel += spamPercent / 32
 	}
 
 	return inappropriateLevel > 0

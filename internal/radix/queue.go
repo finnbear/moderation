@@ -1,8 +1,15 @@
 package radix
 
 type Queue struct {
-	Storage    [32]Match // at least longestWord * 2 because some characters turn into 2 matches
+	// For correctness, at least longestWord * 2 because some characters turn into 2 matches
+	// In reality, there are no profanities that are missed by reducing this to a lower level
+	// For performance, should be a power of 2 so that modulo division is faster
+	Storage    [32]Match
+
+	// Length of abstract queue
 	length     int
+
+	// Indices of next read/write
 	readIndex  int
 	writeIndex int
 }
@@ -13,10 +20,8 @@ const debug = false
 func (queue *Queue) Append(match Match) {
 	queue.length++
 
-	if debug {
-		if queue.length > len(queue.Storage) {
-			panic("queue too small")
-		}
+	if debug && queue.length > len(queue.Storage) {
+		panic("queue too small")
 	}
 
 	queue.Storage[queue.writeIndex] = match
@@ -25,17 +30,12 @@ func (queue *Queue) Append(match Match) {
 
 // appends to back if queue does not already contain node
 func (queue *Queue) AppendUnique(match Match) {
-	unique := true
 	for i := 0; i < queue.length; i++ {
 		idx := (queue.readIndex + i) % len(queue.Storage)
 		if queue.Storage[idx].EqualsExceptLength(match) {
-			unique = false
-			break
+			// Not unique so return early
+			return
 		}
-	}
-
-	if !unique {
-		return
 	}
 
 	queue.Append(match)
@@ -45,10 +45,8 @@ func (queue *Queue) AppendUnique(match Match) {
 func (queue *Queue) Remove() (match Match) {
 	queue.length--
 
-	if debug {
-		if queue.length < 0 {
-			panic("queue out of range")
-		}
+	if debug && queue.length < 0 {
+		panic("queue out of range")
 	}
 
 	match = queue.Storage[queue.readIndex]
