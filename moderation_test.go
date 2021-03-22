@@ -120,6 +120,12 @@ func ExampleIsInappropriate_sh1t() {
 	// Output: true
 }
 
+func ExampleScan() {
+	types := Scan("you're a dumbass")
+	fmt.Println(types&Profane > 0, types&Offensive > 0, types&Sexual > 0, types&Mean > 0)
+	// Output: true false false true
+}
+
 func TestAnalyzeWikipedia(t *testing.T) {
 	wikiModerationData, err := os.Open("wikipedia-test.csv")
 	if err != nil {
@@ -155,7 +161,12 @@ func TestAnalyzeWikipedia(t *testing.T) {
 			//fmt.Printf("phrase=\"%s\" analysis offensive=%v actual offensive=%v\n", phrase, !offensive, offensive)
 		}
 
-		//_, _ = Censor(phrase, Inappropriate)
+		/*
+		censored, _ := Censor(phrase, Inappropriate | Mean)
+		if offensive {
+			fmt.Printf("\"%s\" -> \"%s\"\n", phrase, censored)
+		}
+		*/
 
 		total++
 		if offensive {

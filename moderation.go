@@ -25,6 +25,8 @@ const (
 	Inappropriate = Profane | Offensive | Sexual
 	Any           = Profane | Offensive | Sexual | Spam | Mean
 
+	countableTypes = 4
+
 	minMatchable rune = 0x0020
 	maxMatchable rune = 0x007E
 )
@@ -54,9 +56,15 @@ func IsInappropriate(text string) bool {
 	return Is(text, Inappropriate)
 }
 
-// Is returns whether a phrase contains words matching the
-// types flag
+// Is returns whether a phrase contains words matching the types flag, useful if
+// checking only one type or set of types is needed
 func Is(text string, types Type) bool {
+	return Scan(text)&types > 0
+}
+
+// Scan returns a bitmask of all types, useful if checking multiple types or
+// sets of types is needed, without multiple calls to Is(text, types)
+func Scan(text string) (types Type) {
 	// Figure out if sanitization is needed, and if so, do it
 	for _, textRune := range text {
 		if textRune < minMatchable || maxMatchable < textRune {
@@ -72,7 +80,7 @@ func Is(text string, types Type) bool {
 
 	// Scan status
 	var matches radix.Queue
-	inappropriateLevel := 0
+	var countableTypeLevels [countableTypes]int
 	separate := true // whether the previous character was a separator
 	var lastMatchable byte
 
@@ -172,16 +180,12 @@ func Is(text string, types Type) bool {
 					if next.Word() {
 						if next.Depth() > 4 || (next.Depth() > 3 && next.Start() != 's') || match.Separate {
 							data := next.Data()
-							for i := 0; i < 4; i++ {
-								if types&Type(1<<i) == 0 {
-									continue
-								}
-
+							for i := 0; i < countableTypes; i++ {
 								level := int(int8(data >> (i * 8)))
 
 								// False positives that contain replacements are not matched
 								if level > 0 || !(match.Replaced || replaced) {
-									inappropriateLevel += level
+									countableTypeLevels[i] += level
 								}
 							}
 						}
@@ -200,14 +204,20 @@ func Is(text string, types Type) bool {
 		separate = skippable || !matchable
 	}
 
-	// Min length is arbitrary, but must be > 0 to avoid dividing by zero
-	if types&Spam != 0 && len(text) > 5 {
-		spamPercent := (100 / 2) * (upperCount + repetitionCount) / len(text)
-
-		// 32 is arbitrary, but determines the relationship between spamPercent
-		// and inappropriateLevel
-		inappropriateLevel += spamPercent / 32
+	for i := 0; i < countableTypes; i++ {
+		if countableTypeLevels[i] > 0 {
+			types |= 1 << i
+		}
 	}
 
-	return inappropriateLevel > 0
+	// Min length is arbitrary, but must be > 0 to avoid dividing by zero
+	if len(text) > 5 {
+		spamPercent := (100 / 2) * (upperCount + repetitionCount) / len(text)
+
+		if spamPercent > 30 {
+			types |= Spam
+		}
+	}
+
+	return
 }
