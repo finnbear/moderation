@@ -20,18 +20,18 @@ func main() {
 	fmt.Printf("Censored phrase: %s (%d characters replaced)\n", censored, numCensored)
 
 	shorter := input
-	for moderation.Is(shorter, moderation.Any) {
+	for moderation.Scan(shorter).Is(moderation.Any) {
 		input = shorter
 		shorter = shorter[:len(shorter)-1]
 	}
 
 	shorter = input
-	for moderation.Is(shorter, moderation.Any) {
+	for moderation.Scan(shorter).Is(moderation.Any) {
 		input = shorter
 		shorter = shorter[1:]
 	}
 
-	if moderation.Is(input, moderation.Any) {
+	if moderation.Scan(input).Is(moderation.Any) {
 		fmt.Printf("Found inappropriate phrase: %s\n", input)
 	} else {
 		fmt.Println("No inappropriate phrase found")

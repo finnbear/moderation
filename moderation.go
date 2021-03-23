@@ -61,23 +61,13 @@ func init() {
 // to meet or exceed InappropriateThreshold
 //
 // Equivalent to
-//  moderation.Is(text, moderation.Inappropriate)
-//
-// Also, for the time being, equivalent to
-//  moderation.Is(text, moderation.Profane|moderation.Offensive|moderation.Sexual)
+//  moderation.Scan(text).Is(moderation.Inappropriate)
 //
 func IsInappropriate(text string) bool {
-	return Is(text, Inappropriate)
+	return Scan(text).Is(Inappropriate)
 }
 
-// Is returns whether a phrase contains words matching the types flag, useful if
-// checking only one type or set of types is needed
-func Is(text string, types Type) bool {
-	return Scan(text)&types != 0
-}
-
-// Scan returns a bitmask of all types, useful if checking multiple types or
-// sets of types is needed, without multiple calls to Is(text, types)
+// Scan returns a bitmask of all types detected within given text
 func Scan(text string) (types Type) {
 	// Figure out if sanitization is needed, and if so, do it
 	for _, textRune := range text {
@@ -240,4 +230,9 @@ func Scan(text string) (types Type) {
 	}
 
 	return
+}
+
+// Is returns whether the scan result includes a given Type or set of Type's
+func (scanResult Type) Is(types Type) bool {
+	return scanResult&types != 0
 }

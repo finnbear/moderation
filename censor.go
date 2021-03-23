@@ -10,7 +10,7 @@ var CensorReplacment rune = '*'
 // It is currently Experimental and not fully tested
 func Censor(text string, types Type) (censoredText string, replaced int) {
 	// Fast path
-	if len(text) == 0 || !Is(text, types) {
+	if len(text) == 0 || !Scan(text).Is(types) {
 		return text, 0
 	}
 
@@ -24,10 +24,10 @@ func Censor(text string, types Type) (censoredText string, replaced int) {
 
 	for i := start; i <= str.RuneCount(); i++ {
 		slice := str.Slice(start, i)
-		if /* (i == str.RuneCount() || str.At(i) == ' ') && */ Is(slice, types) {
+		if /* (i == str.RuneCount() || str.At(i) == ' ') && */ Scan(slice).Is(types) {
 			for j := start; j <= i; j++ {
 				slice2 := str.Slice(j, i)
-				if !Is(slice2, types) {
+				if !Scan(slice2).Is(types) {
 					censored = append(censored, []rune(str.Slice(start, j))...)
 					replaced += i - j
 					for k := 0; k < i-j; k++ {
