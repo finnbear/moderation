@@ -33,15 +33,11 @@ const (
 	Spam
 	Inappropriate = Profane | Offensive | Sexual | (Mean & Severe)
 	Any           = Profane | Offensive | Sexual | Spam | Mean
-)
 
-const (
 	Mild     Type = 0b111_111_111_111_111
 	Moderate      = 0b110_110_110_110_110
 	Severe        = 0b100_100_100_100_100
-)
 
-const (
 	countableTypes = 4
 
 	// A subset of the ASCII range that requires no sanitization
