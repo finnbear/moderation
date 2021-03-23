@@ -90,7 +90,12 @@ func TestRedundantReplacement(t *testing.T) {
 	}
 }
 
-func ExampleIs_types() {
+func ExampleIsInappropriate() {
+	fmt.Println(IsInappropriate("hello"), IsInappropriate("sh1t"))
+	// Output: false true
+}
+
+func ExampleType_Is_types() {
 	fmt.Println(Scan("shit").Is(Profane), Scan("shit").Is(Sexual|Mean))
 	fmt.Println(Scan("HELLO THERE").Is(Spam), Scan("duuuuuuuuumb").Is(Spam), Scan("Normal text").Is(Spam))
 	// Output:
@@ -98,14 +103,9 @@ func ExampleIs_types() {
 	// true true false
 }
 
-func ExampleIs_severity() {
+func ExampleType_Is_severity() {
 	fmt.Println(Scan("sh1t").Is(Profane), Scan("sh1t").Is(Profane&Severe))
 	// Output: true false
-}
-
-func ExampleIsInappropriate() {
-	fmt.Println(IsInappropriate("hello"), IsInappropriate("sh1t"))
-	// Output: false true
 }
 
 func ExampleScan() {
