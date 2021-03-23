@@ -120,10 +120,15 @@ func ExampleIsInappropriate_sh1t() {
 	// Output: true
 }
 
+func ExampleIs_severity() {
+	fmt.Println(Is("sh1t", Profane), Is("sh1t", Profane&Severe))
+	// Output: true false
+}
+
 func ExampleScan() {
 	types := Scan("you're a dumbass")
-	fmt.Println(types&Profane > 0, types&Offensive > 0, types&Sexual > 0, types&Mean > 0)
-	// Output: true false false true
+	fmt.Println(types&Profane != 0, types&Offensive != 0, types&Sexual != 0, types&Mean != 0, types&(Mean&Severe) != 0)
+	// Output: true false false true false
 }
 
 func TestAnalyzeWikipedia(t *testing.T) {
@@ -162,10 +167,10 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		}
 
 		/*
-		censored, _ := Censor(phrase, Inappropriate | Mean)
-		if offensive {
-			fmt.Printf("\"%s\" -> \"%s\"\n", phrase, censored)
-		}
+			censored, _ := Censor(phrase, Inappropriate | Mean)
+			if offensive {
+				fmt.Printf("\"%s\" -> \"%s\"\n", phrase, censored)
+			}
 		*/
 
 		total++

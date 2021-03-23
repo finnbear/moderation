@@ -4,6 +4,8 @@ github.com/TwinProduction/go-away v1.1.0 h1:AhkmMxDIxI4Dr0/Hki/qtFfLh/02MOtmDEqL
 github.com/TwinProduction/go-away v1.1.0/go.mod h1:VB/lNzhkzh7Xw2QgU+tYBjMheldukJaIJzVaIx2rh30=
 github.com/TwinProduction/go-away v1.1.1 h1:hqESSRzR3HiBhXQeH6i7Cshn5AQQN0wRfp3v07zw7dk=
 github.com/TwinProduction/go-away v1.1.1/go.mod h1:rhlrmkf0W6BXWsJoj96OYT0FU/Z7mtvfrAW3JezrWeA=
+github.com/TwinProduction/go-away v1.1.2 h1:cUaSUKwNuDEEWKQayPhhWdGgIALpOiexy5yFZZqv2Zg=
+github.com/TwinProduction/go-away v1.1.2/go.mod h1:rhlrmkf0W6BXWsJoj96OYT0FU/Z7mtvfrAW3JezrWeA=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190510104115-cbcb75029529/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=

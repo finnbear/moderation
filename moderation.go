@@ -9,26 +9,44 @@ import (
 	"unicode"
 )
 
-// Types of inappropriateness
+// Types and severities of inappropriateness
 //
-// For compability, only pass a single Type or a bitwise OR of multiple Type's,
-// and always reference Type's by name as their value may change from version
-// to version. Other operations on Type's are not supported.
+// For compability, always reference them by name as their value may change
+// from version to version.
+//
+// Use a bitwise OR of multiple profanity classifications, and a bitwise AND to
+// specify a severity level (default Mild). The definition of Inappropriate
+// (mildly profane, mildly offensive, mildly sexual, or severely mean) serves
+// as a good example.
+//
+// Other operations on Type's are NOT supported.
+//
+// Severities sould be interpreteted on an "at least" basis, e.g. Mild means
+// Mild, Moderate, OR Severe.
 type Type uint32
 
 const (
-	Profane Type = 1 << iota
+	Profane Type = 0b111 << (iota * 3)
 	Offensive
 	Sexual
 	Mean
 	Spam
-	Inappropriate = Profane | Offensive | Sexual
+	Inappropriate = Profane | Offensive | Sexual | (Mean & Severe)
 	Any           = Profane | Offensive | Sexual | Spam | Mean
+)
 
+const (
+	Mild     Type = 0b111_111_111_111_111
+	Moderate      = 0b110_110_110_110_110
+	Severe        = 0b100_100_100_100_100
+)
+
+const (
 	countableTypes = 4
 
-	minMatchable rune = 0x0020
-	maxMatchable rune = 0x007E
+	// A subset of the ASCII range that requires no sanitization
+	minNormal rune = 0x0020
+	maxNormal rune = 0x007E
 )
 
 var (
@@ -59,7 +77,7 @@ func IsInappropriate(text string) bool {
 // Is returns whether a phrase contains words matching the types flag, useful if
 // checking only one type or set of types is needed
 func Is(text string, types Type) bool {
-	return Scan(text)&types > 0
+	return Scan(text)&types != 0
 }
 
 // Scan returns a bitmask of all types, useful if checking multiple types or
@@ -67,7 +85,7 @@ func Is(text string, types Type) bool {
 func Scan(text string) (types Type) {
 	// Figure out if sanitization is needed, and if so, do it
 	for _, textRune := range text {
-		if textRune < minMatchable || maxMatchable < textRune {
+		if textRune < minNormal || maxNormal < textRune {
 			// Sanitize
 			buf := make([]byte, 0, len(text))
 			_, n, _ := transform.Append(removeAccentsTransform, buf, []byte(text))
@@ -99,7 +117,7 @@ func Scan(text string) (types Type) {
 		var replacement string
 		if int(textByte) < len(replacements) {
 			replacement = replacements[textByte]
-		} else if textRune > maxMatchable {
+		} else if textRune > maxNormal {
 			replacement = runeReplacements[textRune]
 			if replacement == "" {
 				lowerRune := unicode.ToLower(textRune)
@@ -118,19 +136,13 @@ func Scan(text string) (types Type) {
 			textByte = replacement[0]
 			textBytes = replacement
 			matchable = true
-		case textRune < minMatchable || maxMatchable < textRune:
-			// Unhandled runes (not printable, not representable as byte, etc.)
-			// matchable = false implied
-			switch textRune {
-			case '\n', '\r', '\t':
-				skippable = true
-			}
 		default:
+			// matchable = false implied
 			switch textByte {
 			case '*': // these count as replacements
 				replaced = true
 				fallthrough
-			case ' ', '~', '-', '_', '.', ',': // false positives may contain these
+			case ' ', '~', '-', '_', '.', ',', '\n', '\r', '\t': // false positives may contain these
 				skippable = true
 			}
 		}
@@ -204,18 +216,30 @@ func Scan(text string) (types Type) {
 		separate = skippable || !matchable
 	}
 
-	for i := 0; i < countableTypes; i++ {
-		if countableTypeLevels[i] > 0 {
-			types |= 1 << i
+	for i, level := range countableTypeLevels {
+		var severity Type
+
+		if level >= 3 {
+			severity = 0b100 // severe
+		} else if level == 2 {
+			severity = 0b010 // moderate
+		} else if level == 1 {
+			severity = 0b001 // mild
 		}
+
+		types |= severity << (i * 3)
 	}
 
 	// Min length is arbitrary, but must be > 0 to avoid dividing by zero
 	if len(text) > 5 {
 		spamPercent := (100 / 2) * (upperCount + repetitionCount) / len(text)
 
-		if spamPercent > 30 {
-			types |= Spam
+		// TODO: Define severe spam
+
+		if spamPercent > 50 {
+			types |= Spam & Moderate
+		} else if spamPercent > 30 {
+			types |= Spam & Mild
 		}
 	}
 
