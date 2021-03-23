@@ -9,7 +9,7 @@ import (
 	"testing"
 )
 
-func TestAnalyze(t *testing.T) {
+func TestIsInappropriate(t *testing.T) {
 	type TestCase struct {
 		phrase    string
 		offensive bool
@@ -90,39 +90,22 @@ func TestRedundantReplacement(t *testing.T) {
 	}
 }
 
-func ExampleIs_shit_profane() {
-	fmt.Println(Is("shit", Profane))
-	// Output: true
-}
-
-func ExampleIs_shit_sexual_or_mean() {
-	fmt.Println(Is("shit", Sexual|Mean))
-	// Output: false
-}
-
-func ExampleIs_caps_spam() {
-	fmt.Println(Is("HELLO THERE", Spam))
-	// Output: true
-}
-
-func ExampleIs_duuuuuuuuumb_spam() {
-	fmt.Println(Is("duuuuuuuuumb", Spam))
-	// Output: true
-}
-
-func ExampleIsInappropriate_hello() {
-	fmt.Println(IsInappropriate("hello"))
-	// Output: false
-}
-
-func ExampleIsInappropriate_sh1t() {
-	fmt.Println(IsInappropriate("sh1t"))
-	// Output: true
+func ExampleIs_types() {
+	fmt.Println(Is("shit", Profane), Is("shit", Sexual|Mean))
+	fmt.Println(Is("HELLO THERE", Spam), Is("duuuuuuuuumb", Spam), Is("Normal text", Spam))
+	// Output:
+	// true false
+	// true true false
 }
 
 func ExampleIs_severity() {
 	fmt.Println(Is("sh1t", Profane), Is("sh1t", Profane&Severe))
 	// Output: true false
+}
+
+func ExampleIsInappropriate() {
+	fmt.Println(IsInappropriate("hello"), IsInappropriate("sh1t"))
+	// Output: false true
 }
 
 func ExampleScan() {
@@ -131,7 +114,7 @@ func ExampleScan() {
 	// Output: true false false true false
 }
 
-func TestAnalyzeWikipedia(t *testing.T) {
+func TestIsInappropriateWikipedia(t *testing.T) {
 	wikiModerationData, err := os.Open("wikipedia-test.csv")
 	if err != nil {
 		t.Skip()
@@ -155,7 +138,7 @@ func TestAnalyzeWikipedia(t *testing.T) {
 		}
 		phrase := fields[1]
 		offensive := fields[0] == "1"
-		if Is(phrase, Profane|Offensive|Sexual|Mean) == offensive {
+		if IsInappropriate(phrase) == offensive {
 			correct++
 			if offensive {
 				correctNok++
