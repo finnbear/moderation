@@ -233,9 +233,9 @@ func Scan(text string) (types Type) {
 		// TODO: Define severe spam
 
 		if spamPercent > 50 {
-			types |= Spam & Moderate
+			types |= 0b010 << (4 * 3) // moderate spam
 		} else if spamPercent > 30 {
-			types |= Spam & Mild
+			types |= 0b001 << (4 * 3) // mild spam
 		}
 	}
 
