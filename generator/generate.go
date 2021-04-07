@@ -185,6 +185,7 @@ func main() {
 	shortValid := map[string]bool{
 		"all":  true,
 		"also": true,
+		"an":   true,
 		"and":  true,
 		"any":  true,
 		"are":  true,

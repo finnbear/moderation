@@ -67,8 +67,9 @@ func IsInappropriate(text string) bool {
 	return Scan(text).Is(Inappropriate)
 }
 
-// Scan returns a bitmask of all types detected within given text
-func Scan(text string) (types Type) {
+// Scan returns a bitmask of all types detected within given text, which can
+// be queried with the Is function
+func Scan(text string) (scanResult Type) {
 	// Figure out if sanitization is needed, and if so, do it
 	for _, textRune := range text {
 		if textRune < minNormal || maxNormal < textRune {
@@ -213,7 +214,7 @@ func Scan(text string) (types Type) {
 			severity = 0b001 // mild
 		}
 
-		types |= severity << (i * 3)
+		scanResult |= severity << (i * 3)
 	}
 
 	// Min length is arbitrary, but must be > 0 to avoid dividing by zero
@@ -223,9 +224,9 @@ func Scan(text string) (types Type) {
 		// TODO: Define severe spam
 
 		if spamPercent > 50 {
-			types |= 0b010 << (4 * 3) // moderate spam
+			scanResult |= 0b010 << (4 * 3) // moderate spam
 		} else if spamPercent > 30 {
-			types |= 0b001 << (4 * 3) // mild spam
+			scanResult |= 0b001 << (4 * 3) // mild spam
 		}
 	}
 
