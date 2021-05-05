@@ -10,7 +10,7 @@
 2. Minimum possible allocations, processing time, and binary size
 3. Minimum false negatives (including text like `h3110_w0r!d`)
 4. Minimum false positives
-5. Provide a way to censor text
+5. (Experimental) Provide a way to censor text
 6. (Future) Other analysis types than inappropriate, profane, offensive, sexual, mean, spam (violence, contact info, etc.)
 7. (Future) Basic support for languages other than English
 
@@ -53,8 +53,8 @@ Accuracy was evaluated based on the first 100,000 items from this [dataset of mo
 
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:|:-----:|:-----:|:-----:|
-|[finnbear/moderation](https://github.com/finnbear/moderation)|1.51s|90.73%|Current API version is not stable|
-|[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|2.13s|82.11%|Many false positives from combined words like "push it"|
+|[finnbear/moderation](https://github.com/finnbear/moderation)|1.52s|90.74%|Current API version is not stable|
+|[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|2.15s|82.11%|Many false positives from combined words like "push it"|
 
 
 ## Acknowledgements

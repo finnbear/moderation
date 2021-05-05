@@ -1,6 +1,7 @@
 word,profane,offensive,sexual,mean
 anal,2,0,2,0
 anus,2,0,0,0
+apeshit,2,0,0,0
 arse,2,0,0,0
 ass,2,0,0,0
 azz,1,0,0,0
@@ -24,6 +25,7 @@ bullshit,2,0,0,0
 butt,1,0,0,0
 bra,0,0,1,0
 brainless,0,0,0,1
+chickenshit,2,0,0,1
 chink,0,3,0,0
 clit,0,0,3,0
 cock,2,0,2,0
@@ -40,6 +42,7 @@ daygo,0,3,0,0
 dego,0,3,0,0
 dick,2,0,2,0
 dildo,0,0,3,0
+dipshit,2,0,0,2
 dominatrics,0,0,3,0
 dominatrix,0,0,3,0
 dong,0,0,2,0
@@ -83,10 +86,12 @@ honkey,0,2,0,0
 honkie,0,2,0,0
 hooker,0,0,3,0
 horny,0,0,3,0
+horseshit,2,0,0,0
 idiot,0,0,0,1
 imbecile,0,0,0,2
 incest,0,0,3,0
 jackass,1,0,0,1
+jackshit,2,0,0,0
 jerk,0,0,0,1
 jigaboo,0,3,0,0
 jizz,0,0,3,0
