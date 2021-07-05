@@ -196,7 +196,14 @@ func Scan(text string) (scanResult Type) {
 			}
 
 			lastMatchable = textByte
-		} else if !skippable {
+		} else if skippable {
+			// Mark all matches as separate
+			for m := 0; m < matches.Len(); m++ {
+				match := matches.Remove()
+				match.Separate = false
+				matches.Append(match)
+			}
+		} else {
 			matches.Clear()
 		}
 

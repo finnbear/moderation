@@ -4,7 +4,7 @@ type Match struct {
 	Node     *Node
 	Length   int  // how many matchable characters contributed
 	Replaced bool // whether a replacement character contributed
-	Separate bool // false if the match came after another caracter (no space/separation)
+	Separate bool // false if the match came after another caracter (no space/separation) and contains no skipped characters
 }
 
 func (match Match) EqualsExceptLength(other Match) bool {
