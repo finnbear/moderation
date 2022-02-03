@@ -4,6 +4,8 @@
 
 `moderation` is a profanity filter for `Go`.
 
+**Note: This project is not actively maintained, as I have moved on to working on [a Rust version](https://github.com/finnbear/rustrict/).**
+
 ## Goals
 
 1. Easy to use
@@ -53,7 +55,7 @@ Accuracy was evaluated based on the first 100,000 items from this [dataset of mo
 
 |**Package**|**Time**|**Accuracy**|**Comment**|
 |:-----:|:-----:|:-----:|:-----:|
-|[finnbear/moderation](https://github.com/finnbear/moderation)|1.63s|92.21%|Current API version is not stable|
+|[finnbear/moderation](https://github.com/finnbear/moderation)|1.63s|92.21%|Not stable, nor actively maintained|
 |[TwinProduction/go-away](https://github.com/TwinProduction/go-away)|2.16s|82.18%|Many false positives from combined words like "push it"|
 
 
